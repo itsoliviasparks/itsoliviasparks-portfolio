@@ -49,8 +49,9 @@ a{
     
 a:hover,
 a:focus{
-    color: #81bd28;
+    color: #aaabad;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .repo {
