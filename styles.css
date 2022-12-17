@@ -25,9 +25,9 @@ h2 {
 }
 
 h1 {
-    Font-Size: 4.8rem;
     margin-top: 80px;
     margin-bottom: 0;
+    Font-Size: 4.8rem;
 }
 
 h2 {
@@ -58,16 +58,23 @@ a:focus{
     font-size: 1.5rem;
 }
 
-ul {
+ul.projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+ul.contact {
     padding: 0;
 }
 
 li {
-    font-size: 3rem;
-    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
+    font-size: 3rem;
+    list-style: none;
 }
 
 .project {
@@ -75,19 +82,19 @@ li {
 }
 
 .contact-links {
-    margin: auto;
-    width: 80px;
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    width: 80px;
 }
 
 @media (max-width: 550px) {
     h1 {
-        Font-Size: 3.5rem;
+        font-Size: 3.5rem;
         margin-top: 30px;
     }
     h2 {
-        Font-Size: 1.7rem;
+        font-Size: 1.7rem;
     }
     h3 {
         font-size: 1.5rem;
