@@ -1,0 +1,64 @@
+@use "var" as *;
+
+//general styles
+html {
+    background-color: $background-white;
+    color: $black;
+    font-family: $body-font;
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+//fonts
+a {
+    color: $dark-green;
+    text-decoration: none;
+    &:hover,
+    &:focus {text-decoration: underline;}
+}
+
+h1 {
+    margin: 0;
+    color: $white;
+    font-family: $header-font;
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+    text-transform: lowercase;
+}
+
+header i {
+    color: $white;
+    font-size: 3rem;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+    }
+}
+
+header a {
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+        text-decoration: none;
+    }
+}
+
