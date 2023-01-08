@@ -108,5 +108,10 @@ header a {
     i {
         font-size: 2.5rem;
         color: $pink;
+        transition: 0.3s;
+        &:hover,
+        &:focus {
+            opacity: 0.5;
+        }
     }
 }
