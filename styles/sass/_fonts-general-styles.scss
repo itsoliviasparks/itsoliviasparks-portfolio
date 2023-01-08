@@ -10,8 +10,13 @@ html {
 
 .wrapper {
     width: 95%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
+}
+
+section {
+    min-height: 40vh;
+    padding: 50px 0;
 }
 
 img{
@@ -34,7 +39,9 @@ a {
     &:focus {text-decoration: underline;}
 }
 
-h1 {
+h1,
+h2,
+h3 {
     margin: 0;
     color: $white;
     font-family: $header-font;
@@ -42,6 +49,28 @@ h1 {
     letter-spacing: 0.5rem;
     text-transform: lowercase;
 }
+
+h2 {
+    color: $black;
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+}
+
+h3 {
+    color: $green;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+p {font-size: 1.5rem;}
 
 header i {
     color: $white;
@@ -57,8 +86,27 @@ header a {
     transition: 0.3s;
     &:hover,
     &:focus {
-        opacity: 0.5;
         text-decoration: none;
+        opacity: 0.5;
     }
 }
 
+.tech-stack{
+    i {font-size: 2.5rem;}
+    p {
+        margin: 0;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    li:nth-child(15) {color: $orange;}
+    li:nth-child(16) {color: $green;}
+    li:nth-child(17) {color: $pink;}
+    li:nth-child(18) {color: $dark-green;}
+}
+
+.about-contacts {
+    i {
+        font-size: 2.5rem;
+        color: $pink;
+    }
+}
