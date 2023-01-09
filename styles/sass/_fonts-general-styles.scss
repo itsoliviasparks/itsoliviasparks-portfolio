@@ -15,7 +15,7 @@ html {
 }
 
 section {
-    min-height: 40vh;
+    min-height: 100vh;
     padding: 50px 0;
 }
 
@@ -68,6 +68,15 @@ h4 {
     letter-spacing: 0.2rem;
     text-transform: lowercase;
     text-align: center;
+}
+
+.opening-text h2 {
+    color: $white;
+    &:nth-child(2) {font-size: 6rem;}
+}
+
+.opening-text h3 {
+    color: $black;
 }
 
 p {font-size: 1.5rem;}

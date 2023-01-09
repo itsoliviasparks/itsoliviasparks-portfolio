@@ -1,12 +1,21 @@
 @use "var" as *;
 
-header {
+.header-background {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 10px 0;
+    height: 100vh;
     background: $orange;
     background: linear-gradient(295deg, $orange 6%, $green 62%, $pink 78%);
+}
+
+header {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
     .wrapper {
         display: flex;
         justify-content: space-between;

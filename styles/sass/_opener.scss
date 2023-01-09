@@ -1,0 +1,15 @@
+@use "var" as *;
+
+section.opener {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    height: 100vh;
+    .opening-text {
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+}
