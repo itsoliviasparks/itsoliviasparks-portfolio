@@ -13,7 +13,7 @@ portfolio.openerTextFadeOut = () => {
 portfolio.headerBackgroundScroll = () => {
     const $headerHeight =  $("header").height();
     const $headerBackground = $(".header-background");
-    $headerBackground.animate({height:($headerHeight + 20)},1000)
+    $headerBackground.animate({height:($headerHeight + 20)},1300)
 }
 
 
