@@ -15,7 +15,7 @@ html {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 50px 0;
 }
 
@@ -123,4 +123,28 @@ header a {
             opacity: 0.5;
         }
     }
+}
+
+footer {
+    padding-bottom: 11vh;
+    background: $orange;
+    text-align: center;
+    p {
+        font-size: 1rem;
+        margin: 0;
+        color: $white;
+    }
+}
+
+
+.pink {
+    background-color: $pink;
+}
+
+.green {
+    background-color: $green;
+}
+
+.orange {
+    background-color: $orange;
 }

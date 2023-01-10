@@ -240,7 +240,7 @@ html {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 50px 0;
 }
 
@@ -359,6 +359,29 @@ header a:hover, header a:focus {
 }
 .about-contacts i:hover, .about-contacts i:focus {
   opacity: 0.5;
+}
+
+footer {
+  padding-bottom: 11vh;
+  background: rgb(250, 182, 79);
+  text-align: center;
+}
+footer p {
+  font-size: 1rem;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+.pink {
+  background-color: rgb(215, 139, 127);
+}
+
+.green {
+  background-color: rgb(89, 172, 161);
+}
+
+.orange {
+  background-color: rgb(250, 182, 79);
 }
 
 section.opener {

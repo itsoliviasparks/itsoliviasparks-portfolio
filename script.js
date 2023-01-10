@@ -1,28 +1,56 @@
 const portfolio = {};
 
-portfolio.headerFadeIn = () => {
-    const $header =  $("header");
-    $header.fadeIn(700);
+portfolio.navFadeIn = () => {
+    const $nav =  $("header");
+    $nav.fadeIn(2000);
 }
 
 portfolio.openerTextFadeOut = () => {
     const $openingText =  $(".opening-text");
-    $openingText.fadeOut(700);
+    $openingText.fadeOut(1200);
 }
 
 portfolio.headerBackgroundScroll = () => {
     const $headerHeight =  $("header").height();
     const $headerBackground = $(".header-background");
-    $headerBackground.animate({height:($headerHeight + 20)},1300)
+    $headerBackground.animate({height:($headerHeight + 20)}, 1700)
+
+    const $aboutSection = $("#about");
+    $aboutSection.animate({"margin-top": 0}, 2500)
 }
 
+portfolio.whatTime = () => {
+    const currentHr = new Date().getHours();
+    const $time = $("h2.time");
+    if (currentHr >= 23 && currentHr < 3) {
+        $time.text("Good Evening Night Owl!");
+    } else if (currentHr >= 3 && currentHr < 6) {
+        $time.text("Good Morning Early Riser!");
+    } else if (currentHr >= 6 && currentHr < 12) {
+        $time.text("Good Morning!");
+    } else if (currentHr >= 12 && currentHr < 17) {
+        $time.text("Good Afternoon!");
+    } else if (currentHr >= 17 && currentHr < 23) {
+        $time.text("Good Evening!");
+        }
+}
 
-portfolio.scrollListener = window.addEventListener("scroll", () => {
-    portfolio.headerBackgroundScroll();
-    portfolio.openerTextFadeOut();
-    portfolio.headerFadeIn();
+portfolio.listeners = () => {
+    window.addEventListener("scroll", () => {
+        portfolio.navFadeIn();
+        portfolio.headerBackgroundScroll();
+        portfolio.openerTextFadeOut();
+    })
+}
+
+portfolio.init = () => {
+    portfolio.listeners();
+    portfolio.whatTime();
+}
+
+$(() => {
+    portfolio.init();
 })
-
 
 
 //vanilla JS:
@@ -41,29 +69,3 @@ portfolio.scrollListener = window.addEventListener("scroll", () => {
 //         time.textContent="Good Evening!";
 //         }
 // }
-
-//jQuery:
-portfolio.whatTime = () => {
-    const currentHr = new Date().getHours();
-    const $time = $("h2.time");
-
-    if (currentHr >= 23 && currentHr < 3) {
-        $time.text("Good Evening Night Owl!");
-    } else if (currentHr >= 3 && currentHr < 6) {
-        $time.text("Good Morning Early Riser!");
-    } else if (currentHr >= 6 && currentHr < 12) {
-        $time.text("Good Morning!");
-    } else if (currentHr >= 12 && currentHr < 17) {
-        $time.text("Good Afternoon!");
-    } else if (currentHr >= 17 && currentHr < 23) {
-        $time.text("Good Evening!");
-        }
-}
-
-portfolio.init = () => {
-    portfolio.whatTime();
-}
-
-$(() => {
-    portfolio.init();
-})
