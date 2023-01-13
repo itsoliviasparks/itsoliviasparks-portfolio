@@ -331,24 +331,7 @@ header a:hover, header a:focus {
 }
 
 .tech-stack i {
-  font-size: 2.5rem;
-}
-.tech-stack p {
-  margin: 0;
-  font-size: 0.7rem;
-  text-align: center;
-}
-.tech-stack li:nth-child(15) {
-  color: rgb(250, 182, 79);
-}
-.tech-stack li:nth-child(16) {
-  color: rgb(89, 172, 161);
-}
-.tech-stack li:nth-child(17) {
-  color: rgb(215, 139, 127);
-}
-.tech-stack li:nth-child(18) {
-  color: rgb(66, 114, 96);
+  font-size: 4rem;
 }
 
 .about-contacts i {
@@ -501,27 +484,8 @@ ul.tech-stack li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50px;
-  height: 50px;
   margin: 3px;
-}
-ul.tech-stack li:nth-child(n+15) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-ul.tech-stack li img {
-  max-width: 100%;
-  max-height: 100%;
+  padding: 5px;
 }
 
 ul.about-contacts {

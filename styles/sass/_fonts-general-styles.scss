@@ -101,16 +101,17 @@ header a {
 }
 
 .tech-stack{
-    i {font-size: 2.5rem;}
-    p {
-        margin: 0;
-        font-size: 0.7rem;
-        text-align: center;
-    }
-    li:nth-child(15) {color: $orange;}
-    li:nth-child(16) {color: $green;}
-    li:nth-child(17) {color: $pink;}
-    li:nth-child(18) {color: $dark-green;}
+    // i {font-size: 2.5rem;}
+    i {font-size: 4rem;}
+    // p {
+    //     margin: 0;
+    //     font-size: 0.7rem;
+    //     text-align: center;
+    // }
+    // li:nth-child(13) {color: $orange;}
+    // li:nth-child(14) {color: $green;}
+    // li:nth-child(15) {color: $pink;}
+    // li:nth-child(16) {color: $dark-green;}
 }
 
 .about-contacts {

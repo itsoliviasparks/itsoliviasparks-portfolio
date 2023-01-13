@@ -10,13 +10,31 @@ portfolio.openerTextFadeOut = () => {
     $openingText.fadeOut(1200);
 }
 
-portfolio.headerBackgroundScroll = () => {
-    const $headerHeight =  $("header").height();
-    const $headerBackground = $(".header-background");
-    $headerBackground.animate({height:($headerHeight + 20)}, 1700)
+// portfolio.headerBackgroundScroll = () => {
+//     const $headerHeight =  $("header").height();
+//     const $headerBackground = $(".header-background");
+//     $headerBackground.animate({height:($headerHeight + 20)}, 1700)
 
-    const $aboutSection = $("#about");
-    $aboutSection.animate({"margin-top": 0}, 2500)
+//     const $aboutSection = $("#about");
+//     $aboutSection.animate({"margin-top": 0}, 2500)
+// }
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const oldHeaderHeight = window.innerHeight;
+    const $newHeaderHeight =  $("header").height() + 20;
+    const $headerBackground = $(".header-background");
+
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    $headerBackground.animate({height:$newHeaderHeight}, 1500)
+        const $aboutSection = $("#about");
+        $aboutSection.animate({"margin-top": 0}, 3500)
+  } else {
+    $headerBackground.height(oldHeaderHeight);
+    // console.log(oldHeaderHeight);
+  }
 }
 
 portfolio.whatTime = () => {
@@ -38,7 +56,7 @@ portfolio.whatTime = () => {
 portfolio.listeners = () => {
     window.addEventListener("scroll", () => {
         portfolio.navFadeIn();
-        portfolio.headerBackgroundScroll();
+        // portfolio.headerBackgroundScroll();
         portfolio.openerTextFadeOut();
     })
 }
@@ -52,6 +70,9 @@ $(() => {
     portfolio.init();
 })
 
+$('.tech-stack > li').hover(function () {
+    $(this).children("i").toggleClass('colored').siblings().removeClass('colored');
+    });
 
 //vanilla JS:
 // portfolio.whatTime = () => {
