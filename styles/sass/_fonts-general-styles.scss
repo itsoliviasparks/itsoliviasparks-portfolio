@@ -83,7 +83,7 @@ p {font-size: 1.5rem;}
 
 header i {
     color: $white;
-    font-size: 3rem;
+    font-size: 2rem;
     transition: 0.3s;
     &:hover,
     &:focus {
@@ -100,18 +100,53 @@ header a {
     }
 }
 
+#tech-stack-anchor{
+    position: relative;
+    padding-top: 30vh;
+  }
+
+
 .tech-stack{
-    // i {font-size: 2.5rem;}
-    i {font-size: 4rem;}
-    // p {
-    //     margin: 0;
-    //     font-size: 0.7rem;
-    //     text-align: center;
-    // }
-    // li:nth-child(13) {color: $orange;}
-    // li:nth-child(14) {color: $green;}
-    // li:nth-child(15) {color: $pink;}
-    // li:nth-child(16) {color: $dark-green;}
+    i {
+        font-size: 5rem;
+        transition: 0.3s;
+    }
+    p {
+        margin: 0;
+        font-size: 1rem;
+        text-align: center;
+        transition: 0.3s;
+    }
+    li:nth-child(5),
+    li:nth-child(6),
+    li:nth-child(10),
+    li:nth-child(13) {
+        i {
+        font-size: 3rem;
+        padding: 5px;
+    }
+    }
+    li:nth-child(5):hover,
+    li:nth-child(5):focus {
+        color: $orange;
+    }
+    li:nth-child(6):hover,
+    li:nth-child(6):focus {
+        color: $green;
+    }
+    li:nth-child(10):hover,
+    li:nth-child(10):focus {
+        color: $orange;
+    }
+    li:nth-child(12):hover,
+    li:nth-child(12):focus {
+        color: $white;
+        opacity: 0.8;
+    }
+    li:nth-child(13):hover,
+    li:nth-child(13):focus {
+        color: $pink;
+    }
 }
 
 .about-contacts {
@@ -127,13 +162,13 @@ header a {
 }
 
 footer {
-    padding-bottom: 11vh;
-    background: $orange;
+    background: $dark-green;
     text-align: center;
     p {
         font-size: 1rem;
         margin: 0;
-        color: $white;
+        padding: 5px 0;
+        color: $black;
     }
 }
 
