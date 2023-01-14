@@ -6,23 +6,29 @@
 }
 
 section#about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 100vh;
-    background-color: $background-white;
+    padding-top: 110vh;
+    background-color: $dark-green;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .about-img {
     position: relative;
-    width: 40%;
-    height: 45vw;
-    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 30vw;
+    margin-right: 15px;
     img.olivia {
         position: absolute;
         z-index: 2;
-        width: 98%;
-        height: 98%;
+        width: 99%;
+        height: 99%;
+        border-radius: 2px 2px 2px 40px;
     }
     .img-cutout {
         position: absolute;
@@ -33,16 +39,17 @@ section#about {
         background-image: $background-img;
         background-attachment: fixed;
         background-size: cover;
+        border-radius: 2px 2px 2px 40px;
     }
-
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     padding: 20px 40px;
     background-color: $green;
+    border-radius: 2px 40px 2px 2px;
     li {
         list-style-type: square;
     }

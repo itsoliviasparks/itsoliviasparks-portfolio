@@ -287,17 +287,18 @@ h3 {
   color: rgb(34, 34, 34);
 }
 
+h3:nth-of-type(2) {
+  margin-top: 20px;
+}
+
 .contact-text h3 {
   text-align: center;
 }
 
-p {
+p,
+.passions li {
   font-size: 1.5rem;
-}
-
-h3 + p,
-.passions li p {
-  margin-top: 5px;
+  margin: 7px 0;
 }
 
 .passions:last-child p {
@@ -374,7 +375,7 @@ header i:hover, header i:focus {
 }
 .tech-stack li:nth-child(13):hover,
 .tech-stack li:nth-child(13):focus {
-  color: rgb(215, 139, 127);
+  color: rgb(66, 114, 96);
 }
 
 .contacts i {
@@ -460,6 +461,10 @@ header .wrapper {
 }
 
 section#about {
+  padding-top: 110vh;
+  background-color: rgb(66, 114, 96);
+}
+section#about .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,21 +474,29 @@ section#about {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 100vh;
-  background-color: rgb(253, 253, 253);
 }
 
 .about-img {
   position: relative;
-  width: 40%;
-  height: 45vw;
-  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 30vw;
+  margin-right: 15px;
 }
 .about-img img.olivia {
   position: absolute;
   z-index: 2;
-  width: 98%;
-  height: 98%;
+  width: 99%;
+  height: 99%;
+  border-radius: 2px 2px 2px 40px;
 }
 .about-img .img-cutout {
   position: absolute;
@@ -494,6 +507,7 @@ section#about {
   background-image: url("../assets/mitchell-luo-8acRvqOAjpw-unsplash.jpg");
   background-attachment: fixed;
   background-size: cover;
+  border-radius: 2px 2px 2px 40px;
 }
 
 .about-text {
@@ -504,9 +518,10 @@ section#about {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
+  width: 70%;
   padding: 20px 40px;
   background-color: rgb(89, 172, 161);
+  border-radius: 2px 40px 2px 2px;
 }
 .about-text li {
   list-style-type: square;
@@ -519,7 +534,7 @@ section#about {
 
 section#tech-stack {
   min-height: 10vh;
-  background-color: rgb(66, 114, 96);
+  background-color: rgb(215, 139, 127);
 }
 
 ul.tech-stack {
@@ -564,12 +579,30 @@ ul.tech-stack li:nth-child(5), ul.tech-stack li:nth-child(6), ul.tech-stack li:n
       justify-content: space-around;
 }
 
-.parallax {
+section#projects {
+  padding: 20px 0;
+}
+
+.background {
   background-attachment: fixed;
   background-image: url("../assets/mitchell-luo-8acRvqOAjpw-unsplash.jpg");
   background-size: cover;
-  row-gap: 4rem;
-  text-align: center;
+}
+
+ul.projects li {
+  width: 100%;
+  min-height: 40vh;
+  margin-top: 10px;
+  padding: 20px 40px;
+  border-radius: 2px 2px 2px 2px;
+  background-color: rgb(255, 255, 255);
+}
+ul.projects :nth-child(1) {
+  margin-top: 0;
+  border-top-right-radius: 40px;
+}
+ul.projects :nth-child(2) {
+  border-bottom-left-radius: 40px;
 }
 
 section#contact {

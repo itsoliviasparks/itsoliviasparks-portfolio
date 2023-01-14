@@ -58,14 +58,15 @@ h3 {
 
 .opening-text h3 {color: $black;}
 
+h3:nth-of-type(2) {margin-top: 20px;}
+
 .contact-text h3 {text-align: center;}
 
 //body fonts
-p {font-size: 1.5rem;}
-
-h3 + p,
-.passions li p {
-    margin-top: 5px;
+p,
+.passions li {
+    font-size: 1.5rem;
+    margin: 7px 0;
 }
 
 .passions:last-child p {margin-bottom: 0;}
@@ -141,7 +142,7 @@ header i {
     }
     li:nth-child(13):hover,
     li:nth-child(13):focus {
-        color: $pink;
+        color: $dark-green;
     }
 }
 
