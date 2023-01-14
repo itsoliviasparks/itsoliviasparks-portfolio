@@ -301,6 +301,11 @@ p,
   margin: 7px 0;
 }
 
+.passions li {
+  text-indent: -2rem;
+  padding-left: 2rem;
+}
+
 .passions:last-child p {
   margin-bottom: 0;
 }
@@ -523,8 +528,10 @@ section#about .wrapper {
   background-color: rgb(89, 172, 161);
   border-radius: 2px 40px 2px 2px;
 }
-.about-text li {
+
+ul.passions li {
   list-style-type: square;
+  list-style-position: inside;
 }
 
 #tech-stack-anchor {
