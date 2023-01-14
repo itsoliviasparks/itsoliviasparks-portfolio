@@ -52,9 +52,4 @@ section#about {
     border-radius: 2px 40px 2px 2px;
 }
 
-ul.passions {
-    li {
-        list-style-type: square;
-        list-style-position: inside;
-    }
-}
+ul.passions li {list-style-type: square;}
