@@ -9,10 +9,10 @@ portfolio.devStackHover = () => {
 portfolio.whatTime = () => {
     const currentHr = new Date().getHours();
     const $time = $("h2.time");
-    if (currentHr >= 23 && currentHr < 3) {
-        $time.text("Good Evening Night Owl!");
+    if (currentHr >= 23 || currentHr < 3) {
+        $time.text("Good Evening, Night Owl!");
     } else if (currentHr >= 3 && currentHr < 6) {
-        $time.text("Good Morning Early Riser!");
+        $time.text("Good Morning, Early Riser!");
     } else if (currentHr >= 6 && currentHr < 12) {
         $time.text("Good Morning!");
     } else if (currentHr >= 12 && currentHr < 17) {

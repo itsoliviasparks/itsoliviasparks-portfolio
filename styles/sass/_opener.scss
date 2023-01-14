@@ -1,18 +1,18 @@
 @use "var" as *;
 
-section.opener {
+section#opener {
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     width: 100%;
     height: 100vh;
-    background: $orange;
-    background: linear-gradient(295deg, rgba(250,182,79,1) 6%, rgba(89,172,161,1) 62%, rgba(215,139,127,1) 78%);
+    background: $green;
+    background: $gradient;
     background-attachment: fixed;
     .opening-text {
-        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        height: 70vh;
     }
 
 }

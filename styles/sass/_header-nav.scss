@@ -1,12 +1,12 @@
 @use "var" as *;
 header {
-    z-index: 1;
     position: sticky;
+    z-index: 5;
     top: 0;
     width: 100%;
     padding: 10px 0;
-    background: rgb(250,182,79);
-    background: linear-gradient(295deg, rgba(250,182,79,1) 6%, rgba(89,172,161,1) 62%, rgba(215,139,127,1) 78%);
+    background: $green;
+    background: $gradient;
     background-attachment: fixed;
     .wrapper {
         display: flex;

@@ -257,14 +257,6 @@ li {
   list-style: none;
 }
 
-a {
-  color: rgb(66, 114, 96);
-  text-decoration: none;
-}
-a:hover, a:focus {
-  text-decoration: underline;
-}
-
 h1,
 h2,
 h3 {
@@ -274,6 +266,7 @@ h3 {
   font-size: 6rem;
   letter-spacing: 0.5rem;
   text-transform: lowercase;
+  text-align: left;
 }
 
 h2 {
@@ -281,44 +274,47 @@ h2 {
   font-size: 4rem;
   letter-spacing: 0.4rem;
 }
-
-h3 {
-  color: rgb(89, 172, 161);
-  font-size: 2rem;
-  letter-spacing: 0.3rem;
-}
-
-h4 {
-  margin: 0;
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
-  text-transform: lowercase;
-  text-align: center;
-}
-
-.opening-text h2 {
+h2.time {
   color: rgb(255, 255, 255);
 }
-.opening-text h2:nth-child(2) {
-  font-size: 6rem;
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
 }
 
 .opening-text h3 {
   color: rgb(34, 34, 34);
 }
 
+.contact-text h3 {
+  text-align: center;
+}
+
 p {
   font-size: 1.5rem;
 }
 
-header i {
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+h3 + p,
+.passions li p {
+  margin-top: 5px;
 }
-header i:hover, header i:focus {
-  opacity: 0.5;
+
+.passions:last-child p {
+  margin-bottom: 0;
+}
+
+.contact-text p {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 header a {
@@ -330,9 +326,14 @@ header a:hover, header a:focus {
   opacity: 0.5;
 }
 
-#tech-stack-anchor {
-  position: relative;
-  padding-top: 30vh;
+header i {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header i:hover, header i:focus {
+  opacity: 0.5;
 }
 
 .tech-stack i {
@@ -376,71 +377,36 @@ header a:hover, header a:focus {
   color: rgb(215, 139, 127);
 }
 
-.about-contacts i {
-  font-size: 2.5rem;
-  color: rgb(215, 139, 127);
+.contacts i {
+  color: rgb(34, 34, 34);
+  font-size: 2.7rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.about-contacts i:hover, .about-contacts i:focus {
+.contacts i:hover, .contacts i:focus {
   opacity: 0.5;
 }
 
 footer {
-  background: rgb(66, 114, 96);
   text-align: center;
 }
 footer p {
-  font-size: 1rem;
   margin: 0;
   padding: 5px 0;
   color: rgb(34, 34, 34);
+  font-size: 1rem;
 }
 
-.pink {
-  background-color: rgb(215, 139, 127);
-}
-
-.green {
-  background-color: rgb(89, 172, 161);
-}
-
-.orange {
-  background-color: rgb(250, 182, 79);
-}
-
-.parallax1 {
-  background-attachment: fixed;
-  background-color: white;
-  color: var(--color);
-  row-gap: 4rem;
-  text-align: center;
-}
-
-.parallax2 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 6rem 0;
-  background-image: url(https://images.unsplash.com/photo-1593016836274-72b5cca2d7cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
-  background-size: cover;
-  gap: 1.6em;
-}
-
-section.opener {
+section#opener {
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
   height: 100vh;
-  background: rgb(250, 182, 79);
+  background: rgb(89, 172, 161);
   background: linear-gradient(295deg, rgb(250, 182, 79) 6%, rgb(89, 172, 161) 62%, rgb(215, 139, 127) 78%);
   background-attachment: fixed;
 }
-section.opener .opening-text {
-  height: 70vh;
+section#opener .opening-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,15 +417,16 @@ section.opener .opening-text {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  height: 70vh;
 }
 
 header {
-  z-index: 1;
   position: sticky;
+  z-index: 5;
   top: 0;
   width: 100%;
   padding: 10px 0;
-  background: rgb(250, 182, 79);
+  background: rgb(89, 172, 161);
   background: linear-gradient(295deg, rgb(250, 182, 79) 6%, rgb(89, 172, 161) 62%, rgb(215, 139, 127) 78%);
   background-attachment: fixed;
 }
@@ -487,6 +454,11 @@ header .wrapper {
   padding: 10px;
 }
 
+#about-anchor {
+  position: relative;
+  padding-top: -300vh;
+}
+
 section#about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,15 +470,33 @@ section#about {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 100vh;
-}
-section#about img.olivia {
-  height: 385px;
-  width: 495px;
-  margin-right: 30px;
-  border-radius: 55% 45% 74% 26%/22% 54% 46% 78%;
+  background-color: rgb(253, 253, 253);
 }
 
-.about {
+.about-img {
+  position: relative;
+  width: 40%;
+  height: 45vw;
+  margin: 15px;
+}
+.about-img img.olivia {
+  position: absolute;
+  z-index: 2;
+  width: 98%;
+  height: 98%;
+}
+.about-img .img-cutout {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/mitchell-luo-8acRvqOAjpw-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.about-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,14 +504,20 @@ section#about img.olivia {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: calc(100% - 495px);
+  width: 60%;
+  padding: 20px 40px;
+  background-color: rgb(89, 172, 161);
+}
+.about-text li {
+  list-style-type: square;
+}
+
+#tech-stack-anchor {
+  position: relative;
+  padding-top: 30vh;
 }
 
 section#tech-stack {
-  width: 100%;
   min-height: 10vh;
   background-color: rgb(66, 114, 96);
 }
@@ -549,9 +545,9 @@ ul.tech-stack li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 65px;
   margin: 3px;
   padding: 5px;
-  width: 65px;
 }
 ul.tech-stack li:nth-child(5), ul.tech-stack li:nth-child(6), ul.tech-stack li:nth-child(10), ul.tech-stack li:nth-child(13) {
   display: -webkit-box;
@@ -568,7 +564,20 @@ ul.tech-stack li:nth-child(5), ul.tech-stack li:nth-child(6), ul.tech-stack li:n
       justify-content: space-around;
 }
 
-ul.about-contacts {
+.parallax {
+  background-attachment: fixed;
+  background-image: url("../assets/mitchell-luo-8acRvqOAjpw-unsplash.jpg");
+  background-size: cover;
+  row-gap: 4rem;
+  text-align: center;
+}
+
+section#contact {
+  min-height: auto;
+  background-color: rgb(89, 172, 161);
+}
+
+ul.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,6 +585,10 @@ ul.about-contacts {
       -ms-flex-pack: center;
           justify-content: center;
 }
-ul.about-contacts li {
-  padding: 20px 10px;
+ul.contacts li {
+  padding: 20px 10px 0 10px;
+}
+
+footer {
+  background: rgb(66, 114, 96);
 }

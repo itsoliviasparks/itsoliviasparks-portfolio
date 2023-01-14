@@ -1,0 +1,10 @@
+@use "var" as *;
+
+.parallax {
+    background-attachment: fixed;
+    background-image: $background-img;
+    background-size: cover;
+    row-gap: 4rem;
+  
+    text-align: center;
+  }
