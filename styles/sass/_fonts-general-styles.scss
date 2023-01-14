@@ -31,14 +31,7 @@ li {
     list-style: none;
 }
 
-//fonts
-a {
-    color: $dark-green;
-    text-decoration: none;
-    &:hover,
-    &:focus {text-decoration: underline;}
-}
-
+//header fonts
 h1,
 h2,
 h3 {
@@ -48,48 +41,46 @@ h3 {
     font-size: 6rem;
     letter-spacing: 0.5rem;
     text-transform: lowercase;
+    text-align: left;
 }
 
 h2 {
     color: $black;
     font-size: 4rem;
     letter-spacing: 0.4rem;
+    &.time {color: $white;}
 }
 
 h3 {
-    color: $green;
     font-size: 2rem;
     letter-spacing: 0.3rem;
 }
 
-h4 {
+.opening-text h3 {color: $black;}
+
+.contact-text h3 {text-align: center;}
+
+//body fonts
+p {font-size: 1.5rem;}
+
+h3 + p,
+.passions li p {
+    margin-top: 5px;
+}
+
+.passions:last-child p {margin-bottom: 0;}
+
+.contact-text p {
     margin: 0;
-    font-size: 1.5rem;
+    color: $white;
+    font-size: 1.2rem;
     letter-spacing: 0.2rem;
     text-transform: lowercase;
     text-align: center;
 }
 
-.opening-text h2 {
-    color: $white;
-    &:nth-child(2) {font-size: 6rem;}
-}
-
-.opening-text h3 {
-    color: $black;
-}
-
-p {font-size: 1.5rem;}
-
-header i {
-    color: $white;
-    font-size: 2rem;
-    transition: 0.3s;
-    &:hover,
-    &:focus {
-        opacity: 0.5;
-    }
-}
+//links
+a {text-decoration: none;}
 
 header a {
     transition: 0.3s;
@@ -100,11 +91,16 @@ header a {
     }
 }
 
-#tech-stack-anchor{
-    position: relative;
-    padding-top: 30vh;
-  }
-
+//icons
+header i {
+    color: $white;
+    font-size: 2rem;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+    }
+}
 
 .tech-stack{
     i {
@@ -149,10 +145,10 @@ header a {
     }
 }
 
-.about-contacts {
+.contacts {
     i {
-        font-size: 2.5rem;
-        color: $pink;
+        color: $black;
+        font-size: 2.7rem;
         transition: 0.3s;
         &:hover,
         &:focus {
@@ -161,26 +157,13 @@ header a {
     }
 }
 
+//footer
 footer {
-    background: $dark-green;
     text-align: center;
     p {
-        font-size: 1rem;
         margin: 0;
         padding: 5px 0;
         color: $black;
+        font-size: 1rem;
     }
-}
-
-
-.pink {
-    background-color: $pink;
-}
-
-.green {
-    background-color: $green;
-}
-
-.orange {
-    background-color: $orange;
 }

@@ -13,13 +13,15 @@
     <title>it's olivia sparks</title>
 </head>
 <body>
-    <section class="opener">
+<!-- opener section -->
+    <section id="opener">
         <div class="opening-text wrapper">
             <h2 class="time">Hello!</h2>
             <h1>It's Olivia Sparks</h1>
             <h3>& I'm a Front-end Web Developer with an eye for design.</h3>
         </div>
     </section>
+<!-- header & sticky nav -->
     <header>
         <div class="wrapper">
             <a href="index.html">
@@ -28,7 +30,7 @@
             <nav>
                 <ul class="contact-links">
                     <li>
-                        <a href="#about">
+                        <a href="#about-anchor">
                             <i class="fa-solid fa-user" alt="About"></i>
                         </a>
                     </li>
@@ -40,6 +42,11 @@
                     <li>
                         <a href="#projects">
                             <i class="fa-solid fa-laptop-code" alt="Projects"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fa-solid fa-envelope" alt="Contact"></i>
                         </a>
                     </li>
                     <li>
@@ -56,52 +63,48 @@
             </nav>
         </div>
     </header>
-
-
-
     <main>
+<!-- about section -->
         <section id="about" class="wrapper">
-            <img class="olivia" src="./assets/olivia-sparks.jpg" alt="olivia sparks">
-            <div class="about">
-                <div class="about-text">
-                    <h2>Olivia Sparks</h2>
-                    <h3>A little about me:</h3>
-                    <p>
-                        I'm a methodical & goal-oriented Front-end Web Developer with 5+ years experience working collaboratively on product development teams. I create succinct, DRY code with a focus on design, #ally, & performance. I identify & offer forward-thinking solutions to problems, while operating effectively through ambiguity, challenges, & transitions.
-                    </p>
-                    <p>
-                        In my heart of hearts I'm a “keener” & a maker- I'm insatiably curious & I'm always chasing that sweet flow state while coding.
-                    </p>
-                    <p>
-                        When I'm AFK, you'll find me throwing pottery, riding mountain bikes, climbing rocks, petting cats, traveling the world, practising yoga, repairing clothes, & playing boardgames.
-
-                    </p>
-                </div>
-                <div class="about-text">
-                    <h4>Let's connect if you're looking for an eager beaver to join your team!</h4>
-                    <ul class="about-contacts">
-                        <li>
-                            <a href="mailto:itsoliviasparks@gmail.com">
-                                <i class="fa-solid fa-envelope"></i>
-                            </a>
-                        </li>
+            <span class="about-anchor" id="about-anchor"></span>
+            <div class="about-img">
+                <img class="olivia" src="./assets/olivia-sparks.jpg" alt="olivia sparks">
+                <div class="img-cutout"></div>
+            </div>
+            <div class="about-text">
+                <h3>A little about me:</h3>
+                <p>
+                I'm a methodical & goal-oriented Front-end Web Developer with 5+ years experience working collaboratively on product development teams. In my heart of hearts I'm a “keener” & a maker— after working in the fashion industry for over half a decade, my curiosity and eagerness to expand my development repertoire has made for a smooth transition from developing physical products to digital.
+                </p>
+                <p>
+                    My tech stack includes JavaScript, CSS, HTML, & all the respective <em>accoutrement</em>. I create succinct, DRY code, while utilizing version control (Git & GitHub), paired programming, and project & project scope management.
+                </p>
+                <p>
+                    I'm a big-picture thinker with an eye for design who identifies & offers forward-thinking solutions to problems, while operating effectively through ambiguity, challenges, and transitions.
+                </p>
+                <h3>Things I'm passionate About:</h3>
+                <ul class="passions">
                     <li>
-                        <a href="https://github.com/itsoliviasparks" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
+                        <p>
+                            Problem solving. I love to dive into a good problem (whether that be coding, rock climbing, or board game related) & getting lost in that sweet flow state while solving
+                        </p>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/itsoliviasparks/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
+                        <p>
+                            Cats! Well, actually all animals, but cats specifically. I have two, and their names are Xena & Rose, together they are known as <em>The Ladies</em>
+                        </p>
                     </li>
-                        </li>
-                    </ul>
+                    <li>
+                        <p>
+                            How writing code is essentially a magical incantation. I just type a few key words and numbers and create something out of nothing. Coding is magic! I'm basically a witch
+                        </p>
+                    </li>
+                </ul>
             </div>
         </section>
-
-        <span class="tech-stack-anchor" id="tech-stack-anchor"></span>
+<!-- tech stack section -->
         <section id="tech-stack">
+            <span class="tech-stack-anchor" id="tech-stack-anchor"></span>
             <ul class="tech-stack wrapper">
                 <li>
                     <i class="devicon-react-original-wordmark" alt="React"></i>
@@ -151,10 +154,34 @@
                 </li>
             </ul>
         </section>
-
-        <section id="projects" class="parallax1 parallax2">projects in here</section>
-        <section id="contact" class="green">contact here</section>
+<!-- project section -->
+        <section id="projects" class="parallax parallax2">projects in here</section>
+<!-- contact section -->
+        <section id="contact">
+            <div class="contact-text wrapper">
+                <h3>Let's connect if you're looking for an eager beaver to join your team</h3>
+                <p>or if you just wanna shoot the sh*t about cats or the magic of coding!</p>
+                <ul class="contacts">
+                    <li>
+                        <a href="mailto:itsoliviasparks@gmail.com">
+                            <i class="fa-solid fa-envelope" alt="Mail"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/itsoliviasparks" target="_blank">
+                            <i class="fa-brands fa-github" alt="GitHub"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/itsoliviasparks/" target="_blank">
+                            <i class="fa-brands fa-linkedin" alt="LinkedIn"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
+<!-- footer -->
     <footer>
         <p>Created by Olivia Sparks</p>
         <p>©2022-2023 Olivia Sparks. All rights reserved.</p>

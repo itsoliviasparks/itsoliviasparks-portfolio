@@ -1,0 +1,16 @@
+@use "var" as *;
+
+section#contact {
+    min-height: auto;
+    background-color: $green;
+}
+
+ul.contacts {
+    display: flex;
+    justify-content: center;
+    li {
+        padding: 20px 10px 0 10px;
+    }
+}
+
+footer {background: $dark-green;}
