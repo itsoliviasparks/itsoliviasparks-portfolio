@@ -69,10 +69,7 @@ p,
     margin: 7px 0;
 }
 
-.passions li {
-    text-indent: -2rem;
-    padding-left: 2rem;
-}
+ul.passions { margin-left: 1.5rem;}
 
 .passions:last-child p {margin-bottom: 0;}
 

@@ -301,9 +301,8 @@ p,
   margin: 7px 0;
 }
 
-.passions li {
-  text-indent: -2rem;
-  padding-left: 2rem;
+ul.passions {
+  margin-left: 1.5rem;
 }
 
 .passions:last-child p {
@@ -531,7 +530,6 @@ section#about .wrapper {
 
 ul.passions li {
   list-style-type: square;
-  list-style-position: inside;
 }
 
 #tech-stack-anchor {
