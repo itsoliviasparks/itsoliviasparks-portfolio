@@ -1,10 +1,27 @@
 @use "var" as *;
 
-.parallax {
+section#projects {
+  padding: 20px 0;
+}
+
+.background {
     background-attachment: fixed;
     background-image: $background-img;
     background-size: cover;
-    row-gap: 4rem;
-  
-    text-align: center;
+  }
+
+  ul.projects {
+    li {
+      width: 100%;
+      min-height: 40vh;
+      margin-top: 10px;
+      padding: 20px 40px;
+      border-radius: 2px 2px 2px 2px;
+      background-color: $white;
+    }
+    :nth-child(1){
+      margin-top: 0;
+      border-top-right-radius: 40px;
+    }
+    :nth-child(2){border-bottom-left-radius: 40px;}
   }
