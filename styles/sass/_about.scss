@@ -1,10 +1,5 @@
 @use "var" as *;
 
-#about-anchor{
-    position: relative;
-    padding-top: -300vh;/////////////////////
-}
-
 section#about {
     padding-top: 110vh;
     background-color: $dark-green;
@@ -14,6 +9,7 @@ section#about {
         justify-content: space-between;
     }
 }
+.jump-padding {height: 20px;}
 
 .about-img {
     position: relative;

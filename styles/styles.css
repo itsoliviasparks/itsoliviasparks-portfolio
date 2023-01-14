@@ -459,9 +459,9 @@ header .wrapper {
   padding: 10px;
 }
 
-#about-anchor {
-  position: relative;
-  padding-top: -300vh;
+.anchor {
+  display: block;
+  visibility: hidden;
 }
 
 section#about {
@@ -478,6 +478,10 @@ section#about .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.jump-padding {
+  height: 20px;
 }
 
 .about-img {
@@ -530,11 +534,6 @@ section#about .wrapper {
 
 ul.passions li {
   list-style-type: square;
-}
-
-#tech-stack-anchor {
-  position: relative;
-  padding-top: 30vh;
 }
 
 section#tech-stack {

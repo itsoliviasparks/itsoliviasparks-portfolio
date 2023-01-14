@@ -6,6 +6,14 @@ portfolio.devStackHover = () => {
         });
 }
 
+portfolio.setJumpAnchorPosition = () => {
+    const $headerHeight = $("header").outerHeight();
+    $(".anchor").css({
+        "height":`${$headerHeight}px`,
+        "margin-top": `-${$headerHeight}px`,
+    });
+}
+
 portfolio.whatTime = () => {
     const currentHr = new Date().getHours();
     const $time = $("h2.time");
@@ -23,6 +31,7 @@ portfolio.whatTime = () => {
 }
 
 portfolio.init = () => {
+    portfolio.setJumpAnchorPosition();
     portfolio.whatTime();
     portfolio.devStackHover();
 }
