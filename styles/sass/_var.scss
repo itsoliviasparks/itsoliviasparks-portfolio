@@ -3,15 +3,16 @@ $header-font: 'Syne', sans-serif;
 $body-font: Verdana;
 
 //colors
-$background-white: rgba(253, 253, 253, 1.00);
-$white: rgba(255, 255, 255, 1.00);
-$black: rgba(34, 34, 34, 1.00);
-$dark-green: rgba(66, 114, 96, 1.00);
-$green: rgba(89,172,161,1);
-$pink: rgba(215,139,127,1);
-$orange: rgba(250,182,79,1);
-$red: rgba(241, 51, 43, 1.00);
+$white: rgba(253, 253, 253, 1.00);
+$off-white: rgba(216, 211, 200, 1.00);
+$black: rgba(45, 45, 43, 1.00);
+$purple: rgba(131, 99, 118, 1.00);
+$grey: rgba(114, 115, 102, 1.00);
+// $green: rgba(222, 234, 224, 1.00);
+
+//other brand colors:
+$github: rgba(110, 84, 148, 1.00);
 
 //backgrounds & images
-$gradient: linear-gradient(295deg, rgba(250,182,79,1) 6%, rgba(89,172,161,1) 62%, rgba(215,139,127,1) 78%);
-$background-img: url("../assets/mitchell-luo-8acRvqOAjpw-unsplash.jpg");
+$opener-background-img: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
+$background-img: url("../assets/photo-1524351543168-8e38787614e9.jpeg");
