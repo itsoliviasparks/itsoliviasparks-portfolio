@@ -354,7 +354,7 @@ header i {
 }
 .tech-stack li:nth-child(5):hover,
 .tech-stack li:nth-child(5):focus {
-  color: rgb(114, 115, 102);
+  color: rgb(140, 159, 144);
 }
 .tech-stack li:nth-child(6):hover,
 .tech-stack li:nth-child(6):focus {
@@ -362,7 +362,7 @@ header i {
 }
 .tech-stack li:nth-child(10):hover,
 .tech-stack li:nth-child(10):focus {
-  color: rgb(131, 99, 118);
+  color: rgb(216, 211, 200);
 }
 .tech-stack li:nth-child(12):hover,
 .tech-stack li:nth-child(12):focus {
@@ -370,7 +370,7 @@ header i {
 }
 .tech-stack li:nth-child(13):hover,
 .tech-stack li:nth-child(13):focus {
-  color: rgb(114, 115, 102);
+  color: rgb(214, 133, 165);
 }
 
 .contacts i {
