@@ -228,7 +228,7 @@ html {
 
 html {
   background-color: rgb(253, 253, 253);
-  color: rgb(34, 34, 34);
+  color: rgb(45, 45, 43);
   font-family: Verdana;
   font-size: 62.5%;
 }
@@ -261,7 +261,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  color: rgb(255, 255, 255);
+  color: rgb(45, 45, 43);
   font-family: "Syne", sans-serif;
   font-size: 6rem;
   letter-spacing: 0.5rem;
@@ -270,12 +270,8 @@ h3 {
 }
 
 h2 {
-  color: rgb(34, 34, 34);
   font-size: 4rem;
   letter-spacing: 0.4rem;
-}
-h2.time {
-  color: rgb(255, 255, 255);
 }
 
 h3 {
@@ -284,7 +280,9 @@ h3 {
 }
 
 .opening-text h3 {
-  color: rgb(34, 34, 34);
+  padding: 7px;
+  color: rgb(253, 253, 253);
+  background-color: rgb(45, 45, 43);
 }
 
 h3:nth-of-type(2) {
@@ -311,7 +309,7 @@ ul.passions {
 
 .contact-text p {
   margin: 0;
-  color: rgb(255, 255, 255);
+  color: rgb(45, 45, 43);
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   text-transform: lowercase;
@@ -320,27 +318,21 @@ ul.passions {
 
 a {
   text-decoration: none;
-}
-
-header a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-header a:hover, header a:focus {
-  text-decoration: none;
+a:hover, a:focus {
   opacity: 0.5;
 }
 
 header i {
-  color: rgb(255, 255, 255);
+  color: rgb(45, 45, 43);
   font-size: 2rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-header i:hover, header i:focus {
-  opacity: 0.5;
 }
 
+.tech-stack {
+  color: rgb(253, 253, 253);
+}
 .tech-stack i {
   font-size: 5rem;
   -webkit-transition: 0.3s;
@@ -362,43 +354,34 @@ header i:hover, header i:focus {
 }
 .tech-stack li:nth-child(5):hover,
 .tech-stack li:nth-child(5):focus {
-  color: rgb(250, 182, 79);
+  color: rgb(114, 115, 102);
 }
 .tech-stack li:nth-child(6):hover,
 .tech-stack li:nth-child(6):focus {
-  color: rgb(89, 172, 161);
+  color: rgb(214, 135, 174);
 }
 .tech-stack li:nth-child(10):hover,
 .tech-stack li:nth-child(10):focus {
-  color: rgb(250, 182, 79);
+  color: rgb(131, 99, 118);
 }
 .tech-stack li:nth-child(12):hover,
 .tech-stack li:nth-child(12):focus {
-  color: rgb(255, 255, 255);
-  opacity: 0.8;
+  color: rgb(110, 84, 148);
 }
 .tech-stack li:nth-child(13):hover,
 .tech-stack li:nth-child(13):focus {
-  color: rgb(66, 114, 96);
+  color: rgb(114, 115, 102);
 }
 
 .contacts i {
-  color: rgb(34, 34, 34);
+  color: rgb(45, 45, 43);
   font-size: 2.7rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.contacts i:hover, .contacts i:focus {
-  opacity: 0.5;
 }
 
-footer {
-  text-align: center;
-}
 footer p {
   margin: 0;
-  padding: 5px 0;
-  color: rgb(34, 34, 34);
+  padding: 5px;
+  color: rgb(131, 99, 118);
   font-size: 1rem;
 }
 
@@ -407,8 +390,8 @@ section#opener {
   z-index: 10;
   width: 100%;
   height: 100vh;
-  background: rgb(89, 172, 161);
-  background: linear-gradient(295deg, rgb(250, 182, 79) 6%, rgb(89, 172, 161) 62%, rgb(215, 139, 127) 78%);
+  background: rgb(222, 234, 224);
+  background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
   background-attachment: fixed;
 }
 section#opener .opening-text {
@@ -431,8 +414,8 @@ header {
   top: 0;
   width: 100%;
   padding: 10px 0;
-  background: rgb(89, 172, 161);
-  background: linear-gradient(295deg, rgb(250, 182, 79) 6%, rgb(89, 172, 161) 62%, rgb(215, 139, 127) 78%);
+  background: rgb(222, 234, 224);
+  background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
   background-attachment: fixed;
 }
 header .wrapper {
@@ -465,8 +448,9 @@ header .wrapper {
 }
 
 section#about {
-  padding-top: 110vh;
-  background-color: rgb(66, 114, 96);
+  padding-top: 100vh;
+  background-color: rgb(131, 99, 118);
+  background-attachment: fixed;
 }
 section#about .wrapper {
   display: -webkit-box;
@@ -502,8 +486,8 @@ section#about .wrapper {
 .about-img img.olivia {
   position: absolute;
   z-index: 2;
-  width: 99%;
-  height: 99%;
+  width: 97%;
+  height: 97%;
   border-radius: 2px 2px 2px 40px;
 }
 .about-img .img-cutout {
@@ -512,7 +496,8 @@ section#about .wrapper {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/mitchell-luo-8acRvqOAjpw-unsplash.jpg");
+  background-color: rgb(214, 135, 174);
+  background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
   background-attachment: fixed;
   background-size: cover;
   border-radius: 2px 2px 2px 40px;
@@ -528,7 +513,7 @@ section#about .wrapper {
           flex-direction: column;
   width: 70%;
   padding: 20px 40px;
-  background-color: rgb(89, 172, 161);
+  background-color: rgb(216, 211, 200);
   border-radius: 2px 40px 2px 2px;
 }
 
@@ -538,7 +523,7 @@ ul.passions li {
 
 section#tech-stack {
   min-height: 10vh;
-  background-color: rgb(215, 139, 127);
+  background-color: rgb(45, 45, 43);
 }
 
 ul.tech-stack {
@@ -589,7 +574,7 @@ section#projects {
 
 .background {
   background-attachment: fixed;
-  background-image: url("../assets/mitchell-luo-8acRvqOAjpw-unsplash.jpg");
+  background-image: url("../assets/photo-1524351543168-8e38787614e9.jpeg");
   background-size: cover;
 }
 
@@ -599,7 +584,7 @@ ul.projects li {
   margin-top: 10px;
   padding: 20px 40px;
   border-radius: 2px 2px 2px 2px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(253, 253, 253);
 }
 ul.projects :nth-child(1) {
   margin-top: 0;
@@ -611,7 +596,7 @@ ul.projects :nth-child(2) {
 
 section#contact {
   min-height: auto;
-  background-color: rgb(89, 172, 161);
+  background-color: rgb(216, 211, 200);
 }
 
 ul.contacts {
@@ -627,5 +612,11 @@ ul.contacts li {
 }
 
 footer {
-  background: rgb(66, 114, 96);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: rgb(45, 45, 43);
 }

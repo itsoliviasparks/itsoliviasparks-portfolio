@@ -1,8 +1,9 @@
 @use "var" as *;
 
 section#about {
-    padding-top: 110vh;
-    background-color: $dark-green;
+    padding-top: 100vh;
+    background-color: $purple;
+    background-attachment: fixed;
     .wrapper {
         display: flex;
         align-items: center;
@@ -22,8 +23,8 @@ section#about {
     img.olivia {
         position: absolute;
         z-index: 2;
-        width: 99%;
-        height: 99%;
+        width: 97%;
+        height: 97%;
         border-radius: 2px 2px 2px 40px;
     }
     .img-cutout {
@@ -32,7 +33,8 @@ section#about {
         top: 0;
         width: 100%;
         height: 100%;
-        background-image: $background-img;
+        background-color: $pink;
+        background: $opener-background-img;
         background-attachment: fixed;
         background-size: cover;
         border-radius: 2px 2px 2px 40px;
@@ -44,7 +46,7 @@ section#about {
     flex-direction: column;
     width: 70%;
     padding: 20px 40px;
-    background-color: $green;
+    background-color: $off-white;
     border-radius: 2px 40px 2px 2px;
 }
 

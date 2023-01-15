@@ -2,7 +2,7 @@
 
 //general styles
 html {
-    background-color: $background-white;
+    background-color: $white;
     color: $black;
     font-family: $body-font;
     font-size: 62.5%;
@@ -36,7 +36,7 @@ h1,
 h2,
 h3 {
     margin: 0;
-    color: $white;
+    color: $black;
     font-family: $header-font;
     font-size: 6rem;
     letter-spacing: 0.5rem;
@@ -45,10 +45,8 @@ h3 {
 }
 
 h2 {
-    color: $black;
     font-size: 4rem;
     letter-spacing: 0.4rem;
-    &.time {color: $white;}
 }
 
 h3 {
@@ -56,7 +54,11 @@ h3 {
     letter-spacing: 0.3rem;
 }
 
-.opening-text h3 {color: $black;}
+.opening-text h3 {
+    padding: 7px;
+    color: $white;
+    background-color: $black;
+}
 
 h3:nth-of-type(2) {margin-top: 20px;}
 
@@ -75,7 +77,7 @@ ul.passions { margin-left: 1.5rem;}
 
 .contact-text p {
     margin: 0;
-    color: $white;
+    color: $black;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     text-transform: lowercase;
@@ -83,29 +85,23 @@ ul.passions { margin-left: 1.5rem;}
 }
 
 //links
-a {text-decoration: none;}
-
-header a {
+a {
+    text-decoration: none;
     transition: 0.3s;
     &:hover,
     &:focus {
-        text-decoration: none;
         opacity: 0.5;
     }
 }
 
 //icons
 header i {
-    color: $white;
+    color: $black;
     font-size: 2rem;
-    transition: 0.3s;
-    &:hover,
-    &:focus {
-        opacity: 0.5;
-    }
 }
 
 .tech-stack{
+    color: $white;
     i {
         font-size: 5rem;
         transition: 0.3s;
@@ -127,46 +123,35 @@ header i {
     }
     li:nth-child(5):hover,
     li:nth-child(5):focus {
-        color: $orange;
+        color: $grey;
     }
     li:nth-child(6):hover,
     li:nth-child(6):focus {
-        color: $green;
+        color: $pink;
     }
     li:nth-child(10):hover,
     li:nth-child(10):focus {
-        color: $orange;
+        color: $purple;
     }
     li:nth-child(12):hover,
     li:nth-child(12):focus {
-        color: $white;
-        opacity: 0.8;
+        color: $github;
     }
     li:nth-child(13):hover,
     li:nth-child(13):focus {
-        color: $dark-green;
+        color: $grey;
     }
 }
 
-.contacts {
-    i {
-        color: $black;
-        font-size: 2.7rem;
-        transition: 0.3s;
-        &:hover,
-        &:focus {
-            opacity: 0.5;
-        }
-    }
+.contacts i {
+    color: $black;
+    font-size: 2.7rem;
 }
 
 //footer
-footer {
-    text-align: center;
-    p {
-        margin: 0;
-        padding: 5px 0;
-        color: $black;
-        font-size: 1rem;
-    }
+footer p {
+    margin: 0;
+    padding: 5px;
+    color: $purple;
+    font-size: 1rem;
 }
