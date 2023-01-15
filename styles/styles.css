@@ -504,7 +504,6 @@ section#about .wrapper {
   background-color: rgb(216, 211, 200);
   background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
   background-attachment: fixed;
-  background-size: cover;
   border-radius: 2px 2px 2px 40px;
 }
 
