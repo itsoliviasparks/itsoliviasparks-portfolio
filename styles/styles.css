@@ -269,6 +269,12 @@ h3 {
   text-align: left;
 }
 
+h2.opener-title {
+  color: rgb(253, 253, 253);
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
+}
+
 h2 {
   font-size: 4rem;
   letter-spacing: 0.4rem;
@@ -277,12 +283,6 @@ h2 {
 h3 {
   font-size: 2rem;
   letter-spacing: 0.3rem;
-}
-
-.opening-text h3 {
-  padding: 7px;
-  color: rgb(253, 253, 253);
-  background-color: rgb(45, 45, 43);
 }
 
 h3:nth-of-type(2) {
@@ -358,7 +358,7 @@ header i {
 }
 .tech-stack li:nth-child(6):hover,
 .tech-stack li:nth-child(6):focus {
-  color: rgb(214, 135, 174);
+  color: rgb(131, 99, 118);
 }
 .tech-stack li:nth-child(10):hover,
 .tech-stack li:nth-child(10):focus {
@@ -390,7 +390,7 @@ section#opener {
   z-index: 10;
   width: 100%;
   height: 100vh;
-  background: rgb(222, 234, 224);
+  background: rgb(131, 99, 118);
   background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
   background-attachment: fixed;
 }
@@ -407,6 +407,11 @@ section#opener .opening-text {
           justify-content: flex-end;
   height: 70vh;
 }
+section#opener .opening-text-no-wrapper {
+  background-color: rgb(45, 45, 43);
+  margin: 3px 0;
+  padding: 5px 0;
+}
 
 header {
   position: sticky;
@@ -414,7 +419,7 @@ header {
   top: 0;
   width: 100%;
   padding: 10px 0;
-  background: rgb(222, 234, 224);
+  background: rgb(131, 99, 118);
   background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
   background-attachment: fixed;
 }
@@ -496,7 +501,7 @@ section#about .wrapper {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(214, 135, 174);
+  background-color: rgb(216, 211, 200);
   background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
   background-attachment: fixed;
   background-size: cover;
