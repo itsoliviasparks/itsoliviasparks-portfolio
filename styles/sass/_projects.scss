@@ -4,19 +4,20 @@ section#projects {
 }
 
 .background {
-    background-attachment: fixed;
-    background-image: $background-img;
-    background-size: cover;
-    background-position: center;
-  }
+  background-color: $off-white;
+  background-image: $background-img;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 
   ul.projects {
     li {
       width: 100%;
       min-height: 40vh;
       margin-top: 10px;
-      padding: 20px 40px;
       border-radius: 2px 2px 2px 2px;
+      padding: 20px 40px;
       background-color: $white;
     }
     :nth-child(1){
