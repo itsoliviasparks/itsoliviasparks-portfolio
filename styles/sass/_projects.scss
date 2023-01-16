@@ -1,13 +1,13 @@
 @use "var" as *;
 
 section#projects {
-  padding: 20px 0;
 }
 
 .background {
     background-attachment: fixed;
     background-image: $background-img;
     background-size: cover;
+    background-position: center;
   }
 
   ul.projects {

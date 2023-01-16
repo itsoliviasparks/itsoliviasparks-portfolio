@@ -8,6 +8,8 @@ header {
     background: $purple;
     background: $opener-background-img;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     .wrapper {
         display: flex;
         justify-content: space-between;

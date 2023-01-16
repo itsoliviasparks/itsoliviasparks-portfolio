@@ -8,6 +8,8 @@ section#opener {
     background: $purple;
     background: $opener-background-img;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     .opening-text {
         display: flex;
         flex-direction: column;

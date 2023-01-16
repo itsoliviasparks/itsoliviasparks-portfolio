@@ -393,6 +393,8 @@ section#opener {
   background: rgb(131, 99, 118);
   background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 section#opener .opening-text {
   display: -webkit-box;
@@ -422,6 +424,8 @@ header {
   background: rgb(131, 99, 118);
   background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 header .wrapper {
   display: -webkit-box;
@@ -572,14 +576,11 @@ ul.tech-stack li:nth-child(5), ul.tech-stack li:nth-child(6), ul.tech-stack li:n
       justify-content: space-around;
 }
 
-section#projects {
-  padding: 20px 0;
-}
-
 .background {
   background-attachment: fixed;
   background-image: url("../assets/photo-1524351543168-8e38787614e9.jpeg");
   background-size: cover;
+  background-position: center;
 }
 
 ul.projects li {
