@@ -1,15 +1,9 @@
 @use "var" as *;
 
-section#opener {
-    position: absolute;
+section.opener-section {
     z-index: 10;
     width: 100%;
     height: 100vh;
-    background: $purple;
-    background: $opener-background-img;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
     .opening-text {
         display: flex;
         flex-direction: column;

@@ -1,8 +1,8 @@
 @use "var" as *;
 
-section#contact {
+.contact-section {
     min-height: auto;
-    background-color: $off-white;
+    background-color: $light;
 }
 
 ul.contacts {

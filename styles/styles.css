@@ -234,7 +234,7 @@ html {
 }
 
 .wrapper {
-  width: 95%;
+  width: 80%;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -242,17 +242,6 @@ html {
 section {
   min-height: 90vh;
   padding: 50px 0;
-}
-
-.full-bleed {
-  min-height: 10vh;
-  background-color: rgb(45, 45, 43);
-}
-
-img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 ul,
@@ -268,10 +257,16 @@ h3 {
   margin: 0;
   color: rgb(45, 45, 43);
   font-family: "Syne", sans-serif;
-  font-size: 6rem;
-  letter-spacing: 0.5rem;
   text-transform: lowercase;
-  text-align: left;
+}
+
+h2 {
+  font-size: 4rem;
+  letter-spacing: 0.4rem;
+}
+h2:last-child {
+  font-size: 2.2rem;
+  letter-spacing: 0.3rem;
 }
 
 h2.opener-title {
@@ -280,28 +275,21 @@ h2.opener-title {
   letter-spacing: 0.5rem;
 }
 
-h2 {
+h1 {
   font-size: 4rem;
   letter-spacing: 0.4rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.7rem;
   letter-spacing: 0.3rem;
 }
-
 h3:nth-of-type(2) {
   margin-top: 20px;
 }
 
 .contact-text h3 {
   text-align: center;
-}
-
-.projects h3,
-.projects p,
-.projects i {
-  color: rgb(253, 253, 253);
 }
 
 p,
@@ -329,6 +317,7 @@ ul.passions {
 
 a {
   text-decoration: none;
+  color: rgb(45, 45, 43);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -366,27 +355,24 @@ header i {
 
 .tech-stack li:nth-child(5):hover,
 .tech-stack li:nth-child(5):focus {
-  color: rgb(140, 159, 144);
+  color: rgb(90, 132, 107);
 }
 .tech-stack li:nth-child(6):hover,
 .tech-stack li:nth-child(6):focus {
-  color: rgb(131, 99, 118);
+  color: rgb(225, 226, 137);
 }
 .tech-stack li:nth-child(10):hover,
 .tech-stack li:nth-child(10):focus {
-  color: rgb(216, 211, 200);
+  color: rgb(171, 210, 236);
 }
 .tech-stack li:nth-child(13):hover,
 .tech-stack li:nth-child(13):focus {
   color: rgb(214, 133, 165);
 }
 
+.projects i,
 .contacts i {
   color: rgb(45, 45, 43);
-  font-size: 2.7rem;
-}
-
-.projects i {
   font-size: 2.7rem;
 }
 
@@ -394,25 +380,77 @@ header i {
   font-size: 2.5rem;
 }
 
-footer p {
-  margin: 0;
-  padding: 5px;
-  color: rgb(131, 99, 118);
-  font-size: 1rem;
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-section#opener {
+section.opener-section,
+header,
+.img-background {
   position: absolute;
-  z-index: 10;
-  width: 100%;
-  height: 100vh;
-  background: rgb(131, 99, 118);
-  background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
+  background: rgb(90, 132, 107);
+  background: url("../assets/josep-martins-9lGNHu1FMvM-unsplash.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
-section#opener .opening-text {
+
+.img-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  aspect-ratio: 1/1;
+}
+.img-container img {
+  z-index: 2;
+  width: 97%;
+  height: 97%;
+}
+.img-container .img-background {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.right {
+  margin-left: 15px;
+}
+.right img,
+.right .img-background {
+  border-radius: 2px 40px 2px 2px;
+}
+
+.left {
+  margin-right: 15px;
+}
+.left img,
+.left .img-background {
+  border-radius: 2px 2px 2px 40px;
+}
+
+footer p {
+  margin: 0;
+  padding: 5px;
+  color: rgb(90, 132, 107);
+  font-size: 1rem;
+}
+
+section.opener-section {
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+}
+section.opener-section .opening-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,7 +463,7 @@ section#opener .opening-text {
           justify-content: flex-end;
   height: 70vh;
 }
-section#opener .opening-text-no-wrapper {
+section.opener-section .opening-text-no-wrapper {
   background-color: rgb(45, 45, 43);
   margin: 3px 0;
   padding: 5px 0;
@@ -437,11 +475,6 @@ header {
   top: 0;
   width: 100%;
   padding: 10px 0;
-  background: rgb(131, 99, 118);
-  background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
 }
 header .wrapper {
   display: -webkit-box;
@@ -472,11 +505,15 @@ header .wrapper {
   visibility: hidden;
 }
 
-section#about {
-  padding-top: 110vh;
-  background-color: rgb(131, 99, 118);
+.jump-padding {
+  height: 20px;
 }
-section#about .wrapper {
+
+.about-section {
+  padding-top: 105vh;
+  background-color: rgba(45, 45, 43, 0.5);
+}
+.about-section .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,45 +524,8 @@ section#about .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.jump-padding {
-  height: 20px;
-}
-
-.about-img {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about-section .img-container {
   width: 30%;
-  height: 30vw;
-  margin-right: 15px;
-}
-.about-img img.olivia {
-  position: absolute;
-  z-index: 2;
-  border-radius: 2px 2px 2px 40px;
-  width: 97%;
-  height: 97%;
-}
-.about-img .img-cutout {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 2px 2px 2px 40px;
-  background-color: rgb(216, 211, 200);
-  background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
 }
 
 .about-text {
@@ -539,11 +539,16 @@ section#about .wrapper {
   width: 70%;
   border-radius: 2px 40px 2px 2px;
   padding: 20px 40px;
-  background-color: rgb(216, 211, 200);
+  background-color: rgb(253, 253, 253);
 }
 
 ul.passions li {
   list-style-type: square;
+}
+
+.tech-stack-section {
+  background-color: rgb(45, 45, 43);
+  min-height: auto;
 }
 
 ul.tech-stack {
@@ -589,6 +594,7 @@ ul.tech-stack li.with-p {
 }
 
 .project-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,13 +604,13 @@ ul.tech-stack li.with-p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
-.project-card .full-bleed {
+.project-card .project-background {
   position: absolute;
+  z-index: -1;
   height: 70%;
   width: 100vw;
-  z-index: -1;
+  background-color: rgb(90, 132, 107);
 }
 
 .project {
@@ -620,27 +626,14 @@ ul.tech-stack li.with-p {
 }
 
 .project-desc {
-  width: 70%;
-}
-
-.project-desc .tech-stack {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-.project-desc .tech-stack li {
-  width: auto;
-}
-.project-desc .tech-stack li:first-child {
-  margin-left: 0;
-  padding-left: 0;
+  width: 60%;
 }
 
 ul.project-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 ul.project-links li {
   padding-right: 20px;
@@ -660,45 +653,22 @@ ul.project-links li a i {
   padding-right: 7px;
 }
 
-.project-img {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 30%;
-  height: 30vw;
-  margin-left: 15px;
+.project-desc .tech-stack {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
-.project-img img.project {
-  position: absolute;
-  z-index: 2;
-  border-radius: 2px 40px 2px 2px;
-  width: 97%;
-  height: 97%;
+.project-desc .tech-stack li {
+  width: auto;
 }
-.project-img .img-cutout {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 2px 40px 2px 2px;
-  background-color: rgb(216, 211, 200);
-  background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+.project-desc .tech-stack li:first-child {
+  margin-left: 0;
+  padding-left: 0;
 }
 
-section#contact {
+.contact-section {
   min-height: auto;
-  background-color: rgb(216, 211, 200);
+  background-color: rgb(171, 210, 236);
 }
 
 ul.contacts {

@@ -15,14 +15,14 @@
 </head>
 <body>
 <!-- opener section -->
-    <section id="opener">
-        <div class="opening-text wrapper">
-            <h2 class="time">Hello!</h2>
+    <section id="opener" class="opener-section">
+        <div class="opening-text">
+            <h2 class="time wrapper">Hello!</h2>
+            <div class="opening-text-no-wrapper">
+                <h2 class="wrapper opener-title">It's Olivia Sparks</h2>
+            </div>
+            <h2 class="wrapper">& I'm a Front-end Web Developer with an eye for design.</h2>
         </div>
-        <div class="opening-text-no-wrapper">
-            <h2 class="wrapper opener-title">It's Olivia Sparks</h2>
-        </div>
-        <h3 class="wrapper">& I'm a Front-end Web Developer with an eye for design.</h3>
     </section>
 <!-- header & sticky nav -->
     <header>
@@ -68,13 +68,13 @@
     </header>
     <main>
 <!-- about section -->
-        <section id="about">
+        <section id="about" class="about-section">
             <span class="anchor" id="about-anchor"></span>
             <div class="jump-padding"></div>
             <div class="wrapper">
-                <div class="about-img">
+                <div class="img-container left">
                     <img class="olivia" src="./assets/olivia-sparks.jpg" alt="olivia sparks">
-                    <div class="img-cutout"></div>
+                    <div class="img-background"></div>
                 </div>
                 <div class="about-text">
                     <h3>A little about me:</h3>
@@ -104,7 +104,7 @@
         </section>
 <!-- tech stack section -->
         <span class="anchor" id="tech-stack-anchor"></span>
-        <section class="full-bleed" id="tech-stack">
+        <section class="tech-stack-section">
             <ul class="tech-stack wrapper">
                 <li class="skill">
                     <i class="devicon-react-original-wordmark" alt="React"></i>
@@ -156,10 +156,10 @@
         </section>
 <!-- project section -->
         <span class="anchor" id="projects-anchor"></span>
-        <section id="projects" class="">
+        <section id="projects" class="projects-section">
             <ul class="projects">
                 <li class="project-card">
-                    <div class="full-bleed"></div>
+                    <div class="project-background"></div>
                     <div class="project wrapper">
                         <div class="project-desc">
                             <h3>One in a Vermillion</h3>
@@ -195,16 +195,161 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="project-img">
+                        <div class="img-container right">
                             <img class="project" src="./assets/one-in-a-vermillion.jpg" alt="screenshot of One in a Vermillion site">
-                            <div class="img-cutout"></div>
+                            <div class="img-background"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="project-card">
+                    <div class="project-background"></div>
+                    <div class="project wrapper">
+                        <div class="img-container left">
+                            <img class="project" src="./assets/go-vegan.jpg" alt="screenshot of Go Vegan site">
+                            <div class="img-background"></div>
+                        </div>
+                        <div class="project-desc">
+                            <h3>Go Vegan</h3>
+                            <ul class="project-links">
+                                <li>
+                                    <a href="/go-vegan">
+                                        <i class="fa-solid fa-globe" alt="Live Site"></i>
+                                        <p>Live Site</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/go-vegan-repo">
+                                        <i class="fa-brands fa-github" alt="GitHub"></i>
+                                        <p>Repo</p>
+                                    </a>                            
+                                </li>
+                            </ul>
+                            <p>
+                                How can you tell if someone is vegan? Don't worry, They'll tell you.
+                            </p>
+                            <p>
+                                Outside of tech, one of my passions is animal rights. And, in celebration of my 6 year vegan anniversary, I created this guilt inducing app that encourages the user to go vegan. The app utilizes two APIs to fetch and display data in response to user interaction.
+                            </p>
+                            <ul class="tech-stack">
+                                <li class="skill">
+                                    <i class="devicon-jquery-plain-wordmark" alt="jQuery"></i>
+                                </li>
+                                <li class="skill">
+                                    <i class="devicon-javascript-plain" alt="JavaScript"></i>
+                                </li>
+                                <li class="skill">
+                                    <i class="fa-solid fa-arrow-right-arrow-left" alt="Restful APIs"></i>
+                                </li>
+                                <li class="skill">
+                                    <i class="devicon-sass-original" alt="Sass"></i>
+                                </li>
+                                <li class="skill">
+                                    <i class="devicon-html5-plain-wordmark" alt="HTML"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="project-card">
+                    <div class="project-background"></div>
+                    <div class="project wrapper">
+                        <div class="project-desc">
+                            <h3>The Ladies Cat Quiz</h3>
+                            <ul class="project-links">
+                                <li>
+                                    <a href="/the-ladies-cat-quix">
+                                        <i class="fa-solid fa-globe" alt="Live Site"></i>
+                                        <p>Live Site</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/the-ladies-cat-quix-repo">
+                                        <i class="fa-brands fa-github" alt="GitHub"></i>
+                                        <p>Repo</p>
+                                    </a>                            
+                                </li>
+                            </ul>
+                            <p>
+                                The dynamic duo, widely referred to as The Ladies, are my two cats. They each have their own unique quirks-- How well do you know them?
+                            </p>
+                            <p>
+                                A playful web app that focuses on using jQuery to interact with the user's interface.
+                            </p>
+                            <ul class="tech-stack">
+                                <li class="skill">
+                                    <i class="devicon-jquery-plain-wordmark" alt="jQuery"></i>
+                                </li>
+                                <li class="skill">
+                                    <i class="devicon-javascript-plain" alt="JavaScript"></i>
+                                </li>
+                                <li class="skill">
+                                    <i class="devicon-sass-original" alt="Sass"></i>
+                                </li>
+                                <li class="skill">
+                                    <i class="devicon-html5-plain-wordmark" alt="HTML"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="img-container right">
+                            <img class="project" src="./assets/the-ladies-cat-quiz.jpg" alt="screenshot of The Ladies Cat Quiz site">
+                            <div class="img-background"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="project-card">
+                    <div class="project-background"></div>
+                    <div class="project wrapper">
+                        <div class="img-container left">
+                            <img class="project" src="./assets/meditation-minute.jpg" alt="screenshot of Meditation Minute site">
+                            <div class="img-background"></div>
+                        </div>
+                        <div class="project-desc">
+                            <h3>Meditation Minute</h3>
+                            <ul class="project-links">
+                                <li>
+                                    <a href="/meditation-minute">
+                                        <i class="fa-solid fa-globe" alt="Live Site"></i>
+                                        <p>Live Site</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/meditation-minute-repo">
+                                        <i class="fa-brands fa-github" alt="GitHub"></i>
+                                        <p>Repo</p>
+                                    </a>                            
+                                </li>
+                            </ul>
+                            <p>
+                                Sometimes you just need to take a minute & have a breather.
+                            </p>
+                            <p>
+                                Never meditated before? Don't you worry your pretty little heart about it! All the heavy meditation lifting is done for you with this app. The app utilizes two APIs to fetch and display data in response to user interaction. This is a Paired Programing project with <a href="https://ranasoyakcodes.dev">Rana Soyak</a>.
+                            </p>
+                            <ul class="tech-stack">
+                                <li class="skill hover">
+                                    <i class="fa-solid fa-user-group" alt="Paired Programming"></i>
+                                    <!-- <p>Paired Programming</p> -->
+                                </li>
+                                <li class="skill">
+                                    <i class="devicon-javascript-plain" alt="JavaScript"></i>
+                                </li>
+                                <li class="skill">
+                                    <i class="fa-solid fa-arrow-right-arrow-left" alt="Restful APIs"></i>
+                                </li>
+                                <li class="skill">
+                                    <i class="devicon-sass-original" alt="Sass"></i>
+                                </li>
+                                <li class="skill">
+                                    <i class="devicon-html5-plain-wordmark" alt="HTML"></i>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </li>
             </ul>
         </section>
 <!-- contact section -->
-        <section id="contact">
+        <section id="contact" class="contact-section">
             <div class="contact-text wrapper">
                 <h3>Let's connect if you're looking for an eager beaver to join your team</h3>
                 <p>or if you just wanna shoot the sh*t about cats &/or the magic of coding!</p>
