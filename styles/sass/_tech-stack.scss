@@ -1,4 +1,10 @@
 @use "var" as *;
+
+.tech-stack-section {
+    background-color: $black;
+    min-height: auto;
+  }
+  
 ul.tech-stack {
     display: flex;
     flex-wrap: wrap;
