@@ -244,6 +244,11 @@ section {
   padding: 50px 0;
 }
 
+.full-bleed {
+  min-height: 10vh;
+  background-color: rgb(45, 45, 43);
+}
+
 img {
   display: block;
   -o-object-fit: cover;
@@ -293,6 +298,12 @@ h3:nth-of-type(2) {
   text-align: center;
 }
 
+.projects h3,
+.projects p,
+.projects i {
+  color: rgb(253, 253, 253);
+}
+
 p,
 .passions li {
   font-size: 1.5rem;
@@ -330,28 +341,29 @@ header i {
   font-size: 2rem;
 }
 
-.tech-stack {
+.skill {
   color: rgb(253, 253, 253);
 }
-.tech-stack i {
+.skill i {
   font-size: 5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.tech-stack p {
+.skill p {
   margin: 0;
   font-size: 1rem;
   text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.tech-stack li:nth-child(5) i,
-.tech-stack li:nth-child(6) i,
-.tech-stack li:nth-child(10) i,
-.tech-stack li:nth-child(13) i {
+.skill.github:hover, .skill.github:focus {
+  color: rgb(110, 84, 148);
+}
+.skill.with-p i {
   font-size: 3rem;
   padding: 5px;
 }
+
 .tech-stack li:nth-child(5):hover,
 .tech-stack li:nth-child(5):focus {
   color: rgb(140, 159, 144);
@@ -364,10 +376,6 @@ header i {
 .tech-stack li:nth-child(10):focus {
   color: rgb(216, 211, 200);
 }
-.tech-stack li:nth-child(12):hover,
-.tech-stack li:nth-child(12):focus {
-  color: rgb(110, 84, 148);
-}
 .tech-stack li:nth-child(13):hover,
 .tech-stack li:nth-child(13):focus {
   color: rgb(214, 133, 165);
@@ -376,6 +384,14 @@ header i {
 .contacts i {
   color: rgb(45, 45, 43);
   font-size: 2.7rem;
+}
+
+.projects i {
+  font-size: 2.7rem;
+}
+
+.projects a i.fa-solid {
+  font-size: 2.5rem;
 }
 
 footer p {
@@ -530,11 +546,6 @@ ul.passions li {
   list-style-type: square;
 }
 
-section#tech-stack {
-  min-height: 10vh;
-  background-color: rgb(45, 45, 43);
-}
-
 ul.tech-stack {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,7 +573,7 @@ ul.tech-stack li {
   margin: 3px;
   padding: 5px;
 }
-ul.tech-stack li:nth-child(5), ul.tech-stack li:nth-child(6), ul.tech-stack li:nth-child(10), ul.tech-stack li:nth-child(13) {
+ul.tech-stack li.with-p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,28 +588,112 @@ ul.tech-stack li:nth-child(5), ul.tech-stack li:nth-child(6), ul.tech-stack li:n
       justify-content: space-around;
 }
 
-.background {
+.project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.project-card .full-bleed {
+  position: absolute;
+  height: 70%;
+  width: 100vw;
+  z-index: -1;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-desc {
+  width: 70%;
+}
+
+.project-desc .tech-stack {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.project-desc .tech-stack li {
+  width: auto;
+}
+.project-desc .tech-stack li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+ul.project-links li {
+  padding-right: 20px;
+}
+ul.project-links li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+ul.project-links li a i {
+  padding-right: 7px;
+}
+
+.project-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 30vw;
+  margin-left: 15px;
+}
+.project-img img.project {
+  position: absolute;
+  z-index: 2;
+  border-radius: 2px 40px 2px 2px;
+  width: 97%;
+  height: 97%;
+}
+.project-img .img-cutout {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px 40px 2px 2px;
   background-color: rgb(216, 211, 200);
-  background-image: url("../assets/photo-1524351543168-8e38787614e9.jpeg");
+  background: url("../assets/photo-1624252628211-bef222b22eb5.jpeg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-}
-
-ul.projects li {
-  width: 100%;
-  min-height: 40vh;
-  margin-top: 10px;
-  border-radius: 2px 2px 2px 2px;
-  padding: 20px 40px;
-  background-color: rgb(253, 253, 253);
-}
-ul.projects :nth-child(1) {
-  margin-top: 0;
-  border-top-right-radius: 40px;
-}
-ul.projects :nth-child(2) {
-  border-bottom-left-radius: 40px;
 }
 
 section#contact {
