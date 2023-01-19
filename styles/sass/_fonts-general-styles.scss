@@ -19,6 +19,11 @@ section {
     padding: 50px 0;
 }
 
+.full-bleed {
+    min-height: 10vh;
+    background-color: $black;
+  }
+
 img{
     display: block;
     object-fit: cover;
@@ -64,6 +69,12 @@ h3:nth-of-type(2) {margin-top: 20px;}
 
 .contact-text h3 {text-align: center;}
 
+.projects h3,
+.projects p,
+.projects i {
+    color: $white;
+}
+
 //body fonts
 p,
 .passions li {
@@ -100,7 +111,7 @@ header i {
     font-size: 2rem;
 }
 
-.tech-stack{
+.skill{
     color: $white;
     i {
         font-size: 5rem;
@@ -112,15 +123,19 @@ header i {
         text-align: center;
         transition: 0.3s;
     }
-    li:nth-child(5),
-    li:nth-child(6),
-    li:nth-child(10),
-    li:nth-child(13) {
+    &.github:hover,
+    &.github:focus {
+        color: $github;
+    }
+    &.with-p {
         i {
         font-size: 3rem;
         padding: 5px;
+        }
     }
-    }
+}
+
+.tech-stack {
     li:nth-child(5):hover,
     li:nth-child(5):focus {
         color: $green;
@@ -133,10 +148,6 @@ header i {
     li:nth-child(10):focus {
         color: $off-white;
     }
-    li:nth-child(12):hover,
-    li:nth-child(12):focus {
-        color: $github;
-    }
     li:nth-child(13):hover,
     li:nth-child(13):focus {
         color: $pink;
@@ -147,6 +158,9 @@ header i {
     color: $black;
     font-size: 2.7rem;
 }
+
+.projects i {font-size: 2.7rem;}
+.projects a i.fa-solid { font-size: 2.5rem;}
 
 //footer
 footer p {

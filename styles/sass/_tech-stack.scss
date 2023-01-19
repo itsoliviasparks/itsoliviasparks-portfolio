@@ -1,10 +1,4 @@
 @use "var" as *;
-
-section#tech-stack {
-    min-height: 10vh;
-    background-color: $black;
-  }
-
 ul.tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -17,10 +11,7 @@ ul.tech-stack {
         width: 65px;
         margin: 3px;
         padding: 5px;
-        &:nth-child(5),
-        &:nth-child(6),
-        &:nth-child(10),
-        &:nth-child(13) {
+        &.with-p {
             display: flex;
             flex-direction: column;
             align-items: center;
