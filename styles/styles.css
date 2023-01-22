@@ -327,7 +327,6 @@ a:hover, a:focus {
 }
 
 header i {
-  color: rgb(45, 45, 43);
   font-size: 2rem;
 }
 
@@ -339,7 +338,11 @@ header i {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.skill p {
+.skill.with-p i {
+  font-size: 3rem;
+  padding: 5px;
+}
+.skill.with-p p {
   margin: 0;
   font-size: 1rem;
   text-align: center;
@@ -349,39 +352,43 @@ header i {
 .skill.github:hover, .skill.github:focus {
   color: rgb(110, 84, 148);
 }
-.skill.with-p i {
-  font-size: 3rem;
-  padding: 5px;
-}
 
 .tech-stack li:nth-child(5):hover,
-.tech-stack li:nth-child(5):focus {
-  color: rgb(90, 132, 107);
+.tech-stack li:nth-child(5):focus,
+.tech-stack i.api:hover,
+.tech-stack i.api:focus {
+  color: rgb(5, 163, 240);
 }
 .tech-stack li:nth-child(6):hover,
 .tech-stack li:nth-child(6):focus {
-  color: rgb(5, 163, 240);
+  color: rgb(220, 63, 76);
 }
 .tech-stack li:nth-child(10):hover,
 .tech-stack li:nth-child(10):focus {
   color: rgb(244, 207, 112);
 }
 .tech-stack li:nth-child(13):hover,
-.tech-stack li:nth-child(13):focus {
+.tech-stack li:nth-child(13):focus,
+.tech-stack i.paired:hover,
+.tech-stack i.paired:focus {
   color: rgb(214, 133, 165);
 }
 
-.projects i,
-.contacts i {
+.projects i {
   color: rgb(45, 45, 43);
-  font-size: 2.7rem;
+  font-size: 3.5rem;
 }
 
 .projects a i.fa-solid {
   font-size: 2.5rem;
 }
 
+.projects a i.fa-brands {
+  font-size: 2.7rem;
+}
+
 .contacts i {
+  font-size: 3rem;
   color: rgb(253, 253, 253);
 }
 
@@ -393,14 +400,19 @@ img {
 
 section.opener-section,
 header,
-.projects-section-background,
+.projects-section,
 .img-background {
-  position: absolute;
   background: rgb(90, 132, 107);
   background: url("../assets/josep-martins-9lGNHu1FMvM-unsplash.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
+
+section.opener-section,
+header,
+.img-background {
+  position: absolute;
 }
 
 .img-container {
@@ -599,12 +611,6 @@ ul.tech-stack li.with-p {
       justify-content: space-around;
 }
 
-.projects-section-background {
-  width: 100vw;
-  z-index: -100;
-  position: relative;
-}
-
 .project-card {
   position: relative;
   display: -webkit-box;
@@ -619,10 +625,13 @@ ul.tech-stack li.with-p {
 }
 .project-card .project-background {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   height: 70%;
   width: 100vw;
   background-color: rgb(90, 132, 107);
+}
+.project-card .wrapper {
+  z-index: 2;
 }
 
 .project {

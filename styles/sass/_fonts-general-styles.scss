@@ -101,10 +101,7 @@ a {
 }
 
 //icons
-header i {
-    color: $black;
-    font-size: 2rem;
-}
+header i {font-size: 2rem;}
 
 .skill{
     color: $white;
@@ -112,52 +109,62 @@ header i {
         font-size: 5rem;
         transition: 0.3s;
     }
-    p {
-        margin: 0;
-        font-size: 1rem;
-        text-align: center;
-        transition: 0.3s;
+    &.with-p {
+        i {
+            font-size: 3rem;
+            padding: 5px;
+        }
+        p {
+            margin: 0;
+            font-size: 1rem;
+            text-align: center;
+            transition: 0.3s;
+        }
     }
     &.github:hover,
     &.github:focus {
         color: $github;
     }
-    &.with-p {
-        i {
-        font-size: 3rem;
-        padding: 5px;
-        }
-    }
 }
 
 .tech-stack {
     li:nth-child(5):hover,
-    li:nth-child(5):focus {
-        color: $main;
-    }
-    li:nth-child(6):hover,
-    li:nth-child(6):focus {
+    li:nth-child(5):focus,
+    i.api:hover,
+    i.api:focus {
         color: $blue;
     }
+    li:nth-child(6):hover,
+    li:nth-child(6):focus{
+        color: $red;
+    }
     li:nth-child(10):hover,
-    li:nth-child(10):focus {
+    li:nth-child(10):focus{
         color: $yellow;
     }
     li:nth-child(13):hover,
-    li:nth-child(13):focus {
+    li:nth-child(13):focus,
+    i.paired:hover,
+    i.paired:focus {
         color: $pink;
     }
 }
 
-.projects i,
-.contacts i {
+.projects i {
     color: $black;
-    font-size: 2.7rem;
+    font-size: 3.5rem;
 }
 
+//Live Site Icon Link- to make visually same height
 .projects a i.fa-solid { font-size: 2.5rem;}
 
-.contacts i {color: $white;}
+//GitHub Icon Link- to make visually same height
+.projects a i.fa-brands { font-size: 2.7rem;}
+
+.contacts i {
+    font-size: 3rem;
+    color: $white;
+}
 
 //backgrounds & images
 img{
@@ -167,14 +174,19 @@ img{
 
 section.opener-section,
 header,
-.projects-section-background,
+.projects-section,
 .img-background {
-    position: absolute;
     background: $main;
     background: $background-img;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+section.opener-section,
+header,
+.img-background {
+    position: absolute;
 }
 
 .img-container {

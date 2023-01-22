@@ -1,11 +1,5 @@
 @use "var" as *;
 
-.projects-section-background {
-  width: 100vw;
-  z-index: -100;
-  position: relative;
-}
-
 .project-card {
   position: relative;
   display: flex;
@@ -13,11 +7,12 @@
   align-items: center;
   .project-background {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     height: 70%;
     width: 100vw;
     background-color: $main;
   }
+  .wrapper {z-index: 2;}
 }
 
 .project {
@@ -54,9 +49,3 @@ ul.project-links {
     }
   }
 }
-
-// .project-card img {
-//   border: solid 6px $black;
-// }
-
-
