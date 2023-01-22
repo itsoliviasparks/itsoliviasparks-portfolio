@@ -290,6 +290,7 @@ h3:nth-of-type(2) {
 
 .contact-text h3 {
   text-align: center;
+  color: rgb(253, 253, 253);
 }
 
 p,
@@ -308,7 +309,7 @@ ul.passions {
 
 .contact-text p {
   margin: 0;
-  color: rgb(45, 45, 43);
+  color: rgb(253, 253, 253);
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   text-transform: lowercase;
@@ -359,11 +360,11 @@ header i {
 }
 .tech-stack li:nth-child(6):hover,
 .tech-stack li:nth-child(6):focus {
-  color: rgb(225, 226, 137);
+  color: rgb(5, 163, 240);
 }
 .tech-stack li:nth-child(10):hover,
 .tech-stack li:nth-child(10):focus {
-  color: rgb(171, 210, 236);
+  color: rgb(244, 207, 112);
 }
 .tech-stack li:nth-child(13):hover,
 .tech-stack li:nth-child(13):focus {
@@ -380,6 +381,10 @@ header i {
   font-size: 2.5rem;
 }
 
+.contacts i {
+  color: rgb(253, 253, 253);
+}
+
 img {
   display: block;
   -o-object-fit: cover;
@@ -388,6 +393,7 @@ img {
 
 section.opener-section,
 header,
+.projects-section-background,
 .img-background {
   position: absolute;
   background: rgb(90, 132, 107);
@@ -423,25 +429,25 @@ header,
 }
 
 .right {
-  margin-left: 15px;
+  margin-left: 40px;
 }
 .right img,
 .right .img-background {
-  border-radius: 2px 40px 2px 2px;
+  border-radius: 0.5% 10% 0.5% 0.5%;
 }
 
 .left {
-  margin-right: 15px;
+  margin-right: 40px;
 }
 .left img,
 .left .img-background {
-  border-radius: 2px 2px 2px 40px;
+  border-radius: 0.5% 0.5% 0.5% 10%;
 }
 
 footer p {
   margin: 0;
   padding: 5px;
-  color: rgb(90, 132, 107);
+  color: rgb(253, 253, 253);
   font-size: 1rem;
 }
 
@@ -511,7 +517,7 @@ header .wrapper {
 
 .about-section {
   padding-top: 105vh;
-  background-color: rgba(45, 45, 43, 0.5);
+  background-color: rgb(90, 132, 107);
 }
 .about-section .wrapper {
   display: -webkit-box;
@@ -593,6 +599,12 @@ ul.tech-stack li.with-p {
       justify-content: space-around;
 }
 
+.projects-section-background {
+  width: 100vw;
+  z-index: -100;
+  position: relative;
+}
+
 .project-card {
   position: relative;
   display: -webkit-box;
@@ -668,7 +680,7 @@ ul.project-links li a i {
 
 .contact-section {
   min-height: auto;
-  background-color: rgb(171, 210, 236);
+  background-color: rgb(45, 45, 43);
 }
 
 ul.contacts {

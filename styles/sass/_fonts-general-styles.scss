@@ -64,7 +64,10 @@ h3 {
     }
 }
 
-.contact-text h3 {text-align: center;}
+.contact-text h3 {
+    text-align: center;
+    color: $white;
+}
 
 //body fonts
 p,
@@ -79,7 +82,7 @@ ul.passions { margin-left: 1.5rem;}
 
 .contact-text p {
     margin: 0;
-    color: $black;
+    color: $white;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     text-transform: lowercase;
@@ -134,11 +137,11 @@ header i {
     }
     li:nth-child(6):hover,
     li:nth-child(6):focus {
-        color: $pop;
+        color: $blue;
     }
     li:nth-child(10):hover,
     li:nth-child(10):focus {
-        color: $light;
+        color: $yellow;
     }
     li:nth-child(13):hover,
     li:nth-child(13):focus {
@@ -154,6 +157,8 @@ header i {
 
 .projects a i.fa-solid { font-size: 2.5rem;}
 
+.contacts i {color: $white;}
+
 //backgrounds & images
 img{
     display: block;
@@ -162,6 +167,7 @@ img{
 
 section.opener-section,
 header,
+.projects-section-background,
 .img-background {
     position: absolute;
     background: $main;
@@ -191,18 +197,18 @@ header,
 }
 
 .right {
-    margin-left: 15px;
+    margin-left: 40px;
     img,
     .img-background {
-        border-radius: 2px 40px 2px 2px;
+        border-radius: 0.5% 10% 0.5% 0.5%;
     }
 }
 
 .left {
-    margin-right: 15px;
+    margin-right: 40px;
     img,
     .img-background {
-        border-radius: 2px 2px 2px 40px;
+        border-radius: 0.5% 0.5% 0.5% 10%;
     }
 }
 
@@ -210,6 +216,6 @@ header,
 footer p {
     margin: 0;
     padding: 5px;
-    color: $main;
+    color: $white;
     font-size: 1rem;
 }
