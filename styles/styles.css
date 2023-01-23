@@ -234,7 +234,7 @@ html {
 }
 
 .wrapper {
-  width: 80%;
+  width: 85%;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -257,27 +257,24 @@ h3 {
   margin: 0;
   color: rgb(45, 45, 43);
   font-family: "Syne", sans-serif;
+  letter-spacing: 0.4rem;
   text-transform: lowercase;
 }
 
 h2 {
   font-size: 4rem;
-  letter-spacing: 0.4rem;
 }
 h2:last-child {
   font-size: 2.2rem;
-  letter-spacing: 0.3rem;
 }
 
 h2.opener-title {
   color: rgb(253, 253, 253);
   font-size: 6rem;
-  letter-spacing: 0.5rem;
 }
 
 h1 {
   font-size: 4rem;
-  letter-spacing: 0.4rem;
 }
 
 h3 {
@@ -712,4 +709,161 @@ footer {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background: rgb(45, 45, 43);
+}
+
+@media (max-width: 1130px) {
+  .wrapper {
+    width: 90%;
+  }
+  .about-section .img-container {
+    width: 40%;
+  }
+  .about-text {
+    width: 60%;
+  }
+  .project-card .project-background {
+    height: 80%;
+  }
+}
+@media (max-width: 990px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+  h2:last-child {
+    font-size: 1.7rem;
+    letter-spacing: 0.3rem;
+  }
+  h2.opener-title {
+    font-size: 5rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  .projects i {
+    font-size: 3rem;
+  }
+  .project-card .project-background {
+    display: none;
+  }
+  .project-card {
+    margin-top: 20px;
+  }
+  .project-card:first-child {
+    margin-top: 0;
+  }
+  .project-card .img-background {
+    display: none;
+  }
+  .project.wrapper {
+    background-color: rgb(90, 132, 107);
+    padding: 15px 40px;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
+  }
+  .contact-text h3 {
+    font-size: 2rem;
+  }
+  .skill i {
+    font-size: 4rem;
+  }
+  .skill.with-p p {
+    font-size: 0.8rem;
+  }
+  .projects i {
+    font-size: 2.7rem;
+  }
+  .about-section .left {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 55%;
+  }
+  .about-section .left img,
+.about-section .left .img-background {
+    border-radius: 10% 0.5% 0.5% 0.5%;
+  }
+  .about-section .about-text {
+    width: 100%;
+    border-radius: 2px 2px 40px 2px;
+  }
+  .about-section .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .img-container {
+    width: 70%;
+  }
+  .project.wrapper {
+    padding: 15px 20px;
+  }
+  .right {
+    margin-left: 15px;
+  }
+  .left {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 480px) {
+  h1,
+h2,
+h3 {
+    letter-spacing: 0.3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h2:last-child {
+    font-size: 1.5rem;
+  }
+  h2.opener-title {
+    font-size: 2.3rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  .contact-text h3 {
+    font-size: 1.5rem;
+  }
+  p,
+.passions li {
+    font-size: 1.3rem;
+    margin: 5px 0;
+  }
+  .about-section .left {
+    width: 80%;
+  }
+  .about-section .about-text {
+    width: 100%;
+    padding: 15px 20px;
+  }
+  .project.wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project.wrapper .project-desc,
+.project.wrapper .img-container {
+    width: 100%;
+  }
+  .right {
+    margin-left: 0;
+  }
+  .left {
+    margin-right: 0;
+  }
 }

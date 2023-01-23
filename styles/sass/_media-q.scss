@@ -1,0 +1,112 @@
+@use "var" as *;
+
+// Small desktops
+@media (max-width: 1130px) {
+    .wrapper {width: 90%;}
+    .about-section .img-container {width: 40%;}
+    .about-text {width: 60%;}
+    .project-card .project-background {height: 80%;}
+}
+
+// Portrait tablet and small desktops
+@media (max-width: 990px) {
+    //fonts
+    h2 {
+        font-size: 3.5rem;
+        &:last-child {
+            font-size: 1.7rem;
+            letter-spacing: 0.3rem;
+        }
+    }
+    h2.opener-title {font-size: 5rem;}
+    h1 {font-size: 3.5rem;}
+    h3 {font-size: 2.2rem;}
+    //project section
+    .projects i {font-size: 3rem;}
+    .project-card .project-background {display: none;}
+    .project-card {
+        margin-top: 20px;
+        &:first-child {margin-top: 0;}
+        .img-background {display: none;}
+    }
+    .project.wrapper {
+        background-color: $main;
+        padding: 15px 40px;
+    }
+}
+
+// Landscape phone to portrait tablet
+@media (max-width: 768px) {
+    //fonts
+    h2 {font-size: 3rem;}
+    h3 {
+        font-size: 2.2rem;
+        letter-spacing: 0.3rem;
+    }
+    .contact-text h3 {font-size: 2rem}
+    //icons
+    .skill{
+        i {font-size: 4rem;}
+        &.with-p p {font-size: 0.8rem;}
+    }
+    .projects i {font-size: 2.7rem;}
+    //about section
+    .about-section {
+        .left {
+            margin-right: 0;
+            margin-bottom: 15px;
+            width: 55%;
+            img,
+            .img-background {border-radius: 10% 0.5% 0.5% 0.5%;}
+        }
+        .about-text {
+            width: 100%;
+            border-radius: 2px 2px 40px 2px;
+        }
+        .wrapper {flex-direction: column;}
+    }
+    .img-container {width: 70%;}
+    //project section
+    .project.wrapper {padding: 15px 20px;}
+    .right {margin-left: 15px;}
+    .left {margin-right: 15px;}
+}
+
+// Landscape phones and down
+@media (max-width: 480px) {
+    //fonts
+    h1,
+    h2,
+    h3 {letter-spacing: 0.3rem;}
+    h2 {
+        font-size: 2rem;
+        &:last-child {font-size: 1.5rem;}
+    }
+    h2.opener-title {font-size: 2.3rem;}
+    h1 {font-size: 2.5rem;}
+    h3 {font-size: 1.7rem;}
+    .contact-text h3 {font-size: 1.5rem;}
+    p,
+    .passions li {
+        font-size: 1.3rem;
+        margin: 5px 0;
+    }
+    //about section
+    .about-section {
+        .left {width: 80%;}
+        .about-text {
+            width: 100%;
+            padding: 15px 20px;
+        }
+    }
+    //project section
+    .project.wrapper {
+        flex-direction: column;
+        .project-desc,
+        .img-container {
+            width: 100%;
+        }
+    }
+    .right {margin-left: 0;}
+    .left {margin-right: 0;}
+}
