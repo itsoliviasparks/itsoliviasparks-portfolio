@@ -46,6 +46,11 @@
         .left {margin-right: 15px;}
     }
     .project-desc {padding-left: 15px;}
+    //footer section
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 // Landscape phone to portrait tablet
@@ -122,11 +127,6 @@
             width: 97%;
             padding: 0;
         }
-    }
-    //footer section
-    footer {
-        flex-direction: column;
-        align-items: center;
     }
 }
 
