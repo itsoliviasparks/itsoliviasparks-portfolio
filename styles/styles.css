@@ -404,11 +404,6 @@ header,
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100%;
-  overflow: hidden;
 }
 
 section.opener-section,
@@ -731,6 +726,12 @@ footer {
   }
 }
 @media (max-width: 990px) {
+  section.opener-section,
+header,
+.projects-section,
+.img-background {
+    background-attachment: scroll;
+  }
   h1 {
     font-size: 3.5rem;
   }
