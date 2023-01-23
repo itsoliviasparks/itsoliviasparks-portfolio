@@ -9,7 +9,7 @@ html {
 }
 
 .wrapper {
-    width: 80%;
+    width: 85%;
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -33,27 +33,20 @@ h3 {
     margin: 0;
     color: $black;
     font-family: $header-font;
+    letter-spacing: 0.4rem;
     text-transform: lowercase;
 }
 
+h1 {font-size: 4rem;}
+
 h2 {
     font-size: 4rem;
-    letter-spacing: 0.4rem;
-    &:last-child {
-        font-size: 2.2rem;
-        letter-spacing: 0.3rem;
-    }
+    &:last-child {font-size: 2.2rem;}
 }
 
 h2.opener-title {
     color: $white;
     font-size: 6rem;
-    letter-spacing: 0.5rem;
-}
-
-h1 {
-    font-size: 4rem;
-    letter-spacing: 0.4rem;
 }
 
 h3 {
