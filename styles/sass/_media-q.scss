@@ -11,12 +11,14 @@
 // Portrait tablet and small desktops
 @media (max-width: 990px) {
 
-    section.opener-section,
-    header,
-    .projects-section,
-    .img-background {
-        background-attachment:scroll
-    }
+
+    :root { background-attachment: fixed; }
+    // section.opener-section,
+    // header,
+    // .projects-section,
+    // .img-background {
+    //     background-attachment:scroll
+    // }
 
 
 

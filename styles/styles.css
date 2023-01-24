@@ -726,11 +726,8 @@ footer {
   }
 }
 @media (max-width: 990px) {
-  section.opener-section,
-header,
-.projects-section,
-.img-background {
-    background-attachment: scroll;
+  :root {
+    background-attachment: fixed;
   }
   h1 {
     font-size: 3.5rem;
