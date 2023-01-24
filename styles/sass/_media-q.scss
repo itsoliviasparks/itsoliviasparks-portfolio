@@ -56,14 +56,17 @@
 // Landscape phone to portrait tablet
 @media (max-width: 768px) {
     //remove position fixed backgrounds
-    section.opener-section {
-        background-attachment: scroll;
+    section.opener-section,
+    .img-background {background-attachment: scroll;}
+
+    .projects-section {
+        background: $background-img-tile;
+        background-attachment: inherit;
+        background-size: contain;
+        background-repeat: repeat-y;
     }
-    header,
-    .projects-section,
-    .img-background {
-        background: $white;
-    }
+    
+    header {background: $main;}
     //fonts
     h1,
     h2 {font-size: 3rem;}

@@ -794,13 +794,18 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  section.opener-section {
+  section.opener-section,
+.img-background {
     background-attachment: scroll;
   }
-  header,
-.projects-section,
-.img-background {
-    background: rgb(253, 253, 253);
+  .projects-section {
+    background: url("../assets/josep-martins-9lGNHu1FMvM-unsplash-tile.jpg");
+    background-attachment: inherit;
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+  header {
+    background: rgb(90, 132, 107);
   }
   h1,
 h2 {
