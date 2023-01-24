@@ -165,16 +165,11 @@ section.opener-section,
 header,
 .projects-section,
 .img-background {
-    background: $main;
+    background: $white;
     background: $background-img;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    height: 100%;
-    overflow: hidden;
 }
 
 section.opener-section,
