@@ -1,0 +1,49 @@
+@use "var" as *;
+
+.project-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .project-background {
+    position: absolute;
+    z-index: 1;
+    height: 70%;
+    width: 100vw;
+    background-color: $main;
+  }
+  .wrapper {z-index: 2;}
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-desc {width: 60%;}
+
+ul.project-links {
+  display: flex;
+  padding: 8px 0;
+  li {
+    padding-right: 20px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {padding-right: 7px;}
+    }
+  }
+}
+
+.project-desc .tech-stack {
+  justify-content: flex-start;
+  li {
+    width: auto;
+    &:first-child {
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+}

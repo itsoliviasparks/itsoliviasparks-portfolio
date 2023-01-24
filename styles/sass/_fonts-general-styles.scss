@@ -1,0 +1,218 @@
+@use "var" as *;
+
+//general styles
+html {
+    background-color: $white;
+    color: $black;
+    font-family: $body-font;
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+section {
+    min-height: 90vh;
+    padding: 50px 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+//header fonts
+h1,
+h2,
+h3 {
+    margin: 0;
+    color: $black;
+    font-family: $header-font;
+    letter-spacing: 0.4rem;
+    text-transform: lowercase;
+}
+
+h1 {font-size: 4rem;}
+
+h2 {
+    font-size: 4rem;
+    &:last-child {font-size: 2.2rem;}
+}
+
+h2.opener-title {
+    color: $white;
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 2.7rem;
+    letter-spacing: 0.3rem;
+    &:nth-of-type(2) {margin-top: 20px;}
+}
+
+.contact-text h3 {
+    text-align: center;
+    color: $white;
+}
+
+//body fonts
+p,
+.passions li {
+    font-size: 1.5rem;
+    margin: 7px 0;
+}
+
+ul.passions {margin-left: 1.5rem;}
+
+.passions:last-child p {margin-bottom: 0;}
+
+.contact-text p {
+    margin: 0;
+    color: $white;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+//links
+a {
+    text-decoration: none;
+    color: $black;
+    transition: 0.3s;
+    &:hover,
+    &:focus {opacity: 0.5;}
+}
+
+//icons
+header i {font-size: 2rem;}
+
+.skill{
+    color: $white;
+    i {
+        font-size: 5rem;
+        transition: 0.3s;
+    }
+    &.with-p {
+        i {
+            font-size: 3rem;
+            padding: 5px;
+        }
+        p {
+            margin: 0;
+            font-size: 1rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+    }
+    &.github:hover,
+    &.github:focus {
+        color: $github;
+    }
+}
+
+.tech-stack {
+    li:nth-child(5):hover,
+    li:nth-child(5):focus,
+    i.api:hover,
+    i.api:focus {
+        color: $blue;
+    }
+    li:nth-child(6):hover,
+    li:nth-child(6):focus{
+        color: $red;
+    }
+    li:nth-child(10):hover,
+    li:nth-child(10):focus{
+        color: $yellow;
+    }
+    li:nth-child(13):hover,
+    li:nth-child(13):focus,
+    i.paired:hover,
+    i.paired:focus {
+        color: $pink;
+    }
+}
+
+.projects i {
+    color: $black;
+    font-size: 3.5rem;
+}
+
+//Live Site Icon Link- to make visually same height
+.projects a i.fa-solid { font-size: 2.5rem;}
+
+//GitHub Icon Link- to make visually same height
+.projects a i.fa-brands { font-size: 2.7rem;}
+
+.contacts i {
+    font-size: 3rem;
+    color: $white;
+}
+
+//backgrounds & images
+img{
+    display: block;
+    object-fit: cover;
+}
+
+section.opener-section,
+header,
+.projects-section,
+.img-background {
+    background: $white;
+    background: $background-img;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+section.opener-section,
+header,
+.img-background {
+    position: absolute;
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    aspect-ratio: 1/1;
+    img {
+        z-index: 2;
+        width: 97%;
+        height: 97%;
+    }
+    .img-background {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.right {
+    margin-left: 40px;
+    img,
+    .img-background {border-radius: 0.5% 10% 0.5% 0.5%;}
+}
+
+.left {
+    margin-right: 40px;
+    img,
+    .img-background {border-radius: 0.5% 0.5% 0.5% 10%;}
+}
+
+//footer
+footer p {
+    margin: 0;
+    padding: 5px;
+    color: $white;
+    font-size: 1rem;
+}

@@ -1,0 +1,25 @@
+@use "var" as *;
+
+.jump-padding {height: 20px;}
+
+.about-section {
+    padding-top: 105vh;
+    background-color: $main;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .img-container {width: 30%;}
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 2px 40px 2px 2px;
+    padding: 20px 40px;
+    background-color: $white;
+}
+
+ul.passions li {list-style-type: square;}
