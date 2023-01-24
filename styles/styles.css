@@ -399,7 +399,7 @@ section.opener-section,
 header,
 .projects-section,
 .img-background {
-  background: rgb(90, 132, 107);
+  background: rgb(253, 253, 253);
   background: url("../assets/josep-martins-9lGNHu1FMvM-unsplash.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -726,9 +726,6 @@ footer {
   }
 }
 @media (max-width: 990px) {
-  :root {
-    background-attachment: fixed;
-  }
   h1 {
     font-size: 3.5rem;
   }
@@ -797,6 +794,14 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  section.opener-section {
+    background-attachment: scroll;
+  }
+  header,
+.projects-section,
+.img-background {
+    background: rgb(253, 253, 253);
+  }
   h1,
 h2 {
     font-size: 3rem;
