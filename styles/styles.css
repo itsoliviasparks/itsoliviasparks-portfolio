@@ -231,6 +231,7 @@ html {
   color: rgb(45, 45, 43);
   font-family: Verdana;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
