@@ -14,13 +14,14 @@
     h1 {font-size: 3.5rem;}
     h2 {
         font-size: 3.5rem;
+        &:first-child {margin-bottom: 1rem;}
         &:last-child {
-            font-size: 1.7rem;
+            font-size: 2rem;
             letter-spacing: 0.3rem;
         }
     }
     h2.opener-title {font-size: 5rem;}
-    h3 {font-size: 2.2rem;}
+    h3 {font-size: 2.7rem;}
     .projects i {font-size: 3rem;}
     //about section
     .about-section .left {margin-right: 15px;}
@@ -57,15 +58,15 @@
 @media (max-width: 768px) {
     //remove position fixed backgrounds
     section.opener-section,
-    .img-background {background-attachment: scroll;}
-
+    .img-background {
+        background-attachment: scroll;
+    }
     .projects-section {
         background: $background-img-tile;
         background-attachment: inherit;
         background-size: contain;
         background-repeat: repeat-y;
     }
-    
     header {background: $main;}
     //fonts
     h1,
@@ -110,12 +111,11 @@
     h1 {font-size: 2rem;}
     h2 {
         font-size: 2rem;
-        &:last-child {font-size: 1.5rem;}
+        &:last-child {font-size: 1.7rem;}
     }
-    h2.opener-title {font-size: 2.3rem;}
-    h3 {font-size: 1.7rem;}
-    .contact-text h3 {font-size: 1.5rem;}
-    footer p {font-size: 0.7rem;}
+    h2.opener-title {font-size: 2.7rem;}
+    h3 {font-size: 2rem;}
+    .contact-text h3 {font-size: 1.7rem;}
     //about section
     .about-section {
         .left {width: 80%;}
