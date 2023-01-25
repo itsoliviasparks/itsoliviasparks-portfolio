@@ -42,7 +42,8 @@ h1 {font-size: 4rem;}
 
 h2 {
     font-size: 4rem;
-    &:last-child {font-size: 2.2rem;}
+    &:first-child {margin-bottom: 1.5rem;}
+    &:last-child {font-size: 2.7rem;}
 }
 
 h2.opener-title {
@@ -51,7 +52,7 @@ h2.opener-title {
 }
 
 h3 {
-    font-size: 2.7rem;
+    font-size: 3rem;
     letter-spacing: 0.3rem;
     &:nth-of-type(2) {margin-top: 20px;}
 }
@@ -64,7 +65,7 @@ h3 {
 //body fonts
 p,
 .passions li {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 7px 0;
 }
 
@@ -74,11 +75,19 @@ ul.passions {margin-left: 1.5rem;}
 
 .contact-text p {
     margin: 0;
+    margin-top: 17px;
     color: $white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.2rem;
     text-transform: lowercase;
     text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+    color: $white;
+    font-size: 1.2rem;
 }
 
 //links
@@ -106,6 +115,7 @@ header i {font-size: 2rem;}
         }
         p {
             margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 1rem;
             text-align: center;
             transition: 0.3s;
@@ -122,7 +132,7 @@ header i {font-size: 2rem;}
     li:nth-child(5):focus,
     i.api:hover,
     i.api:focus {
-        color: $blue;
+        color: $green;
     }
     li:nth-child(6):hover,
     li:nth-child(6):focus{
@@ -208,12 +218,4 @@ header,
     margin-right: 40px;
     img,
     .img-background {border-radius: 0.5% 0.5% 0.5% 10%;}
-}
-
-//footer
-footer p {
-    margin: 0;
-    padding: 5px;
-    color: $white;
-    font-size: 1rem;
 }

@@ -229,7 +229,7 @@ html {
 html {
   background-color: rgb(253, 253, 253);
   color: rgb(45, 45, 43);
-  font-family: Verdana;
+  font-family: "Crimson Text", serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -257,7 +257,7 @@ h2,
 h3 {
   margin: 0;
   color: rgb(45, 45, 43);
-  font-family: "Syne", sans-serif;
+  font-family: "Homemade Apple", cursive;
   letter-spacing: 0.4rem;
   text-transform: lowercase;
 }
@@ -269,8 +269,11 @@ h1 {
 h2 {
   font-size: 4rem;
 }
+h2:first-child {
+  margin-bottom: 1.5rem;
+}
 h2:last-child {
-  font-size: 2.2rem;
+  font-size: 2.7rem;
 }
 
 h2.opener-title {
@@ -279,7 +282,7 @@ h2.opener-title {
 }
 
 h3 {
-  font-size: 2.7rem;
+  font-size: 3rem;
   letter-spacing: 0.3rem;
 }
 h3:nth-of-type(2) {
@@ -293,7 +296,7 @@ h3:nth-of-type(2) {
 
 p,
 .passions li {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 7px 0;
 }
 
@@ -307,11 +310,19 @@ ul.passions {
 
 .contact-text p {
   margin: 0;
+  margin-top: 17px;
   color: rgb(253, 253, 253);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   text-transform: lowercase;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 5px;
+  color: rgb(253, 253, 253);
+  font-size: 1.2rem;
 }
 
 a {
@@ -342,6 +353,7 @@ header i {
 }
 .skill.with-p p {
   margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   text-align: center;
   -webkit-transition: 0.3s;
@@ -355,7 +367,7 @@ header i {
 .tech-stack li:nth-child(5):focus,
 .tech-stack i.api:hover,
 .tech-stack i.api:focus {
-  color: rgb(5, 163, 240);
+  color: rgb(90, 132, 107);
 }
 .tech-stack li:nth-child(6):hover,
 .tech-stack li:nth-child(6):focus {
@@ -401,7 +413,7 @@ header,
 .projects-section,
 .img-background {
   background: rgb(253, 253, 253);
-  background: url("../assets/josep-martins-9lGNHu1FMvM-unsplash.jpg");
+  background: url("../assets/rohro-clark-Jgdbp3pPj9Q-unsplash.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -454,13 +466,6 @@ header,
   border-radius: 0.5% 0.5% 0.5% 10%;
 }
 
-footer p {
-  margin: 0;
-  padding: 5px;
-  color: rgb(253, 253, 253);
-  font-size: 1rem;
-}
-
 section.opener-section {
   z-index: 10;
   width: 100%;
@@ -481,8 +486,8 @@ section.opener-section .opening-text {
 }
 section.opener-section .opening-text-no-wrapper {
   background-color: rgb(45, 45, 43);
-  margin: 3px 0;
-  padding: 5px 0;
+  margin: 10px 0;
+  padding: 7px 0;
 }
 
 header {
@@ -527,7 +532,7 @@ header .wrapper {
 
 .about-section {
   padding-top: 105vh;
-  background-color: rgb(90, 132, 107);
+  background-color: rgb(116, 193, 219);
 }
 .about-section .wrapper {
   display: -webkit-box;
@@ -559,7 +564,7 @@ header .wrapper {
 }
 
 ul.passions li {
-  list-style-type: square;
+  list-style-type: disc;
 }
 
 .tech-stack-section {
@@ -626,7 +631,7 @@ ul.tech-stack li.with-p {
   z-index: 1;
   height: 70%;
   width: 100vw;
-  background-color: rgb(90, 132, 107);
+  background-color: rgb(116, 193, 219);
 }
 .project-card .wrapper {
   z-index: 2;
@@ -733,15 +738,18 @@ footer {
   h2 {
     font-size: 3.5rem;
   }
+  h2:first-child {
+    margin-bottom: 1rem;
+  }
   h2:last-child {
-    font-size: 1.7rem;
+    font-size: 2rem;
     letter-spacing: 0.3rem;
   }
   h2.opener-title {
     font-size: 5rem;
   }
   h3 {
-    font-size: 2.2rem;
+    font-size: 2.7rem;
   }
   .projects i {
     font-size: 3rem;
@@ -754,7 +762,7 @@ footer {
   }
   .project.wrapper {
     padding: 15px;
-    background-color: rgb(90, 132, 107);
+    background-color: rgb(116, 193, 219);
   }
   .project.wrapper.right-corner {
     border-radius: 2px 40px 2px 2px;
@@ -800,13 +808,13 @@ footer {
     background-attachment: scroll;
   }
   .projects-section {
-    background: url("../assets/josep-martins-9lGNHu1FMvM-unsplash-tile.jpg");
+    background: url("../assets/rohro-clark-Jgdbp3pPj9Q-unsplash-tile.jpg");
     background-attachment: inherit;
     background-size: contain;
     background-repeat: repeat-y;
   }
   header {
-    background: rgb(90, 132, 107);
+    background: rgb(116, 193, 219);
   }
   h1,
 h2 {
@@ -867,19 +875,16 @@ h3 {
     font-size: 2rem;
   }
   h2:last-child {
-    font-size: 1.5rem;
-  }
-  h2.opener-title {
-    font-size: 2.3rem;
-  }
-  h3 {
     font-size: 1.7rem;
   }
-  .contact-text h3 {
-    font-size: 1.5rem;
+  h2.opener-title {
+    font-size: 2.7rem;
   }
-  footer p {
-    font-size: 0.7rem;
+  h3 {
+    font-size: 2rem;
+  }
+  .contact-text h3 {
+    font-size: 1.7rem;
   }
   .about-section .left {
     width: 80%;
