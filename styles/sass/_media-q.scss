@@ -22,6 +22,7 @@
     }
     h2.opener-title {font-size: 5rem;}
     h3 {font-size: 2.7rem;}
+    h4 {font-size: 3.2rem;}
     .projects i {font-size: 3rem;}
     //about section
     .about-section .left {margin-right: 15px;}
@@ -71,11 +72,14 @@
     //fonts
     h1,
     h2 {font-size: 3rem;}
-    h3 {
-        font-size: 2.2rem;
-        letter-spacing: 0.3rem;
+    h3,
+    h4 {letter-spacing: 0.3rem;}
+    h3 {font-size: 2.2rem;}
+    h4 {font-size: 2.6rem;}
+    .contact-text h3 {
+        font-size: 2rem;
+        line-height: 3rem;
     }
-    .contact-text h3 {font-size: 2rem}
     //reduce nav links
     nav .contact-links li:nth-last-child(-n + 2)  {display: none;}
     //icons
@@ -114,8 +118,11 @@
         &:last-child {font-size: 1.7rem;}
     }
     h2.opener-title {font-size: 2.7rem;}
-    h3 {font-size: 2rem;}
-    .contact-text h3 {font-size: 1.7rem;}
+    h4 {font-size: 2.2rem;}
+    .contact-text h3 {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
     //about section
     .about-section {
         .left {width: 80%;}
@@ -145,5 +152,6 @@
 // Min width
 @media (max-width: 320px) {
     h2.opener-title {font-size: 1.7rem;}
+    h3 {font-size: 2rem;}
     .about-section .left {width: 100%;}
 }

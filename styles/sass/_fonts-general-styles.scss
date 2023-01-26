@@ -30,7 +30,8 @@ li {
 //header fonts
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0;
     color: $black;
     font-family: $header-font;
@@ -58,9 +59,14 @@ h3 {
 }
 
 .contact-text h3 {
-    text-align: center;
     color: $white;
+    text-align: center;
+    line-height: 4rem;
 }
+
+h4 {font-size: 3.5rem;}
+
+.tech-stack-section h4 {color: $white;}
 
 //body fonts
 p,
