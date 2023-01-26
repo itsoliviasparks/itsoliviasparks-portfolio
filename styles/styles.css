@@ -254,7 +254,8 @@ li {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   color: rgb(45, 45, 43);
   font-family: "Homemade Apple", cursive;
@@ -290,7 +291,16 @@ h3:nth-of-type(2) {
 }
 
 .contact-text h3 {
+  color: rgb(253, 253, 253);
   text-align: center;
+  line-height: 4rem;
+}
+
+h4 {
+  font-size: 3.5rem;
+}
+
+.tech-stack-section h4 {
   color: rgb(253, 253, 253);
 }
 
@@ -614,6 +624,16 @@ ul.tech-stack li.with-p {
       justify-content: space-around;
 }
 
+.projects-section {
+  padding-top: 0;
+}
+
+.project-header {
+  background-color: rgb(116, 193, 219);
+  padding: 15px 0;
+  margin-bottom: 50px;
+}
+
 .project-card {
   position: relative;
   display: -webkit-box;
@@ -751,6 +771,9 @@ footer {
   h3 {
     font-size: 2.7rem;
   }
+  h4 {
+    font-size: 3.2rem;
+  }
   .projects i {
     font-size: 3rem;
   }
@@ -820,12 +843,19 @@ footer {
 h2 {
     font-size: 3rem;
   }
+  h3,
+h4 {
+    letter-spacing: 0.3rem;
+  }
   h3 {
     font-size: 2.2rem;
-    letter-spacing: 0.3rem;
+  }
+  h4 {
+    font-size: 2.6rem;
   }
   .contact-text h3 {
     font-size: 2rem;
+    line-height: 3rem;
   }
   nav .contact-links li:nth-last-child(-n+2) {
     display: none;
@@ -880,11 +910,12 @@ h3 {
   h2.opener-title {
     font-size: 2.7rem;
   }
-  h3 {
-    font-size: 2rem;
+  h4 {
+    font-size: 2.2rem;
   }
   .contact-text h3 {
     font-size: 1.7rem;
+    line-height: 2.5rem;
   }
   .about-section .left {
     width: 80%;
@@ -924,6 +955,9 @@ h3 {
 @media (max-width: 320px) {
   h2.opener-title {
     font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 2rem;
   }
   .about-section .left {
     width: 100%;
