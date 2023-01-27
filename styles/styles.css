@@ -650,7 +650,7 @@ ul.tech-stack li.with-p {
   position: absolute;
   z-index: 1;
   height: 70%;
-  width: 100vw;
+  width: 100%;
   background-color: rgb(116, 193, 219);
 }
 .project-card .wrapper {
