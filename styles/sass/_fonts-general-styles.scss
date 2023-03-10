@@ -141,11 +141,13 @@ header i {font-size: 2rem;}
         color: $green;
     }
     li:nth-child(6):hover,
-    li:nth-child(6):focus{
+    li:nth-child(6):focus,
+    i.responsive:hover,
+    i.responsive:focus {
         color: $red;
     }
     li:nth-child(10):hover,
-    li:nth-child(10):focus{
+    li:nth-child(10):focus {
         color: $yellow;
     }
     li:nth-child(13):hover,
