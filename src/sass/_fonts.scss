@@ -1,0 +1,7 @@
+@use "_variables.scss" as *;
+
+h1 {
+    font-family: $pop-font;
+    color: $pink;
+    font-size: 5rem;
+}

@@ -1,0 +1,43 @@
+@use "_variables.scss" as *;
+
+.border-container {
+    .border {
+        content: '';
+        z-index: 100;
+        position: fixed;
+        background: $black;
+    }
+    .right {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 20px;
+    }
+    .top {
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 40px;
+    }
+    .bottom {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 40px;
+    }
+    .left {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+    }
+}
+
+.background {
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    background: $off-white;
+    // background: radial-gradient(at 889px 574px, $white 0%, $off-white-highlight 25%, $off-white 73%);
+}
