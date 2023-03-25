@@ -85,6 +85,12 @@ const techStack = [
         i: "devicon-illustrator-line",
         color: colorVariables.orange,
     },
+    {
+        id: 15,
+        name: "project mgmt",
+        i: "fa-solid fa-list-check",
+        color: colorVariables.green,
+    },
 ];
 
 export default techStack;

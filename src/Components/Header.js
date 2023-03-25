@@ -34,11 +34,11 @@ const Header = () => {
                                         backgroundColor: `${link.color}`,
                                         width: "fit-content",
                                         paddingRight: "10px",
-                                        } : null}>
+                                    } : null}>
                                 <Link to={link.link}>
                                     <p className="sr-only">{link.name}</p>
                                     <i className={link.i}></i>
-                                    {navHover === link.id ? link.name  : null}
+                                    {navHover === link.id ? link.name : null}
                                 </Link>
                             </li>
                         )

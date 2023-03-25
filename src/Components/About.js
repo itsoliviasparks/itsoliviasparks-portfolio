@@ -13,7 +13,7 @@ const About = () => {
                     </span>
                     I love problem solving, and I'm annoyed when things aren't quite right. <em>I'm a developer.</em>
                 </h2>
-                <img src={aboutImg} alt="Headshot of Olivia Sparks"/>
+                <img src={aboutImg} alt="Headshot of Olivia Sparks" />
                 <p>
                     See, I was born with the <strong>“there must be a better way” gene</strong> & that ethos permeates every aspect of my life:
                 </p>
@@ -28,7 +28,7 @@ const About = () => {
                     My “there must be a better way” ethos also contributed to my 5+ year track record of solving user-focus problems in my past-life as a Technical Apparel Developer. You can read more about that <Link to="/technical-apparel-developer">here</Link>.
                 </p>
                 <p>
-                    Ultimately, maintainable & easy to understand code is always my goal. I love elegant & modular code blocks that <strong>provide a seamless user-experience</strong>. 
+                    Ultimately, maintainable & easy to understand code is always my goal. I love elegant & modular code blocks that <strong>provide a seamless user-experience</strong>.
                 </p>
                 <h3>
                     I believe that all problems have a solution— it's just a matter of having the patience to find the solution that will make the user's experience just <em>right</em>.
