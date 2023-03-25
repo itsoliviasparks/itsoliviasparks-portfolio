@@ -1,0 +1,70 @@
+@use "_variables.scss" as *;
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 45px 0 45px;
+}
+
+.name {
+    position: relative;
+    .full-name {
+        position: absolute;
+        top: 12.5%;
+        right: -14%;
+        left: -7%;
+        opacity: 0;
+        color: $white;
+        background-color: $black;
+        margin: 0;
+        border: solid 2px $white;
+        font-family: $header-font;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: 0.3s;
+        &:hover,
+        &:focus { opacity: 1; }
+    }
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 7px;
+    border-radius: 2px;
+    background-color: $black;
+    font-family: $header-font;
+    font-size: 1.6rem;
+    transition: 0.3s;
+    a,
+    a:hover,
+    a:focus { color: $white; }
+    i {
+        padding: 3px 10px;
+        color: $white;
+        font-size: 1.5rem;
+    }
+    &:focus { background-color: $pink; }
+}
+
+footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 45px 25px 45px;
+}

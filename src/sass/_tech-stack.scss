@@ -1,0 +1,42 @@
+@use "_variables.scss" as *;
+
+section.tech-stack {
+    min-height: fit-content;
+    padding-bottom: 12vh;
+}
+
+ul.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    li {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 15%;
+        aspect-ratio: 1.5/1;
+        align-items: center;
+        margin: 7px;
+        padding: 3px;
+        p {
+            position: absolute;
+            top: 30%;
+            right: 0;
+            left: 0;
+            opacity: 0;
+            color: $white;
+            background-color: $black;
+            margin: 0;
+            border: solid 1px $white;
+            font-family: $header-font;
+            font-size: 1.2rem;
+            text-align: center;
+            transition: 0.3s;
+            &:hover,
+            &:focus { opacity: 1; }
+        }
+    }
+    i { font-size: 5.5rem; }
+}
