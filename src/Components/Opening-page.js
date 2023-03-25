@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const OpeningPage = () => {
-return (
+    return (
         <section className="opening-page">
             <div className="hero-text">
                 <p>solving</p>

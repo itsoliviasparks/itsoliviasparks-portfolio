@@ -1,13 +1,12 @@
 import colorVariables from "../assets/colorVariables";
 
-
 const navLinks = [
     {
         id: 1,
         name: "about",
         i: "fa-solid fa-user",
         color: colorVariables.green,
-        link:"/about"
+        link: "/about"
     },
     {
         id: 2,

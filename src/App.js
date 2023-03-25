@@ -9,6 +9,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import OpeningPage from "./Components/Opening-page";
 import About from "./Components/About";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<OpeningPage />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
 
     </main>
