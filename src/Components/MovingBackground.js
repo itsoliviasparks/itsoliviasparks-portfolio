@@ -20,3 +20,5 @@ const MovingBackground = () => {
     )
   };
   export default MovingBackground;
+
+  //i'm pretty proud of this Component! I think it's a nice subtle touch for the user

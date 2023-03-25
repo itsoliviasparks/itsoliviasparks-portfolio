@@ -1,0 +1,63 @@
+@use "_variables.scss" as *;
+
+section.opening-page { padding-top: 20vh; }
+
+.hero-text {
+    text-align: center;
+    :nth-child(1),
+    :nth-child(3) {
+        position: relative;
+        z-index: 5;
+        margin: 3rem;
+        color: $black;
+        font-family: $header-font;
+        font-size: 10rem;
+    }
+    .user-focused {
+        position: relative;
+        p {
+            color: $white;
+            margin: 10rem 0;
+            font-family: $pop-font;
+            font-size: 10vw;
+            text-transform: uppercase;
+            text-shadow:
+                0.9rem -0.7rem 0 $black, 
+                -0.7rem 1rem 0 $pink,
+                1.5rem 0.8rem 0 $pea-green,
+                -1.5rem -0.5rem 0 $orange;
+        }
+        :first-child { margin-top: 8.5rem; }
+        :last-child { margin-bottom: 0; }
+    }
+}
+
+.opening-page nav {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 12vh;
+        li:first-child:hover,
+        li:first-child:focus { background-color: $green; }
+        li:hover,
+        li:focus { background-color: $orange; }
+        li:last-child:hover,
+        li:last-child:focus { background-color: $pea-green; }
+    }
+    li {
+        min-width: 17%;
+        background-color: $black;
+        margin: 0 30px;
+        border-radius: 2px;
+        padding: 12px 20px;
+        text-align: center;
+        transition: 0.3s;
+        a {
+            font-family: $header-font;
+            font-size: 2.5rem;
+            color: $white;
+            text-decoration: none;
+            }
+    }
+}
