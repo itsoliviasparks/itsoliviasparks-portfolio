@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import TechStack from "./TechStack";
-import aboutImg from '../assets/olivia-sparks.jpg';
+import aboutImg from "../assets/photos/olivia-sparks.jpg";
 
 const About = () => {
     return (
@@ -13,7 +13,7 @@ const About = () => {
                     </span>
                     I love problem solving, and I'm annoyed when things aren't quite right. <em>I'm a developer.</em>
                 </h2>
-                <img src={aboutImg} alt="Headshot of Olivia Sparks" />
+                <img src={aboutImg} className="right" alt="Head shot of Olivia Sparks. She is smiling and wearing pink & black tortoise shell glasses" />
                 <p>
                     See, I was born with the <strong>“there must be a better way” gene</strong> & that ethos permeates every aspect of my life:
                 </p>
@@ -25,7 +25,7 @@ const About = () => {
 
                 </p>
                 <p>
-                    My “there must be a better way” ethos also contributed to my 5+ year track record of solving user-focus problems in my past-life as a Technical Apparel Developer. You can read more about that <Link to="/technical-apparel-developer">here</Link>.
+                    My “there must be a better way” ethos also contributed to my 5+ year track record of solving user-focus problems in my past-life as a Technical Apparel Developer. You can read more about that <Link to="/tech-design-work">here</Link>.
                 </p>
                 <p>
                     Ultimately, maintainable & easy to understand code is always my goal. I love elegant & modular code blocks that <strong>provide a seamless user-experience</strong>.

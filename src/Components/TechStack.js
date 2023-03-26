@@ -16,6 +16,7 @@ const TechStack = () => {
                             onMouseEnter={() => setShowLabel(skill.id)}
                             onMouseLeave={() => setShowLabel(0)}>
                                 <i className={skill.i}
+                                    alt={skill.name}
                                     style={{color: `${skill.color}`}}></i>
                                 <p className="sr-only">it's Olivia Sparks</p>
                                 {showLabel === skill.id ? <p

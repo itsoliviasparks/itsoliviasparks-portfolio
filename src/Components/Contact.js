@@ -8,7 +8,9 @@ const Contact = () => {
     return (
         <section className="contact">
             <h2>
-                <span>Are you working on <em>solving user-focused problems?</em></span>
+                <span>
+                    Are you <em>solving user-focused problems?</em>
+                </span>
                 Let's connect if you're looking for an eager beaver to join your team!
             </h2>
             <ul>
@@ -23,7 +25,7 @@ const Contact = () => {
                                         color: `${link.color}`,
                                     } : null}>
                                 <div>
-                                    <i className={link.i}></i>
+                                    <i className={link.i} alt={link.name}></i>
                                     <p>:</p>
                                 </div>
                                 <p>{link.name}</p>

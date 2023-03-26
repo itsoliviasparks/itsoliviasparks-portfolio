@@ -2,14 +2,13 @@
 
 section.tech-stack {
     min-height: fit-content;
-    padding-bottom: 12vh;
+    padding-top: 0;
 }
 
 ul.tech-stack{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
     margin: 0 auto;
     li {
         position: relative;

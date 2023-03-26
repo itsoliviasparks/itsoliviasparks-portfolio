@@ -37,7 +37,7 @@ const Header = () => {
                                     } : null}>
                                 <Link to={link.link}>
                                     <p className="sr-only">{link.name}</p>
-                                    <i className={link.i}></i>
+                                    <i className={link.i} alt={link.name}></i>
                                     {navHover === link.id ? link.name : null}
                                 </Link>
                             </li>
