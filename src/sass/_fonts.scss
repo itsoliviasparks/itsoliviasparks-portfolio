@@ -24,12 +24,14 @@ header a {text-decoration: none;}
 h2 {
     font-family: $header-font;
     font-size: 4rem;
-    em { color: $pink; }
     span {
         display: block;
         line-height: 8rem;
     }
 }
+
+h2 em,
+h3 em { color: $pink; }
 
 h3 {
     font-family: $header-font;

@@ -15,6 +15,7 @@ section.opening-page { padding-top: 20vh; }
     }
     .user-focused {
         position: relative;
+        z-index: 3;
         p {
             color: $white;
             margin: 10rem 0;

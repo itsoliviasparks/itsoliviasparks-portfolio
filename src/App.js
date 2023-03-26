@@ -10,6 +10,7 @@ import Footer from "./Components/Footer";
 import OpeningPage from "./Components/Opening-page";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
+import TechDesignWork from "./Components/TechDesignWork";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<OpeningPage />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/tech-design-work" element={<TechDesignWork />}></Route>
       </Routes>
 
     </main>
