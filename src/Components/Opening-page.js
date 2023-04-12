@@ -11,7 +11,7 @@ const OpeningPage = () => {
                 </div>
                 <p>problems</p>
             </div>
-            <nav>
+            <nav className="wrapper">
                 <ul>
                     <li>
                         <Link to="/about">about</Link>

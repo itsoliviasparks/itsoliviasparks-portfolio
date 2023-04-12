@@ -6,7 +6,7 @@ const TechStack = () => {
     const [showLabel, setShowLabel] = useState(0);
 
     return(
-        <section className="tech-stack">
+        <section className="tech-stack wrapper">
             <h2>Tech Stack & Skills:</h2>
             <ul className="tech-stack">
                 {techStack.map((skill) => {

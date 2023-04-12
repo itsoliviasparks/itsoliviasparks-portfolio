@@ -1,26 +1,35 @@
 @use "_variables.scss" as *;
 
-section.opening-page { padding-top: 20vh; }
+section.opening-page { padding-top: 13vh; }
 
 .hero-text {
     text-align: center;
+    :nth-child(1) { margin: clamp(5rem, 6vw + 0.5rem, 8.5rem); }
+    :nth-child(3) { margin: clamp(1rem, 6vw + 0.5rem, 3.5rem); }
     :nth-child(1),
     :nth-child(3) {
         position: relative;
         z-index: 5;
-        margin: 3rem;
         color: $black;
         font-family: $header-font;
         font-size: 10rem;
+        font-size: clamp(5rem, 6vw + 1rem, 10rem);
     }
     .user-focused {
         position: relative;
         z-index: 3;
+        :nth-child(1) {
+            margin-bottom: clamp(4rem, 6vw + 1rem, 10rem);
+            margin-top: 0;
+        }
+        :nth-child(2) {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
         p {
             color: $white;
-            margin: 10rem 0;
             font-family: $pop-font;
-            font-size: 10vw;
+            font-size: clamp(7rem, 9vw + 1rem, 14rem);
             text-transform: uppercase;
             text-shadow:
                 0.9rem -0.7rem 0 $black, 
@@ -28,8 +37,6 @@ section.opening-page { padding-top: 20vh; }
                 1.5rem 0.8rem 0 $pea-green,
                 -1.5rem -0.5rem 0 $orange;
         }
-        :first-child { margin-top: 8.5rem; }
-        :last-child { margin-bottom: 0; }
     }
 }
 

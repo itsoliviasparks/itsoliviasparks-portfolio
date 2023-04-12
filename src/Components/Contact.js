@@ -6,7 +6,7 @@ import contactLinks from "../assets/contactLinks";
 const Contact = () => {
     const [contactHover, setContactHover] = useState(0);
     return (
-        <section className="contact">
+        <section className="contact wrapper">
             <h2>
                 <span>
                     Are you <em>solving user-focused problems?</em>

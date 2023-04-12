@@ -6,7 +6,7 @@ import aboutImg from "../assets/photos/olivia-sparks.jpg";
 const About = () => {
     return (
         <>
-            <section className="about">
+            <section className="about wrapper">
                 <h2>
                     <span>
                         My name is Olivia Sparks.
