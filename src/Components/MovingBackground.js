@@ -15,7 +15,7 @@ const MovingBackground = () => {
 
   return (
     <div className="background"
-      style={{ background: `radial-gradient(at ${mousePosition.x}px ${mousePosition.y}px, rgba(227,223,211,1) 1%, rgba(216,210,191,1) 44%` }}>
+      style={{ background: `radial-gradient(at ${mousePosition.x}px ${mousePosition.y}px, rgba(243,241,235,1) 1%, rgba(216,210,191,1) 44%` }}>
     </div>
   )
 };

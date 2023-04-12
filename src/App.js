@@ -18,7 +18,8 @@ function App() {
     <Border />
     <MovingBackground />
     <Header />
-    <main className="wrapper">
+    {/* <main className="wrapper"> */}
+    <main>
       <Routes>
         <Route path="/" element={<OpeningPage />}></Route>
         <Route path="/about" element={<About />}></Route>

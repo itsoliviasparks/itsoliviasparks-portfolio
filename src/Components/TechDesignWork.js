@@ -3,7 +3,7 @@ import tech2 from "../assets/photos/KIC_332-1801-1452-110_model4.jpeg";
 
 const About = () => {
     return (
-        <section className="tech-design-work">
+        <section className="tech-design-work wrapper">
             <h2>
                 What is a Technical Apparel Developer?
             </h2>
