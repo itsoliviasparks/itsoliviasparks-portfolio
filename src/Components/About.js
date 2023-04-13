@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
-import TechStack from "./TechStack";
-
 import aboutImg from "../assets/photos/olivia-sparks.jpg";
+import TechStack from "./TechStack";
 
 const About = () => {
     return (

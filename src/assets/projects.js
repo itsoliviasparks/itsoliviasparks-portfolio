@@ -1,11 +1,11 @@
 import techStack from "../assets/techStack";
 
-import touchGrass from "../assets/photos/projects/touch-grass.jpg";
 import collabLab from "../assets/photos/projects/the-collab-lab.jpg";
-import meditationMinute from "../assets/photos/projects/meditation-minute.jpg";
-import goVegan from "../assets/photos/projects/go-vegan.jpg";
 import creative from "../assets/photos/projects/creative-pdf-conversion.jpg";
+import goVegan from "../assets/photos/projects/go-vegan.jpg";
+import meditationMinute from "../assets/photos/projects/meditation-minute.jpg";
 import techDesignWork from "../assets/photos/hollister/261375916_4505634319532859_5557319768276982720_n.jpg";
+import touchGrass from "../assets/photos/projects/touch-grass.jpg";
 
 const projects = [
     {
@@ -33,8 +33,8 @@ const projects = [
             },
         ],
         links: [
-            {name: "Project Info & Repo", link: "/touch-grass-repo", color:"pink"},
-            {name: "Live Site", link: "/touch-grass", color:"orange"}
+            { name: "Project Info & Repo", link: "/touch-grass-repo", color: "pink" },
+            { name: "Live Site", link: "/touch-grass", color: "orange" }
         ],
         done: true
     },
@@ -63,9 +63,9 @@ const projects = [
             },
         ],
         links: [
-            {name: "Learn More", link: "/the-collab-lab-info", color:"blue"},
-            {name: "Repo", link: "/the-collab-lab-repo", color:"pink"},
-            {name: "Live Site", link: "/the-collab-lab", color:"orange"}
+            { name: "Learn More", link: "/the-collab-lab-info", color: "blue" },
+            { name: "Repo", link: "/the-collab-lab-repo", color: "pink" },
+            { name: "Live Site", link: "/the-collab-lab", color: "orange" }
         ],
         done: false
     },
@@ -93,8 +93,8 @@ const projects = [
             },
         ],
         links: [
-            {name: "Project Info & Repo", link: "/meditation-minute-repo", color:"pink"},
-            {name: "Live Site", link: "/meditation-minute", color:"orange"}
+            { name: "Project Info & Repo", link: "/meditation-minute-repo", color: "pink" },
+            { name: "Live Site", link: "/meditation-minute", color: "orange" }
         ],
         done: true
     },
@@ -122,8 +122,8 @@ const projects = [
             },
         ],
         links: [
-            {name: "Project Info & Repo", link: "/go-vegan-repo", color:"pink"},
-            {name: "Live Site", link: "/go-vegan", color:"orange"}
+            { name: "Project Info & Repo", link: "/go-vegan-repo", color: "pink" },
+            { name: "Live Site", link: "/go-vegan", color: "orange" }
         ],
         done: true
     },
@@ -147,8 +147,8 @@ const projects = [
             },
         ],
         links: [
-            {name: "Project Info & Repo", link: "/creative-repo", color:"pink"},
-            {name: "Live Site", link: "/creative", color:"orange"}
+            { name: "Project Info & Repo", link: "/creative-repo", color: "pink" },
+            { name: "Live Site", link: "/creative", color: "orange" }
         ],
         done: true
     },
@@ -158,7 +158,7 @@ const projects = [
         name: "What is a Technical Apparel Developer?",
         desc: "Before I began my coding career, I spent half a decade working in the fashion industry as a Technical Apparel Developer.",
         links: [
-            {name: "Learn More", link: "/tech-design-work", color:"blue"},
+            { name: "Learn More", link: "/tech-design-work", color: "blue" },
         ],
         done: true
     }

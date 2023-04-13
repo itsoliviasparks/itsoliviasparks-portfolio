@@ -7,10 +7,9 @@ const MovingBackground = () => {
     const updateMousePosition = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
+
     window.addEventListener('mousemove', updateMousePosition);
-    return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
-    };
+
   }, []);
 
   return (
@@ -19,6 +18,5 @@ const MovingBackground = () => {
     </div>
   )
 };
-export default MovingBackground;
 
-  //i'm pretty proud of this Component! I think it's a nice subtle touch for the user
+export default MovingBackground;
