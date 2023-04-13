@@ -5,6 +5,7 @@ import "./App.scss";
 import About from "./Components/About";
 import Border from "./Components/Border";
 import Contact from "./Components/Contact";
+import Error404 from "./Components/Error404";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import MovingBackground from "./Components/MovingBackground";
@@ -27,6 +28,7 @@ function App() {
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/tech-design-work" element={<TechDesignWork />}></Route>
         <Route path="/the-collab-lab-info" element={<TheCollabLab />}></Route>
+        <Route path="*" element={<Error404 />}></Route>
       </Routes>
     </main>
     <Footer />

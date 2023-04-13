@@ -1,3 +1,4 @@
+import externalLinks from "../assets/externalLinks";
 import techStack from "../assets/techStack";
 
 import collabLab from "../assets/photos/projects/the-collab-lab.jpg";
@@ -33,8 +34,8 @@ const projects = [
             },
         ],
         links: [
-            { name: "Project Info & Repo", link: "/touch-grass-repo", color: "pink" },
-            { name: "Live Site", link: "/touch-grass", color: "orange" }
+            { name: "Project Info & Repo", link: externalLinks.touchGrassRepo, color: "pink" },
+            { name: "Live Site", link: externalLinks.touchGrass, color: "orange" }
         ],
         done: true
     },
@@ -64,8 +65,8 @@ const projects = [
         ],
         links: [
             { name: "Learn More", link: "/the-collab-lab-info", color: "blue" },
-            { name: "Repo", link: "/the-collab-lab-repo", color: "pink" },
-            { name: "Live Site", link: "/the-collab-lab", color: "orange" }
+            { name: "Repo", link: externalLinks.collabLabRepo, color: "pink" },
+            { name: "Live Site", link: externalLinks.collabLab, color: "orange" }
         ],
         done: false
     },
@@ -93,8 +94,8 @@ const projects = [
             },
         ],
         links: [
-            { name: "Project Info & Repo", link: "/meditation-minute-repo", color: "pink" },
-            { name: "Live Site", link: "/meditation-minute", color: "orange" }
+            { name: "Project Info & Repo", link: externalLinks.meditationMinuteRepo, color: "pink" },
+            { name: "Live Site", link: externalLinks.meditationMinute, color: "orange" }
         ],
         done: true
     },
@@ -122,8 +123,8 @@ const projects = [
             },
         ],
         links: [
-            { name: "Project Info & Repo", link: "/go-vegan-repo", color: "pink" },
-            { name: "Live Site", link: "/go-vegan", color: "orange" }
+            { name: "Project Info & Repo", link: externalLinks.goVeganRepo, color: "pink" },
+            { name: "Live Site", link: externalLinks.goVegan, color: "orange" }
         ],
         done: true
     },
@@ -147,8 +148,8 @@ const projects = [
             },
         ],
         links: [
-            { name: "Project Info & Repo", link: "/creative-repo", color: "pink" },
-            { name: "Live Site", link: "/creative", color: "orange" }
+            { name: "Project Info & Repo", link: externalLinks.creativeRepo, color: "pink" },
+            { name: "Live Site", link: externalLinks.creative, color: "orange" }
         ],
         done: true
     },
