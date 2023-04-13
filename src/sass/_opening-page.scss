@@ -15,7 +15,7 @@ section.opening-page { padding-top: 13vh; }
         font-size: 10rem;
         font-size: clamp(5rem, 6vw + 1rem, 10rem);
     }
-    .user-focused {
+    .bold {
         position: relative;
         z-index: 3;
         :nth-child(1) {
