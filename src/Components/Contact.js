@@ -14,25 +14,27 @@ const Contact = () => {
                 Let's connect if you're looking for an eager beaver to join your team!
             </h2>
             <ul>
-                {contactLinks.map((link) => {
-                    return (
-                        <li key={link.id}
-                            onMouseEnter={() => setContactHover(link.id)}
-                            onMouseLeave={() => setContactHover(0)}>
-                            <Link to={link.link}
-                                style={
-                                    contactHover === link.id ? {
-                                        color: `${link.color}`,
-                                    } : null}>
-                                <div>
-                                    <i className={link.i} alt={link.name}></i>
-                                    <p>:</p>
-                                </div>
-                                <p>{link.name}</p>
-                            </Link>
-                        </li>
-                    )
-                })}
+                {
+                    contactLinks.map((link) => {
+                        return (
+                            <li key={link.id}
+                                onMouseEnter={() => setContactHover(link.id)}
+                                onMouseLeave={() => setContactHover(0)}>
+                                <Link to={link.link}
+                                    style={
+                                        contactHover === link.id ? {
+                                            color: `${link.color}`,
+                                        } : null}>
+                                    <div>
+                                        <i className={link.i} alt={link.name}></i>
+                                        <p>:</p>
+                                    </div>
+                                    <p>{link.name}</p>
+                                </Link>
+                            </li>
+                        )
+                    })
+                }
             </ul>
         </section>
     );

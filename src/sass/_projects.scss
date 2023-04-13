@@ -1,0 +1,75 @@
+@use "_variables.scss" as *;
+
+ul.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li { position: relative; }
+}
+
+
+.show-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $green-opacity;
+    opacity: 0;
+    transition: 0.3s;
+    &:hover,
+    &:focus { opacity: 1; }
+    li {
+        display: flex;
+        justify-content: center;
+        margin: 7px;
+    }
+    li a {
+            color: $white;
+            font-family: $header-font;
+            font-size: 1.7rem;
+            text-align: center;
+            text-transform: lowercase;
+            text-decoration: none;
+            border: solid 1px $white;
+            border-radius: 2px;
+            padding: 15px 30px;
+            background-color: $black;
+            transition: 0.3s;
+    }
+    li:first-child:hover a,
+    li:first-child:focus a { background-color: $pink; }
+    li:nth-child(2):hover a,
+    li:nth-child(2):focus a { background-color: $orange; }
+    li:nth-child(3):hover a,
+    li:nth-child(3):focus a { background-color: $blue; }
+}
+
+.project-desc {
+    margin: 0 30px;
+    border: solid 1px $black;
+    padding: 15px;
+    background-color: $white;
+    text-align: center;
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        h3 { margin: 0 }
+        .in-dev{ margin-left: 5px; }
+    }
+    p {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+}
+
+.project-tech {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}

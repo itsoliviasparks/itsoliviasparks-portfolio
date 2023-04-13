@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import TechStack from "./TechStack";
+
 import aboutImg from "../assets/photos/olivia-sparks.jpg";
 
 const About = () => {
@@ -13,7 +14,7 @@ const About = () => {
                     </span>
                     I love problem solving, and I'm annoyed when things aren't quite right. <em>I'm a developer.</em>
                 </h2>
-                <img src={aboutImg} className="right" alt="Head shot of Olivia Sparks. She is smiling and wearing pink & black tortoise shell glasses" />
+                <img src={aboutImg} className="right" alt="Head shot of Olivia Sparks. She is smiling and wearing pink & black tortoise shell glasses" title="Olivia Sparks" />
                 <p>
                     See, I was born with the <strong>“there must be a better way” gene</strong> & that ethos permeates every aspect of my life:
                 </p>
