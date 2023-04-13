@@ -1,4 +1,5 @@
 import colorVariables from "../assets/colorVariables";
+import externalLinks from "../assets/externalLinks";
 
 const navLinks = [
     {
@@ -27,14 +28,14 @@ const navLinks = [
         name: "github",
         i: "fa-brands fa-github",
         color: colorVariables.pink,
-        link: "/github"
+        link: externalLinks.github
     },
     {
         id: 5,
         name: "linkedin",
         i: "fa-brands fa-linkedin",
         color: colorVariables.blue,
-        link: "/linkedin"
+        link: externalLinks.linkedin
     },
 ];
 
