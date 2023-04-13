@@ -29,7 +29,7 @@ const TheCollabLab = () => {
             <p>
                 However, since joining The Collab Lab, I've realized that this is a fundamental aspect of any professional software development team. We follow strict naming conventions for branches, are assigned tickets with acceptance criteria in place, work with established codebases, and write detailed pull requests and comments.
             </p>
-            <img src={workflowImg} alt="The Collab Lab Weekly Cadence. Mon-Wed: Two developers pair program to complete the weekly story. Thurs: Submit pull request on GitHub & request the other pair's feedback. Fri: Review the other pair's PR & request final review from mentor. Sat: Implement all feedback until PR is approved & merge into main GitHub branch. Sunday: Demo the new features on production!" title="The Collab Lab Weekly Cadence" />
+            <img src={workflowImg} className="workflow" alt="The Collab Lab Weekly Cadence. Mon-Wed: Two developers pair program to complete the weekly story. Thurs: Submit pull request on GitHub & request the other pair's feedback. Fri: Review the other pair's PR & request final review from mentor. Sat: Implement all feedback until PR is approved & merge into main GitHub branch. Sunday: Demo the new features on production!" title="The Collab Lab Weekly Cadence" />
             <p>
                 Collaborating with other developers has also been a great learning experience. I've had the opportunity to work with self-taught developers, those from different bootcamps, and professionals in the field. This has helped me expand my knowledge of the various coding techniques and approaches.
             </p>

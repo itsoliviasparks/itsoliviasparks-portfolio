@@ -40,12 +40,12 @@ ul.project-list {
             background-color: $black;
             transition: 0.3s;
     }
-    li:first-child:hover a,
-    li:first-child:focus a { background-color: $pink; }
-    li:nth-child(2):hover a,
-    li:nth-child(2):focus a { background-color: $orange; }
-    li:nth-child(3):hover a,
-    li:nth-child(3):focus a { background-color: $blue; }
+    li.pink:hover a,
+    li.pink:focus a { background-color: $pink; }
+    li.orange:hover a,
+    li.orange:focus a { background-color: $orange; }
+    li.blue:hover a,
+    li.blue:focus a { background-color: $blue; }
 }
 
 .project-desc {

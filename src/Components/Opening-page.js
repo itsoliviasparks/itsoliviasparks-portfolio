@@ -4,12 +4,12 @@ const OpeningPage = () => {
     return (
         <section className="opening-page">
             <div className="hero-text">
-                <p>solving</p>
-                <div className="user-focused">
-                    <p>user-</p>
-                    <p>focused</p>
+                <p>curious & methodical</p>
+                <div className="bold">
+                    <p>software</p>
+                    <p>developer</p>
                 </div>
-                <p>problems</p>
+                <p>designer, & overall "keener"</p>
             </div>
             <nav className="wrapper">
                 <ul>

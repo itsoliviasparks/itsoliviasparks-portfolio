@@ -47,7 +47,8 @@ const Projects = () => {
                                         {
                                             project.links.map((link) => {
                                                 return (
-                                                    <li key={link.link}>
+                                                    <li key={link.link}
+                                                        className={link.color}>
                                                         <Link to={link.link}>{link.name}</Link>
                                                     </li>
                                                 )
