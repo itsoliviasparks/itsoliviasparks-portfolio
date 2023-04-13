@@ -40,7 +40,8 @@ section.opening-page { padding-top: 13vh; }
     }
 }
 
-.opening-page nav {
+.opening-page nav,
+.the-collab-lab nav{
     ul {
         display: flex;
         flex-direction: row;

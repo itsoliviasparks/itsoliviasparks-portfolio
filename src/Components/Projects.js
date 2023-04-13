@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import projects from "../assets/projects";
 
-const Projects = () => {    
+const Projects = () => {
     return (
         <section className="projects wrapper">
             <h2>I'd love to <em>show-off</em> a little bit:</h2>
@@ -25,22 +25,22 @@ const Projects = () => {
                                         </div>
                                         <p>{project.desc}</p>
                                         {
-                                            project.tech ? 
-                                            <ul className="project-tech">
-                                            {
-                                                project.tech.map((skill) => {
-                                                    return (
-                                                        <li key={project.name + skill.name}>
-                                                            <i className={skill.i}
-                                                                alt={skill.name}
-                                                                title={skill.name}
-                                                                ></i>
-                                                        </li>
-                                                    )
-                                                })
-                                            }
-                                        </ul>
-                                            : null
+                                            project.tech ?
+                                                <ul className="project-tech">
+                                                    {
+                                                        project.tech.map((skill) => {
+                                                            return (
+                                                                <li key={project.name + skill.name}>
+                                                                    <i className={skill.i}
+                                                                        alt={skill.name}
+                                                                        title={skill.name}
+                                                                    ></i>
+                                                                </li>
+                                                            )
+                                                        })
+                                                    }
+                                                </ul>
+                                                : null
                                         }
                                     </div>
                                     <ul className="project-links">

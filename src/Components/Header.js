@@ -52,5 +52,3 @@ const Header = () => {
 };
 
 export default Header;
-
-//I'm really proud of the logic here! On hover, the label & changes the background color is updated to a unique color for each link. I'm using onMouseEnter&Leave for this logic, so it's not accessible for non-mouse users. I would love to learn a way to provide this feature to all sighted users, but for now I have a back-up hover/focus state to change the background of all items to pink on focus.

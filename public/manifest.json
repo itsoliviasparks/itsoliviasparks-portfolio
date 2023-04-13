@@ -1,8 +1,8 @@
 {
   "short_name": "Olivia Sparks",
-  "name": "Olivia Sparks: Solving User-Focused Problems",
+  "name": "Olivia Sparks: Software Developer",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#aba515",
-  "background_color": "#d8d2bf"
+  "theme_color": "rgba(171, 165, 21, 1.00)",
+  "background_color": "rgba(243, 241, 235, 1.00)"
 }
