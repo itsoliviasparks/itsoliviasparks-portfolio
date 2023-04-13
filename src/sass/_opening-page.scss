@@ -48,8 +48,8 @@ section.opening-page { padding-top: 13vh; }
         margin-top: 12vh;
         li:first-child:hover,
         li:first-child:focus { background-color: $green; }
-        li:hover,
-        li:focus { background-color: $orange; }
+        li:nth-child(2):hover,
+        li:nth-child(2):focus { background-color: $orange; }
         li:last-child:hover,
         li:last-child:focus { background-color: $pea-green; }
     }
@@ -58,6 +58,7 @@ section.opening-page { padding-top: 13vh; }
         background-color: $black;
         margin: 0 30px;
         border-radius: 2px;
+        border: solid 1px $white;
         padding: 12px 20px;
         text-align: center;
         transition: 0.3s;

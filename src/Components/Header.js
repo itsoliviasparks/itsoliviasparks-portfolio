@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import navLinks from "../assets/navLinks";
 
@@ -16,11 +16,13 @@ const Header = () => {
                     os
                 </h1>
                 <p className="sr-only">it's Olivia Sparks</p>
-                {showFullName ? <p
+                {showFullName ?
+                    <p
                     className="full-name"
                     onMouseEnter={() => setShowFullName(true)}
                     onMouseLeave={() => setShowFullName(false)}>
-                    it's olivia sparks</p> : null}
+                        it's olivia sparks
+                    </p> : null}
             </Link>
             <nav>
                 <ul className="contact-links">
@@ -30,8 +32,8 @@ const Header = () => {
                                 onMouseEnter={() => setNavHover(link.id)}
                                 onMouseLeave={() => setNavHover(0)}
                                 style={
-                                    navHover === link.id ? {
-                                        backgroundColor: `${link.color}`,
+                                    navHover === link.id ?
+                                    {backgroundColor: `${link.color}`,
                                         width: "fit-content",
                                         paddingRight: "10px",
                                     } : null}>
