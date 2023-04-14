@@ -14,7 +14,8 @@ const Projects = () => {
                     projects.map((project) => {
                         return (
                             <li key={project.id}>
-                                <img src={project.headerPhoto} alt={`Screenshot of "${project.name}" website on a MacBook & iPhone`} title={`Screenshot of "${project.name}" website on a MacBook & iPhone`} />
+                                <img src={project.headerPhoto}
+                                    alt={project.notTech ? project.imgDesc : `Screenshot of "${project.name}" website on a MacBook & iPhone`} />
                                 <div className="show-links">
                                     <div className="project-desc">
                                         <div className="title">
