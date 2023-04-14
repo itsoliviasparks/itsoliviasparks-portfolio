@@ -161,6 +161,8 @@ const projects = [
         links: [
             { name: "Learn More", link: "/tech-design-work", color: "blue" },
         ],
+        notTech: true,
+        imgDesc: "Nine mens winter jackets hung up in rainbow order",
         done: true
     }
 ];

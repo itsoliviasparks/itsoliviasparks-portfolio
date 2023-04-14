@@ -9,10 +9,7 @@ const Contact = () => {
     return (
         <section className="contact wrapper">
             <h2>
-                <span>
-                    Are you <em>solving user-focused problems?</em>
-                </span>
-                Let's connect if you're looking for an eager beaver to join your team!
+                Let's connect if you're looking for an <em>eager beaver</em> to join your team!
             </h2>
             <ul>
                 {
