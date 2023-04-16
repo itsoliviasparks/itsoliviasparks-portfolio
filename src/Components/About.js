@@ -25,7 +25,7 @@ const About = () => {
 
                 </p>
                 <p>
-                    My “there must be a better way” mindset also contributed to my 5+ year track record of solving user-focus problems in my past-life as a Technical Apparel Developer. You can read more about that <Link to="/tech-design-work">here</Link>.
+                    My “there must be a better way” mindset also contributed to my 5+ year track record of solving user-focus problems in my past-life as a Technical Apparel Developer. To learn more about what that job entailed head over to <Link to="/tech-design-work">What is a Technical Apparel Developer?</Link>.
                 </p>
                 <p>
                     Ultimately, maintainable & easy to understand code is always my goal. I love elegant & modular code blocks that provide a seamless user-experience.
