@@ -118,8 +118,8 @@ const projects = [
                 i: techStack[4].i,
             },
             {
-                name: techStack[6].name,
-                i: techStack[6].i,
+                name: techStack[7].name,
+                i: techStack[7].i,
             },
         ],
         links: [

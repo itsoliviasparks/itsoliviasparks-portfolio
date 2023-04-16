@@ -19,7 +19,6 @@ const TechStack = () => {
                                 <i className={skill.i}
                                     alt={skill.name}
                                     style={{ color: `${skill.color}` }}></i>
-                                <p className="sr-only">it's Olivia Sparks</p>
                                 {showLabel === skill.id ?
                                     <p className="label">
                                         {skill.name}
