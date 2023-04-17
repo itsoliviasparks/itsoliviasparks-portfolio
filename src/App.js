@@ -14,8 +14,6 @@ import Projects from "./Components/Projects";
 import TechDesignWork from "./Components/TechDesignWork";
 import TheCollabLab from "./Components/TheCollabLab";
 
-import ScrollToTop from "./Components/ScrollToTop";
-
 function App() {
   return (
     <>
