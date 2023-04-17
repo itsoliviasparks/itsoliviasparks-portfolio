@@ -4,7 +4,15 @@ ul.project-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    li { position: relative; }
+    li.projects {
+        position: relative;
+        width: 50%;
+        img {
+            width: calc( 100% - 40px );
+            height: auto;
+
+        }
+    }
 }
 
 

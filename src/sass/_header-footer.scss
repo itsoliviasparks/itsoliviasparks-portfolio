@@ -12,15 +12,16 @@ header {
 
 .name {
     position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .full-name {
         position: absolute;
-        top: 12.5%;
-        right: -14%;
-        left: -7%;
+        width: 110%;
         opacity: 0;
         color: $white;
         background-color: $black;
-        margin: 0;
         border: solid 2px $white;
         font-family: $header-font;
         font-size: 1.5rem;
