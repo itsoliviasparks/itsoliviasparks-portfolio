@@ -1,0 +1,219 @@
+@use "_variables.scss" as *;
+
+@media (max-width: 1470px) {
+    .hero-text {
+        :nth-child(1),
+        :nth-child(3) { font-size: 9rem; }
+        .bold {
+            :nth-child(1) { margin-bottom: 9rem; }
+            p { font-size: 13rem; }
+        }
+    }
+}
+
+@media (max-width: 1290px) {
+    .wrapper { width: 65%; }
+    h1 {
+        font-size: 7.5rem;
+        line-height: 5.5rem;
+    }
+    .hero-text {
+        :nth-child(1),
+        :nth-child(3) { font-size: 8rem; }
+        .bold {
+            :nth-child(1) { margin-bottom: 8rem; }
+            p { font-size: 12rem; }
+        }
+    }
+}
+
+@media (max-width: 1190px) {
+    .hero-text {
+        :nth-child(1) { margin: 6rem; }
+        :nth-child(3) { margin: 2.5rem; }
+        :nth-child(1),
+        :nth-child(3) { font-size: 7rem; }
+        .bold {
+            :nth-child(1) { margin-bottom: 8rem; }
+            p { font-size: 11rem; }
+        }
+    }
+    h3 { font-size: 2.2rem; }
+    ul.tech-stack li { width: 17%; }
+    .project-desc { margin: 0 20px; }
+}
+
+@media (max-width: 1090px) {
+    .hero-text {
+        :nth-child(1) { margin: 4.2rem; }
+        :nth-child(3) { margin: 2rem; }
+        :nth-child(1),
+        :nth-child(3) { font-size: 5rem; }
+        .bold {
+            :nth-child(1) { margin-bottom: 6rem; }
+            p { font-size: 9rem; }
+        }
+    }
+    h2 { font-size: 3.2rem; }
+    h3 { font-size: 2.5rem; }
+    p { font-size: 1.8rem;
+        line-height: 3rem;
+    }
+    .opening-page nav ul,
+    .the-collab-lab nav ul {
+        li { padding: 10px 15px;
+            a { font-size: 1.4rem; }
+        }
+    }
+    ul.project-list li.projects { width: 65%; }
+}
+
+@media (max-width: 940px) {
+    .inner.border-container .top { height: 145px; }
+    .outer.border-container .top { height: 142px; }
+    header {
+        z-index: 1000;
+        flex-direction: column;
+        margin: 20px 20px 0 20px;
+        align-items: center;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        li { margin: 2px; }
+    }
+    section,
+    section.opening-page {
+        padding-top: 145px;
+        padding-bottom: 30px;
+    }
+    .wrapper { width: 80%; }
+    .hero-text {
+        :nth-child(1),
+        :nth-child(3) { font-size: 5rem; }
+        .bold {
+            :nth-child(1) { margin-bottom: 4.5rem; }
+            p { font-size: 7rem; }
+        }
+    }
+    section.about img { height: 300px; }
+    .the-collab-lab .workflow { width: 100%; }
+    ul.tech-stack li { width: 27%; }
+    ul.project-list  li.projects { width: 75%; }
+    .opening-page nav li,
+    .the-collab-lab nav li{ min-width: 25%; }
+}
+
+@media (max-width: 730px) {
+    h2 { font-size: 3rem; }
+    h3 { font-size: 2rem; }
+    p { font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+    .hero-text {
+        :nth-child(1) { margin: 2.5rem; }
+        :nth-child(3) { margin: 1.5rem; }
+        :nth-child(1),
+        :nth-child(3) { font-size: 3rem; }
+        .bold {
+            :nth-child(1) { margin-bottom: 3.5rem; }
+            p { font-size: 6rem; }
+        }
+    }
+    .show-links li a {
+        font-size: 1.4rem;
+        padding: 10px 15px;
+    } 
+    footer {
+        flex-direction: column;
+        align-items: center;
+        p { margin: 0 }
+    }
+}
+
+@media (max-width: 630px) {
+    .hero-text {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 15px;
+        background-color: $white;
+        box-shadow: 0.5rem -0.5rem 0 $black,
+        -0.4rem 0.6rem 0 $pink,
+        0.8rem 0.4rem 0 $pea-green,
+        -0.6rem -0.3rem 0 $orange;
+        :nth-child(3) { margin: 2rem; }
+        :nth-child(1),
+        :nth-child(3) { color: $blue; }
+        .bold p {
+            color: $black;
+            font-family: $header-font;
+            text-shadow: none;
+        } 
+    }
+    ul.tech-stack li { width: 40%; }
+}
+
+@media (max-width: 540px) {
+    h2 { font-size: 2.5rem; }
+    .hero-text .bold {
+        :nth-child(1) { margin-bottom: 1.8rem; }
+        p { font-size: 4rem; }
+    }
+    ul.tech-stack li { width: 45%; }
+    .opening-page nav ul,
+    .the-collab-lab nav ul {
+        flex-direction: column;
+        li {
+            width: 60%;
+            margin: 5px auto;
+        }
+    }
+    section.about img {
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        float: none;
+        }
+    section.tech-design-work img {
+        width: 85%;
+        margin: 0 auto;
+        float: none;
+    }
+    ul.project-list  li.projects { width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .show-links {
+        .project-desc {
+            margin: 5px;
+            margin-top: 15px;
+            padding: 5px;
+        }
+    }
+    .show-links {
+        position: relative;
+        top: -20px;
+        right: 0;
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+        background-color: transparent;
+        opacity: 1;
+        .project-desc {
+            padding: 10px;
+            .title { flex-direction: column; }
+        }
+    } 
+    .project-tech { font-size: 1.8rem; }
+    .the-collab-lab .logo {
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+@media (max-width: 320px) {
+    h2 span { line-height: 3rem; } 
+    ul.tech-stack li { width: 65%; }
+}
