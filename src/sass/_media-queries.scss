@@ -138,6 +138,10 @@
             text-shadow: none;
         } 
     }
+    ul.tech-stack {
+        width: 100%;
+        li p { font-size: 1.4rem; }
+    }
 }
 
 @media (max-width: 540px) {
@@ -166,17 +170,10 @@
         margin: 0 auto;
         float: none;
     }
-    ul.tech-stack { width: 85%; }
+    ul.tech-stack li { width: 40%; }
 }
 
 @media (max-width: 500px) {
-    .show-links {
-        .project-desc {
-            margin: 5px;
-            margin-top: 15px;
-            padding: 5px;
-        }
-    }
     .show-links {
         position: relative;
         top: -20px;
@@ -187,6 +184,8 @@
         background-color: transparent;
         opacity: 1;
         .project-desc {
+            margin: 5px;
+            margin-top: 15px;
             padding: 10px;
             .title { flex-direction: column; }
         }
@@ -205,5 +204,5 @@
         .bold p { font-size: 3rem; }
     }
     h2 span { line-height: 3rem; } 
-    ul.tech-stack li { width: 65%; }
+    ul.tech-stack li p { font-size: 1.2rem; }
 }
