@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 const OpeningPage = () => {
     return (
         <section className="opening-page">
+            <div className="opener">
             <div className="hero-text">
                 <p>curious & methodical</p>
                 <div className="bold">
@@ -24,6 +25,7 @@ const OpeningPage = () => {
                     </li>
                 </ul>
             </nav>
+            </div>
         </section>
     )
 };

@@ -11,13 +11,13 @@ h1 {
     margin: 0;
     padding: 0 1.2rem;
     font-family: $pop-font;
-    font-size: 8rem;
+    font-size: 7.5rem;
     line-height: 6rem;
     text-shadow:
-        0.6rem -0.4rem 0 $black, 
-        -0.4rem 0.7rem 0 $pink,
-        1.2rem 0.5rem 0 $pea-green,
-        -1.2rem -0.2rem 0 $orange;
+        0.5rem -0.3rem 0 $black, 
+        -0.3rem 0.6rem 0 $pink,
+        0.8rem 0.4rem 0 $pea-green,
+        -0.8rem -0.1rem 0 $orange;
 }
 
 header a {text-decoration: none;}
@@ -25,7 +25,6 @@ header a {text-decoration: none;}
 h2 {
     font-family: $header-font;
     font-size: 4rem;
-    span { line-height: 8rem; }
 }
 
 h2 em,
@@ -33,7 +32,7 @@ h3 em { color: $pink; }
 
 h3 {
     font-family: $header-font;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
 }
 
 span { display: block; }
@@ -51,6 +50,6 @@ a {
 }
 
 footer p,
-footer a { font-size: 1.2rem; }
+footer a { font-size: 1.4rem; }
 
 section.error-404 { text-align: center; }
