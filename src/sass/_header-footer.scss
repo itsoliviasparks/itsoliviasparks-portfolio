@@ -59,16 +59,14 @@ header nav li {
     i {
         padding: 3px 10px;
         color: $white;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     &:focus { background-color: $pink; }
 }
 
 footer {
-    right: 0;
-    bottom: 0;
-    left: 0;
     display: flex;
     justify-content: space-between;
-    margin: 0 45px 25px 45px;
+    margin: 0 45px;
+    padding-bottom: 5px;
 }

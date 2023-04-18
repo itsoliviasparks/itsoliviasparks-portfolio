@@ -44,7 +44,7 @@ ul.project-list {
             text-decoration: none;
             border: solid 1px $white;
             border-radius: 2px;
-            padding: 15px 30px;
+            padding: 10px 25px;
             background-color: $black;
             transition: 0.3s;
     }
@@ -68,16 +68,19 @@ ul.project-list {
         align-items: center;
         margin-bottom: 15px;
         h3 { margin: 0 }
-        .in-dev{ margin-left: 5px; }
+        .in-dev{
+            margin-left: 5px;
+            font-size: 1.4rem;
+        }
     }
     p {
         margin: 0;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
 
 .project-tech {
     display: flex;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }

@@ -8,9 +8,9 @@ const About = () => {
         <>
             <section className="about wrapper">
                 <h2>
-                    <span>
-                        My name is Olivia Sparks.
-                    </span>
+                    My name is Olivia Sparks.
+                </h2>
+                <h2>
                     I love problem solving, and I'm annoyed when things aren't quite right. <em>I'm a developer.</em>
                 </h2>
                 <img src={aboutImg} className="right" alt="Head shot of Olivia Sparks. She is smiling and wearing pink & black tortoise shell glasses" title="Olivia Sparks" />
