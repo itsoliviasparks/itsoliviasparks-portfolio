@@ -1,0 +1,39 @@
+@use "_variables.scss" as *;
+
+section.tech-stack {
+    min-height: fit-content;
+    padding-top: 0;
+}
+
+ul.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    li {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 15%;
+        align-items: center;
+        margin: 7px;
+        padding: 10px;
+        p {
+            position: absolute;
+            right: 5px;
+            left: 5px;
+            opacity: 0;
+            color: $white;
+            background-color: $black;
+            margin: 0;
+            border: solid 1px $white;
+            font-family: $header-font;
+            font-size: 1.6rem;
+            text-align: center;
+            transition: 0.3s;
+            &:hover,
+            &:focus { opacity: 1; }
+        }
+    }
+    i { font-size: 5.5rem; }
+}

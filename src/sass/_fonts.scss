@@ -1,0 +1,55 @@
+@use "_variables.scss" as *;
+
+html {
+    color: $black;
+    font-family: $body-font;
+    font-size: 62.5%;
+}
+
+h1 {
+    color: $white;
+    margin: 0;
+    padding: 0 1.2rem;
+    font-family: $pop-font;
+    font-size: 7.5rem;
+    line-height: 6rem;
+    text-shadow:
+        0.5rem -0.3rem 0 $black, 
+        -0.3rem 0.6rem 0 $pink,
+        0.8rem 0.4rem 0 $pea-green,
+        -0.8rem -0.1rem 0 $orange;
+}
+
+header a {text-decoration: none;}
+
+h2 {
+    font-family: $header-font;
+    font-size: 4rem;
+}
+
+h2 em,
+h3 em { color: $pink; }
+
+h3 {
+    font-family: $header-font;
+    font-size: 2.5rem;
+}
+
+span { display: block; }
+
+p {
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+a {
+    color: $black;
+    transition: 0.3s;
+    &:hover,
+    &:focus { color: $pink; }
+}
+
+footer p,
+footer a { font-size: 1.4rem; }
+
+section.error-404 { text-align: center; }

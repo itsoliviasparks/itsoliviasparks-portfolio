@@ -1,0 +1,19 @@
+@use "_variables.scss" as *;
+
+section.contact li {
+    display: flex;
+    font-size: 5rem;
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        p {
+            font-size: 3rem;
+            margin: 0 15px;
+        }
+    }
+}

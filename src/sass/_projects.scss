@@ -1,0 +1,86 @@
+@use "_variables.scss" as *;
+
+ul.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li.projects {
+        position: relative;
+        width: 50%;
+        img {
+            width: calc( 100% - 40px );
+            height: auto;
+
+        }
+    }
+}
+
+
+.show-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $green-opacity;
+    opacity: 0;
+    transition: 0.3s;
+    &:hover,
+    &:focus { opacity: 1; }
+    li {
+        display: flex;
+        justify-content: center;
+        margin: 7px;
+    }
+    li a {
+            color: $white;
+            font-family: $header-font;
+            font-size: 1.7rem;
+            text-align: center;
+            text-transform: lowercase;
+            text-decoration: none;
+            border: solid 1px $white;
+            border-radius: 2px;
+            padding: 10px 25px;
+            background-color: $black;
+            transition: 0.3s;
+    }
+    li.pink:hover a,
+    li.pink:focus a { background-color: $pink; }
+    li.orange:hover a,
+    li.orange:focus a { background-color: $orange; }
+    li.blue:hover a,
+    li.blue:focus a { background-color: $blue; }
+}
+
+.project-desc {
+    margin: 0 30px;
+    border: solid 1px $black;
+    padding: 15px;
+    background-color: $white;
+    text-align: center;
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        h3 { margin: 0 }
+        .in-dev{
+            margin-left: 5px;
+            font-size: 1.4rem;
+        }
+    }
+    p {
+        margin: 0;
+        font-size: 1.6rem;
+    }
+}
+
+.project-tech {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
