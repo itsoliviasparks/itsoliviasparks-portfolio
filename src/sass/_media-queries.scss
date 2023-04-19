@@ -156,6 +156,11 @@
         :nth-child(1) { margin-bottom: 1.8rem; }
         p { font-size: 4rem; }
     }
+    header nav ul li {
+        font-size: 1.8rem;
+        margin: 5px;
+        margin-top: 0;
+    }
     ul.tech-stack li { width: 45%; }
     .opening-page nav ul,
     .the-collab-lab nav ul {
@@ -210,5 +215,9 @@
         .bold p { font-size: 3rem; }
     }
     h2 span { line-height: 3rem; } 
+    header nav ul li {
+        font-size: 1.2rem;
+        i { padding: 3px; }
+    }
     ul.tech-stack li p { font-size: 1.2rem; }
 }
