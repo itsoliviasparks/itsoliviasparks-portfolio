@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import tclLogo from "../assets/photos/the-collab-lab/53383537.png";
 import workflowImg from "../assets/photos/the-collab-lab/111340762-27dbbc00-8636-11eb-92a2-04a31916f9e5.png";
+import externalLinks from "../assets/externalLinks";
 
 const TheCollabLab = () => {
     return (
@@ -36,10 +37,10 @@ const TheCollabLab = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/the-collab-lab-repo">repo</Link>
+                        <Link to={externalLinks.collabLabRepo}>repo</Link>
                     </li>
                     <li>
-                        <Link to="/the-collab-lab">live site</Link>
+                        <Link to={externalLinks.collabLab}>live site</Link>
                     </li>
                 </ul>
             </nav>
