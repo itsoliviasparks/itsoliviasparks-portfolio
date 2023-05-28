@@ -1,7 +1,7 @@
 import externalLinks from "../assets/externalLinks";
 import techStack from "../assets/techStack";
 
-import collabLab from "../assets/photos/projects/the-collab-lab.jpg";
+import collabLab from "../assets/photos/projects/predict-a-buy.jpg";
 import creative from "../assets/photos/projects/creative-pdf-conversion.jpg";
 import goVegan from "../assets/photos/projects/go-vegan.jpg";
 import meditationMinute from "../assets/photos/projects/meditation-minute.jpg";
@@ -13,7 +13,7 @@ const projects = [
         id: 1,
         headerPhoto: touchGrass,
         name: "Touch Grass",
-        desc: "A U.S. National Park Search & Plan Tool",
+        desc: "A U.S. National Park Search & Plan Tool.",
         tech: [
             {
                 name: techStack[0].name,
@@ -25,12 +25,12 @@ const projects = [
                 i: techStack[1].i,
             },
             {
-                name: techStack[4].name,
-                i: techStack[4].i,
+                name: techStack[5].name,
+                i: techStack[5].i,
             },
             {
-                name: techStack[6].name,
-                i: techStack[6].i,
+                name: techStack[7].name,
+                i: techStack[7].i,
             },
         ],
         links: [
@@ -42,8 +42,8 @@ const projects = [
     {
         id: 2,
         headerPhoto: collabLab,
-        name: "The Collab Lab",
-        desc: "I am collaborating with three other early-career devs to build a Smart Shopping List.",
+        name: "PREDICT-A-BUY",
+        desc: "This app makes shopping a journey through time by anticipating your needs while guiding you through the aisles!",
         tech: [
             {
                 name: techStack[0].name,
@@ -55,20 +55,20 @@ const projects = [
                 i: techStack[1].i,
             },
             {
-                name: techStack[12].name,
-                i: techStack[12].i,
+                name: techStack[14].name,
+                i: techStack[14].i,
             },
             {
-                name: techStack[11].name,
-                i: techStack[11].i,
+                name: techStack[13].name,
+                i: techStack[13].i,
             },
         ],
         links: [
-            { name: "Learn More", link: "/the-collab-lab-info", color: "blue" },
-            { name: "Repo", link: externalLinks.collabLabRepo, color: "pink" },
-            { name: "Live Site", link: externalLinks.collabLab, color: "orange" }
+            { name: "Project Info & Repo", link: externalLinks.collabLabRepo, color: "pink" },
+            { name: "Live Site", link: externalLinks.collabLab, color: "orange" },
+            { name: "The Collab Lab Info", link: "/the-collab-lab-info", color: "blue" }
         ],
-        done: false
+        done: true
     },
     {
         id: 3,
@@ -77,20 +77,20 @@ const projects = [
         desc: "Never meditated before? Don't worry! All the heavy meditation lifting is done for you with this app.",
         tech: [
             {
-                name: techStack[12].name,
-                i: techStack[12].i,
+                name: techStack[13].name,
+                i: techStack[13].i,
             },
             {
-                name: techStack[3].name,
-                i: techStack[3].i,
+                name: techStack[2].name,
+                i: techStack[2].i,
             },
             {
-                name: techStack[4].name,
-                i: techStack[4].i,
+                name: techStack[5].name,
+                i: techStack[5].i,
             },
             {
-                name: techStack[6].name,
-                i: techStack[6].i,
+                name: techStack[7].name,
+                i: techStack[7].i,
             },
         ],
         links: [
@@ -106,20 +106,20 @@ const projects = [
         desc: "This guilt-inducing app encourages the user to go vegan by sharing animal facts, photos, and vegan recipes.",
         tech: [
             {
-                name: techStack[2].name,
-                i: techStack[2].i,
-            },
-            {
-                name: techStack[3].name,
-                i: techStack[3].i,
-            },
-            {
                 name: techStack[4].name,
                 i: techStack[4].i,
             },
             {
-                name: techStack[7].name,
-                i: techStack[7].i,
+                name: techStack[2].name,
+                i: techStack[2].i,
+            },
+            {
+                name: techStack[5].name,
+                i: techStack[5].i,
+            },
+            {
+                name: techStack[8].name,
+                i: techStack[8].i,
             },
         ],
         links: [
@@ -135,16 +135,16 @@ const projects = [
         desc: "Creative was an exercise in taking a given design deck and translating it into HTML & CSS using Sass.",
         tech: [
             {
-                name: techStack[5].name,
-                i: techStack[5].i,
-            },
-            {
                 name: techStack[6].name,
                 i: techStack[6].i,
             },
             {
-                name: techStack[8].name,
-                i: techStack[8].i,
+                name: techStack[7].name,
+                i: techStack[7].i,
+            },
+            {
+                name: techStack[9].name,
+                i: techStack[9].i,
             },
         ],
         links: [

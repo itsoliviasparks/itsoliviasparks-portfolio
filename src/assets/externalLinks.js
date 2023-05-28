@@ -12,7 +12,7 @@ const externalLinks = {
     meditationMinuteRepo: "https://github.com/itsoliviasparks/meditation-minute",
 
     collabLab: "https://tcl-61-smart-shopping-list.web.app",
-    collabLabRepo: "https://github.com/the-collab-lab/tcl-61-smart-shopping-list",
+    collabLabRepo: "https://github.com/itsoliviasparks/predict-a-buy",
 
     touchGrass: "https://itsoliviasparks-touch-grass.netlify.app",
     touchGrassRepo: "https://github.com/itsoliviasparks/touch-grass",
