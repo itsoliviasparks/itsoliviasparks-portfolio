@@ -47,13 +47,13 @@ const OpeningPage = () => {
                     </g>
 
                     <g ref={firstRef}>
-                        <text transform="translate(72.96 60.34)" className=" first black">curious &</text>
-                        <text transform="translate(34.65 122.34)" className=" first black">methodical</text>
+                        <text transform="translate(82.96 60.34)" className=" first black">curious &</text>
+                        <text transform="translate(43.65 122.34)" className=" first black">methodical</text>
                     </g>
                     <g ref={lastRef}>
-                        <text transform="translate(70.15 309.34)" className="last black">designer,</text>
-                        <text transform="translate(76.48 367.5)" className="last black">& overall</text>
-                        <text transform="translate(70.54 424.5)" className="last black">“keener”</text>
+                        <text transform="translate(90.15 309.34)" className="last black">designer,</text>
+                        <text transform="translate(96.48 367.5)" className="last black">& overall</text>
+                        <text transform="translate(90.54 424.5)" className="last black">“keener”</text>
                     </g>
                 </svg>
                 :
