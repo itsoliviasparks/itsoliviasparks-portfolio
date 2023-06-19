@@ -13,7 +13,6 @@ const OpeningPage = () => {
 
     useEffect(() => {
         window.addEventListener("resize", () => setWidth(window.innerWidth))
-        console.log(width)
     }, [width])
 
     useEffect(() => {

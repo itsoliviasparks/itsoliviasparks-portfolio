@@ -73,6 +73,7 @@
     }
     main {
         min-height: calc( 100vh - 240px );
+        min-height: calc( 100svh - 240px );
         margin-top: 155px;
     }
     section {  padding: 35px 0; }
