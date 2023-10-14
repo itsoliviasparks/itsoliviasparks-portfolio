@@ -8,6 +8,10 @@ import meditationMinute from "../assets/photos/projects/meditation-minute.jpg";
 import techDesignWork from "../assets/photos/hollister/261375916_4505634319532859_5557319768276982720_n.jpg";
 import touchGrass from "../assets/photos/projects/touch-grass.jpg";
 
+const tech = x => techStack.filter(stack => {
+    return stack.name === x;
+});
+
 const projects = [
     {
         id: 1,
@@ -16,21 +20,21 @@ const projects = [
         desc: "A U.S. National Park Search & Plan Tool.",
         tech: [
             {
-                name: techStack[0].name,
-                i: techStack[0].i,
+                name: tech("React")[0].name,
+                i: tech("React")[0].i,
 
             },
             {
-                name: techStack[1].name,
-                i: techStack[1].i,
+                name: tech("Firebase")[0].name,
+                i: tech("Firebase")[0].i,
             },
             {
-                name: techStack[5].name,
-                i: techStack[5].i,
+                name: tech("Restful APIs")[0].name,
+                i: tech("Restful APIs")[0].i,
             },
             {
-                name: techStack[7].name,
-                i: techStack[7].i,
+                name: tech("SASS")[0].name,
+                i: tech("SASS")[0].i,
             },
         ],
         links: [
@@ -46,21 +50,21 @@ const projects = [
         desc: "This app makes shopping a journey through time by anticipating your needs while guiding you through the aisles!",
         tech: [
             {
-                name: techStack[0].name,
-                i: techStack[0].i,
+                name: tech("React")[0].name,
+                i: tech("React")[0].i,
 
             },
             {
-                name: techStack[1].name,
-                i: techStack[1].i,
+                name: tech("Firebase")[0].name,
+                i: tech("Firebase")[0].i,
             },
             {
-                name: techStack[14].name,
-                i: techStack[14].i,
+                name: tech("Figma")[0].name,
+                i: tech("Figma")[0].i,
             },
             {
-                name: techStack[13].name,
-                i: techStack[13].i,
+                name: tech("Pair Programming")[0].name,
+                i: tech("Pair Programming")[0].i,
             },
         ],
         links: [
@@ -77,20 +81,20 @@ const projects = [
         desc: "Never meditated before? Don't worry! All the heavy meditation lifting is done for you with this app.",
         tech: [
             {
-                name: techStack[13].name,
-                i: techStack[13].i,
+                name: tech("Pair Programming")[0].name,
+                i: tech("Pair Programming")[0].i,
             },
             {
-                name: techStack[2].name,
-                i: techStack[2].i,
+                name: tech("JavaScript")[0].name,
+                i: tech("JavaScript")[0].i,
             },
             {
-                name: techStack[5].name,
-                i: techStack[5].i,
+                name: tech("Restful APIs")[0].name,
+                i: tech("Restful APIs")[0].i,
             },
             {
-                name: techStack[7].name,
-                i: techStack[7].i,
+                name: tech("SASS")[0].name,
+                i: tech("SASS")[0].i,
             },
         ],
         links: [
@@ -106,20 +110,20 @@ const projects = [
         desc: "This guilt-inducing app encourages the user to go vegan by sharing animal facts, photos, and vegan recipes.",
         tech: [
             {
-                name: techStack[4].name,
-                i: techStack[4].i,
+                name: tech("jQuery")[0].name,
+                i: tech("jQuery")[0].i,
             },
             {
-                name: techStack[2].name,
-                i: techStack[2].i,
+                name: tech("JavaScript")[0].name,
+                i: tech("JavaScript")[0].i,
             },
             {
-                name: techStack[5].name,
-                i: techStack[5].i,
+                name: tech("Restful APIs")[0].name,
+                i: tech("Restful APIs")[0].i,
             },
             {
-                name: techStack[8].name,
-                i: techStack[8].i,
+                name: tech("CSS")[0].name,
+                i: tech("CSS")[0].i,
             },
         ],
         links: [
@@ -135,16 +139,16 @@ const projects = [
         desc: "Creative was an exercise in taking a given design deck and translating it into HTML & CSS using Sass.",
         tech: [
             {
-                name: techStack[6].name,
-                i: techStack[6].i,
+                name: tech("Responsive Design")[0].name,
+                i: tech("Responsive Design")[0].i,
             },
             {
-                name: techStack[7].name,
-                i: techStack[7].i,
+                name: tech("SASS")[0].name,
+                i: tech("SASS")[0].i,
             },
             {
-                name: techStack[9].name,
-                i: techStack[9].i,
+                name: tech("HTML")[0].name,
+                i: tech("HTML")[0].i,
             },
         ],
         links: [
