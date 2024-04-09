@@ -34,9 +34,9 @@ const TheCollabLab = () => {
             <p>
                 Collaborating with other developers was also a great learning experience. I worked with self-taught developers, those from different bootcamps, and professionals in the field. This has helped me expand my knowledge of the various coding techniques and approaches.
             </p>
-            {/* <p className='links'>
+            <p className='links'>
                 <Link to={externalLinks.collabLab}>live site</Link> | <Link to={externalLinks.collabLabRepo}>repo</Link>
-            </p> */}
+            </p>
         </main>
     );
 };
