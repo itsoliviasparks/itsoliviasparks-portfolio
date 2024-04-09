@@ -1,26 +1,22 @@
-@use "_variables.scss" as *;
+@use '_variables.scss' as *;
 
-ul,
-li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+html { background-color: $bg; }
 
-main {
-    min-height: calc( 100vh - 100px );
-    min-height: calc( 100svh - 100px );
-    margin-top: 35px;
-}
-
-section {
-    min-height: 100%;
-    padding: 12vh 0;
-    padding: 12svh 0;
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-height: 100svh;
 }
 
 .wrapper {
-    width: 70%;
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
+    width: 70%;
 }
+
+main { padding-top: 2rem; }
+
+ul { list-style-type: square; }
+li { padding: 0.5rem 0; }

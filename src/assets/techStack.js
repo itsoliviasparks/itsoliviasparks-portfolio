@@ -1,110 +1,87 @@
-import colorVariables from "../assets/colorVariables";
-
 const techStack = [
     {
-        name: "React",
-        i: "devicon-react-original",
-        color: colorVariables.blue,
+        name: 'React',
+        i: 'devicon-react-original'
     },
     {
-        name: "Firebase",
-        i: "devicon-firebase-plain",
-        color: colorVariables.orange,
+        name: 'Firebase',
+        i: 'devicon-firebase-plain'
     },
     {
-        name: "JavaScript",
-        i: "devicon-javascript-plain",
-        color: colorVariables.peaGreen,
+        name: 'JavaScript',
+        i: 'devicon-javascript-plain'
     },
     {
-        name: "GreenSock",
-        i: "fa-solid fa-socks",
-        color: colorVariables.green,
+        name: 'GSAP',
+        i: 'fa-solid fa-fan'
     },
     {
-        name: "jQuery",
-        i: "devicon-jquery-plain",
-        color: colorVariables.blue,
+        name: 'jQuery',
+        i: 'devicon-jquery-plain'
     },
     {
-        name: "Restful APIs",
-        i: "fa-solid fa-right-left",
-        color: colorVariables.green,
+        name: 'SASS',
+        i: 'devicon-sass-original'
     },
     {
-        name: "Responsive Design",
-        i: "fa-solid fa-mobile-screen",
-        color: colorVariables.peaGreen,
+        name: 'CSS',
+        i: 'devicon-css3-plain'
     },
     {
-        name: "SASS",
-        i: "devicon-sass-original",
-        color: colorVariables.pink,
+        name: 'HTML',
+        i: 'devicon-html5-plain'
     },
     {
-        name: "CSS",
-        i: "devicon-css3-plain",
-        color: colorVariables.blue,
+        name: 'Restful APIs',
+        i: 'fa-solid fa-right-left'
     },
     {
-        name: "HTML",
-        i: "devicon-html5-plain",
-        color: colorVariables.orange,
+        name: 'Git',
+        i: 'devicon-git-plain'
     },
     {
-        name: "Debugging",
-        i: "fa-solid fa-bug-slash",
-        color: colorVariables.green,
+        name: 'GitHub',
+        i: 'devicon-github-original'
     },
     {
-        name: "Git",
-        i: "devicon-git-plain",
-        color: colorVariables.pink,
+        name: 'Bitbucket',
+        i: 'devicon-bitbucket-original'
     },
     {
-        name: "GitHub",
-        i: "devicon-github-original",
-        color: colorVariables.green,
+        name: 'Google Studio',
+        i: 'devicon-google-plain'
     },
     {
-        name: "Bitbucket",
-        i: "devicon-bitbucket-original",
-        color: colorVariables.blue,
+        name: 'Flashtalking',
+        i: 'fa-solid fa-quote-left'
     },
     {
-        name: "Google Studio",
-        i: "devicon-google-plain",
-        color: colorVariables.pink,
+        name: 'Illustrator',
+        i: 'devicon-illustrator-line'
     },
     {
-        name: "Pair Programming",
-        i: "fa-solid fa-people-arrows",
-        color: colorVariables.peaGreen,
+        name: 'Photoshop',
+        i: 'devicon-photoshop-plain'
     },
     {
-        name: "Figma",
-        i: "devicon-figma-plain",
-        color: colorVariables.pink,
+        name: 'Figma',
+        i: 'devicon-figma-plain'
     },
     {
-        name: "Illustrator",
-        i: "devicon-illustrator-line",
-        color: colorVariables.orange,
+        name: 'Blender',
+        i: 'devicon-blender-original'
     },
     {
-        name: "Photoshop",
-        i: "devicon-photoshop-line",
-        color: colorVariables.blue,
+        name: 'Jira',
+        i: 'devicon-jira-plain-wordmark'
     },
     {
-        name: "Blender",
-        i: "devicon-blender-original",
-        color: colorVariables.orange,
+        name: 'Pair Programming',
+        i: 'fa-solid fa-people-arrows'
     },
     {
-        name: "Project Mgmt",
-        i: "fa-solid fa-list-check",
-        color: colorVariables.green,
+        name: 'Project Management',
+        i: 'fa-solid fa-list-check'
     },
 ];
 
