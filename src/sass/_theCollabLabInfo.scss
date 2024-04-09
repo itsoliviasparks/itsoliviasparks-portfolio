@@ -1,0 +1,19 @@
+#the-collab-lab img {
+    display: block;
+    height: auto;
+    object-fit: cover;
+    &.logo {
+        float: right;
+        margin: 5px 20px;
+        width: 200px;
+    }
+    &.workflow {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+#the-collab-lab .links {
+    margin: 0 auto;
+    width: fit-content;
+}

@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import techStack from "../assets/techStack";
+import techStack from '../assets/techStack';
 
-const TechStack = () => {
+const Tools = () => {
     const [showLabel, setShowLabel] = useState(0);
 
     return (
-        <section className="tech-stack wrapper">
-            <h2>Tech Stack & Skills:</h2>
-            <ul className="tech-stack">
+        <section id='tools'>
+            <h2>
+                Tools I've worked with:
+            </h2>
+            <ul className='tools'>
                 {
                     techStack.map((skill) => {
                         return (
@@ -17,10 +19,9 @@ const TechStack = () => {
                                 onMouseEnter={() => setShowLabel(skill.id)}
                                 onMouseLeave={() => setShowLabel(0)}>
                                 <i className={skill.i}
-                                    alt={skill.name}
-                                    style={{ color: `${skill.color}` }}></i>
+                                    alt={skill.name}></i>
                                 {showLabel === skill.id ?
-                                    <p className="label">
+                                    <p className='label'>
                                         {skill.name}
                                     </p> : null}
                             </li>
@@ -32,4 +33,4 @@ const TechStack = () => {
     );
 };
 
-export default TechStack;
+export default Tools;

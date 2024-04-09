@@ -1,12 +1,5 @@
-import externalLinks from "../assets/externalLinks";
-import techStack from "../assets/techStack";
-
-import collabLab from "../assets/photos/projects/predict-a-buy.jpg";
-import creative from "../assets/photos/projects/creative-pdf-conversion.jpg";
-import goVegan from "../assets/photos/projects/go-vegan.jpg";
-import meditationMinute from "../assets/photos/projects/meditation-minute.jpg";
-import techDesignWork from "../assets/photos/hollister/261375916_4505634319532859_5557319768276982720_n.jpg";
-import touchGrass from "../assets/photos/projects/touch-grass.jpg";
+import externalLinks from '../assets/externalLinks';
+import techStack from '../assets/techStack';
 
 const tech = x => techStack.filter(stack => {
     return stack.name === x;
@@ -14,159 +7,76 @@ const tech = x => techStack.filter(stack => {
 
 const projects = [
     {
-        id: 1,
-        headerPhoto: touchGrass,
-        name: "Touch Grass",
-        desc: "A U.S. National Park Search & Plan Tool.",
+        name: 'Touch Grass',
+        desc: [
+            'A U.S. National Park Search & Plan Tool',
+            'This app allows users to plan a trip outdoors by filtering through National Parks by location & outdoor activity',
+            'Persistent data is utilized in the Field Notes section, encouraging users to add activities they are interested in to a to-do list. They can then check off activities as they have experienced them'
+        ],
         tech: [
             {
-                name: tech("React")[0].name,
-                i: tech("React")[0].i,
+                name: tech('React')[0].name,
+                i: tech('React')[0].i,
 
             },
             {
-                name: tech("Firebase")[0].name,
-                i: tech("Firebase")[0].i,
+                name: tech('Firebase')[0].name,
+                i: tech('Firebase')[0].i,
             },
             {
-                name: tech("Restful APIs")[0].name,
-                i: tech("Restful APIs")[0].i,
+                name: tech('Restful APIs')[0].name,
+                i: tech('Restful APIs')[0].i,
             },
             {
-                name: tech("SASS")[0].name,
-                i: tech("SASS")[0].i,
+                name: tech('SASS')[0].name,
+                i: tech('SASS')[0].i,
             },
         ],
         links: [
-            { name: "Project Info & Repo", link: externalLinks.touchGrassRepo, color: "pink" },
-            { name: "Live Site", link: externalLinks.touchGrass, color: "orange" }
+            { name: 'project info & repo', link: externalLinks.touchGrassRepo },
+            { name: 'live site', link: externalLinks.touchGrass }
         ],
         done: true
     },
     {
-        id: 2,
-        headerPhoto: collabLab,
-        name: "PREDICT-A-BUY",
-        desc: "This app makes shopping a journey through time by anticipating your needs while guiding you through the aisles!",
+        name: 'PREDICT-A-BUY',
+        desc: [
+            'Built in collaboration with a bunch of other early-career developers through The Collab Lab, this app makes shopping a journey through time by anticipating your needs while guiding you through the aisles!',
+            'PREDICT-A-BUY allows the user start a unique shopping list where they can add/delete items & can check/uncheck items as purchased',
+            'Overtime, the app learns the user’s shopping habits, adjusting each item’s purchase frequency, letting the user know when next to buy each item',
+        ],
         tech: [
             {
-                name: tech("React")[0].name,
-                i: tech("React")[0].i,
+                name: tech('GitHub')[0].name,
+                i: tech('GitHub')[0].i,
+            },
+            {
+                name: tech('React')[0].name,
+                i: tech('React')[0].i,
 
             },
             {
-                name: tech("Firebase")[0].name,
-                i: tech("Firebase")[0].i,
+                name: tech('Firebase')[0].name,
+                i: tech('Firebase')[0].i,
             },
             {
-                name: tech("Figma")[0].name,
-                i: tech("Figma")[0].i,
+                name: tech('SASS')[0].name,
+                i: tech('SASS')[0].i,
             },
             {
-                name: tech("Pair Programming")[0].name,
-                i: tech("Pair Programming")[0].i,
+                name: tech('Pair Programming')[0].name,
+                i: tech('Pair Programming')[0].i,
+            },
+            {
+                name: tech('Figma')[0].name,
+                i: tech('Figma')[0].i,
             },
         ],
         links: [
-            { name: "Project Info & Repo", link: externalLinks.collabLabRepo, color: "pink" },
-            { name: "Live Site", link: externalLinks.collabLab, color: "orange" },
-            { name: "The Collab Lab Info", link: "/the-collab-lab-info", color: "blue" }
+            { name: 'project info & repo', link: externalLinks.collabLabRepo  },
+            { name: 'live site', link: externalLinks.collabLab  },
+            { name: 'info on The Collab Lab', link: '/the-collab-lab-info' }
         ],
-        done: true
-    },
-    {
-        id: 3,
-        headerPhoto: meditationMinute,
-        name: "Meditation Minute",
-        desc: "Never meditated before? Don't worry! All the heavy meditation lifting is done for you with this app.",
-        tech: [
-            {
-                name: tech("Pair Programming")[0].name,
-                i: tech("Pair Programming")[0].i,
-            },
-            {
-                name: tech("JavaScript")[0].name,
-                i: tech("JavaScript")[0].i,
-            },
-            {
-                name: tech("Restful APIs")[0].name,
-                i: tech("Restful APIs")[0].i,
-            },
-            {
-                name: tech("SASS")[0].name,
-                i: tech("SASS")[0].i,
-            },
-        ],
-        links: [
-            { name: "Project Info & Repo", link: externalLinks.meditationMinuteRepo, color: "pink" },
-            { name: "Live Site", link: externalLinks.meditationMinute, color: "orange" }
-        ],
-        done: true
-    },
-    {
-        id: 4,
-        headerPhoto: goVegan,
-        name: "Go Vegan",
-        desc: "This guilt-inducing app encourages the user to go vegan by sharing animal facts, photos, and vegan recipes.",
-        tech: [
-            {
-                name: tech("jQuery")[0].name,
-                i: tech("jQuery")[0].i,
-            },
-            {
-                name: tech("JavaScript")[0].name,
-                i: tech("JavaScript")[0].i,
-            },
-            {
-                name: tech("Restful APIs")[0].name,
-                i: tech("Restful APIs")[0].i,
-            },
-            {
-                name: tech("CSS")[0].name,
-                i: tech("CSS")[0].i,
-            },
-        ],
-        links: [
-            { name: "Project Info & Repo", link: externalLinks.goVeganRepo, color: "pink" },
-            { name: "Live Site", link: externalLinks.goVegan, color: "orange" }
-        ],
-        done: true
-    },
-    {
-        id: 5,
-        headerPhoto: creative,
-        name: "Creative PDF Conversion",
-        desc: "Creative was an exercise in taking a given design deck and translating it into HTML & CSS using Sass.",
-        tech: [
-            {
-                name: tech("Responsive Design")[0].name,
-                i: tech("Responsive Design")[0].i,
-            },
-            {
-                name: tech("SASS")[0].name,
-                i: tech("SASS")[0].i,
-            },
-            {
-                name: tech("HTML")[0].name,
-                i: tech("HTML")[0].i,
-            },
-        ],
-        links: [
-            { name: "Project Info & Repo", link: externalLinks.creativeRepo, color: "pink" },
-            { name: "Live Site", link: externalLinks.creative, color: "orange" }
-        ],
-        done: true
-    },
-    {
-        id: 6,
-        headerPhoto: techDesignWork,
-        name: "What is a Technical Apparel Developer?",
-        desc: "Before I began my coding career, I spent half a decade working in the fashion industry as a Technical Apparel Developer.",
-        links: [
-            { name: "Learn More", link: "/tech-design-work", color: "blue" },
-        ],
-        notTech: true,
-        imgDesc: "Nine mens winter jackets hung up in rainbow order",
         done: true
     }
 ];

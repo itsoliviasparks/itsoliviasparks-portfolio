@@ -1,55 +1,56 @@
-@use "_variables.scss" as *;
+@use '_variables.scss' as *;
 
 html {
-    color: $black;
+    color: $body;
     font-family: $body-font;
     font-size: 62.5%;
 }
 
-h1 {
-    color: $white;
-    margin: 0;
-    padding: 0 1.2rem;
-    font-family: $pop-font;
-    font-size: 7.5rem;
-    line-height: 6rem;
-    text-shadow:
-        0.5rem -0.3rem 0 $black, 
-        -0.3rem 0.6rem 0 $pink,
-        0.8rem 0.4rem 0 $pea-green,
-        -0.8rem -0.1rem 0 $orange;
-}
+h1, h2, h3 { font-family: $header-font; }
 
-header a {text-decoration: none;}
+h1 a {
+    background-color: $black;
+    border: 2px solid $white;
+    color: $white;
+    display: block;
+    font-size: 4rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    padding-top: 0.5rem;
+    text-decoration: none;
+    width: fit-content;
+}
 
 h2 {
-    font-family: $header-font;
-    font-size: 4rem;
+    color: $h2;
+    font-size: 2.7rem;
 }
-
-h2 em,
-h3 em { color: $pink; }
 
 h3 {
-    font-family: $header-font;
-    font-size: 2.5rem;
+    color: $h3;
+    font-size: 2.2rem;
+    margin: 0;
 }
 
-span { display: block; }
-
-p {
-    font-size: 2rem;
-    line-height: 3.2rem;
+p, li {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
 }
 
 a {
-    color: $black;
+    color: $link;
     transition: 0.3s;
     &:hover,
-    &:focus { color: $pink; }
+    &:focus {
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
 footer p,
-footer a { font-size: 1.4rem; }
+footer a {
+    font-size: 1.4rem;
+    margin: 0;
+}
 
-section.error-404 { text-align: center; }
+#error-404 { text-align: center; }

@@ -1,56 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import projects from "../assets/projects";
+import projects from '../assets/projects';
 
 const Projects = () => {
     return (
-        <section className="projects wrapper">
-            <h2>I'd love to <em>show-off</em> a little bit:</h2>
-            <p>
-                Click through each project to learn more about the problems solved, what I learned during development, and to access the live site & repository.
-            </p>
-            <ul className="project-list">
+        <section id='projects'>
+            <h2>
+                Stuff I've worked on:
+            </h2>
+            <ul>
                 {
                     projects.map((project) => {
                         return (
-                            <li className="projects"
-                                key={project.id}>
-                                <img src={project.headerPhoto}
-                                    alt={project.notTech ? project.imgDesc : `Screenshot of "${project.name}" website on a MacBook & iPhone`} />
-                                <div className="show-links">
-                                    <div className="project-desc">
-                                        <div className="title">
-                                            <h3>{project.name}</h3>
-                                            {
-                                                project.done ? null : <p className="in-dev">In Development</p>
-                                            }
-                                        </div>
-                                        <p>{project.desc}</p>
-                                        {
-                                            project.tech ?
-                                                <ul className="project-tech">
-                                                    {
-                                                        project.tech.map((skill) => {
-                                                            return (
-                                                                <li key={project.name + skill.name}>
-                                                                    <i className={skill.i}
-                                                                        alt={skill.name}
-                                                                        title={skill.name}
-                                                                    ></i>
-                                                                </li>
-                                                            )
-                                                        })
-                                                    }
-                                                </ul>
-                                                : null
-                                        }
-                                    </div>
+                            <li className='project' key={project.name}>
+                                <div className="project-header">
+                                    <h3>{project.name}</h3>
+                                    { project.done ? null : <p className="in-dev"> - In Development</p> }
                                     <ul className="project-links">
                                         {
                                             project.links.map((link) => {
                                                 return (
-                                                    <li key={link.link}
-                                                        className={link.color}>
+                                                    <li key={link.link}>
                                                         <Link to={link.link}>{link.name}</Link>
                                                     </li>
                                                 )
@@ -58,11 +28,39 @@ const Projects = () => {
                                         }
                                     </ul>
                                 </div>
+                                {
+                                    project.tech ?
+                                        <ul className="project-tech">
+                                            {
+                                                project.tech.map((skill) => {
+                                                    return (
+                                                        <li key={project.name + skill.name}>
+                                                            <i className={skill.i}
+                                                                alt={skill.name}
+                                                                title={skill.name}
+                                                            ></i>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                        : null
+                                }
+                                <ul className="project-desc">
+                                        {
+                                            project.desc.map((li) => {
+                                                return (
+                                                    <li key={li}>
+                                                        {li}
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
                             </li>
                         )
                     })
                 }
-
             </ul>
         </section>
     );

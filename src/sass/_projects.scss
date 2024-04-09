@@ -1,86 +1,25 @@
-@use "_variables.scss" as *;
-
-ul.project-list {
+.project-header {
+    align-items: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    li.projects {
-        position: relative;
-        width: 50%;
-        img {
-            width: calc( 100% - 40px );
-            height: auto;
-
-        }
-    }
+    p.in-dev { font-size: 1.4rem; }
 }
 
-
-.show-links {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
+ul.project-tech {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: $green-opacity;
-    opacity: 0;
-    transition: 0.3s;
-    &:hover,
-    &:focus { opacity: 1; }
+    list-style-type: none;
+    padding: 0;
+    li {  margin: 0px 3px; }
+}
+
+ul.project-links {
+    list-style-type: "|";
+    > li:first-child  { list-style-type: none; }
+    display: flex;
+    padding-left: 10px;
     li {
-        display: flex;
-        justify-content: center;
-        margin: 7px;
-    }
-    li a {
-            color: $white;
-            font-family: $header-font;
-            font-size: 1.7rem;
-            text-align: center;
-            text-transform: lowercase;
-            text-decoration: none;
-            border: solid 1px $white;
-            border-radius: 2px;
-            padding: 10px 25px;
-            background-color: $black;
-            transition: 0.3s;
-    }
-    li.pink:hover a,
-    li.pink:focus a { background-color: $pink; }
-    li.orange:hover a,
-    li.orange:focus a { background-color: $orange; }
-    li.blue:hover a,
-    li.blue:focus a { background-color: $blue; }
-}
-
-.project-desc {
-    margin: 0 30px;
-    border: solid 1px $black;
-    padding: 15px;
-    background-color: $white;
-    text-align: center;
-    .title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-        h3 { margin: 0 }
-        .in-dev{
-            margin-left: 5px;
-            font-size: 1.4rem;
-        }
-    }
-    p {
-        margin: 0;
-        font-size: 1.6rem;
+        margin-right: 5px;
+        padding: 0 10px;
     }
 }
 
-.project-tech {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-}
+ul.project-desc { list-style-type: disc; }

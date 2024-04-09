@@ -1,8 +1,8 @@
 {
   "short_name": "Olivia Sparks",
-  "name": "Olivia Sparks: Software Developer",
+  "name": "Olivia Sparks: Curious & methodical developer, designer, and overall 'keener', dedicated to lifelong learning & problem solving",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "rgba(171, 165, 21, 1.00)",
-  "background_color": "rgba(243, 241, 235, 1.00)"
+  "theme_color": "#89823d",
+  "background_color": "#dee481"
 }

@@ -1,219 +1,55 @@
-@use "_variables.scss" as *;
+@use '_variables.scss' as *;
 
-@media (max-width: 1208px) {
-    .hero-text {
-        :nth-child(1) { margin: 6rem; }
-        :nth-child(3) { margin: 2.5rem; }
-        :nth-child(1),
-        :nth-child(3) { font-size: 7rem; }
-        .bold {
-            :nth-child(1) { margin-bottom: 8rem; }
-            p { font-size: 11rem; }
-        }
-    }
-    h3 { font-size: 2.2rem; }
-    .opening-page nav ul,
-    .the-collab-lab nav ul {
-        li { padding: 10px 15px;
-            a { font-size: 1.6rem; }
-        }
-    }
-    ul.project-list li.projects { width: 65%; }
-}
-
-@media (max-width: 1090px) {
-    h1 {
-        font-size: 6rem;
-        text-shadow:
-            0.5rem -0.3rem 0 $black, 
-            -0.3rem 0.5rem 0 $pink,
-            0.6rem 0.4rem 0 $pea-green,
-            -0.6rem -0.1rem 0 $orange;
-    }
-    .name .full-name { font-size: 1.2rem; }
-    .hero-text {
-        :nth-child(1) { margin: 4.2rem; }
-        :nth-child(3) { margin: 2rem; }
-        :nth-child(1),
-        :nth-child(3) { font-size: 5rem; }
-        .bold {
-            :nth-child(1) { margin-bottom: 6rem; }
-            p {
-                font-size: 9rem;
-                text-shadow:
-                0.6rem -0.4rem 0 $black, 
-                -0.3rem 0.6rem 0 $pink,
-                1rem 0.5rem 0 $pea-green,
-                -0.7rem -0.2rem 0 $orange;
-            }
-        }
-    }
-    h2 { font-size: 3.2rem; }
-    h3 { font-size: 2.5rem; }
-    p { font-size: 1.8rem;
-        line-height: 3rem;
-    }
-    ul.project-list  li.projects { width: 75%; }
-}
-
-@media (max-width: 940px) {
-    .inner.border-container .top { height: 145px; }
-    .outer.border-container .top { height: 142px; }
-    header {
-        z-index: 1000;
+@media (max-width: 1060px) {
+    .project-header {
+        align-items: start;
         flex-direction: column;
-        margin: 20px 20px 0 20px;
-        align-items: center;
     }
-    header nav ul {
-        display: flex;
-        flex-direction: row;
-        margin-top: 15px;
-        li { margin: 2px; }
+    ul.project-links {
+        padding-left: 0;
+        > li:first-child { padding-left: 0; }
     }
-    main {
-        min-height: calc( 100vh - 240px );
-        min-height: calc( 100svh - 240px );
-        margin-top: 155px;
-    }
-    section {  padding: 35px 0; }
-    .opening-page nav,
-    .the-collab-lab nav{
-    ul { margin-top: 25px; }
-    }
+    #the-collab-lab img.workflow { width: 100%; }
+}
+
+@media (max-width: 770px) {
     .wrapper { width: 80%; }
-    section.about img { height: 300px; }
-    .the-collab-lab .workflow { width: 100%; }
-    ul.tech-stack li { width: 25%; }
-    footer {
+    h1 a { font-size: 3.5rem; }
+    .project-header {
+        flex-direction: column;
+        align-items: start;
+    }
+    #the-collab-lab img.logo {
+        width: 30%;
+        margin: 10px auto;
+        float: none;
+    }
+    ul.project-links {
+        flex-direction: column;
+        list-style-type: disc;
+        padding-left: 20px;
+        > li:first-child {
+            list-style-type: disc;
+            padding-left: 10px;
+        }
+    }
+    ul.tools li {width: 13%;}
+    footer p,
+    footer a { font-size: 1.2rem; }
+    .footer-copy {
         flex-direction: column;
         align-items: center;
-        p,
-        a {
-            margin: 0;
-            font-size: 1.1rem;
-            text-align: center;
-        }
     }
 }
 
-@media (max-width: 730px) {
-    h2 { font-size: 3rem; }
-    h3 { font-size: 2rem; }
-    p { font-size: 1.6rem;
-        line-height: 2.5rem;
+@media (max-width: 430px) {
+    .wrapper { width: 90%; }
+    h1 a { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.6rem; }
+    p, li {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
     }
-    .hero-text {
-        :nth-child(1) { margin: 2.5rem; }
-        :nth-child(3) { margin: 1.5rem; }
-        :nth-child(1),
-        :nth-child(3) { font-size: 4rem; }
-        .bold {
-            :nth-child(1) { margin-bottom: 3.5rem; }
-            p { font-size: 6rem; }
-        }
-    }
-    ul.project-list  li.projects { width: 100%; }
-}
-
-@media (max-width: 630px) {
-    .hero-text {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 30px;
-        padding: 15px;
-        background-color: $white;
-        box-shadow:
-            0.5rem -0.5rem 0 $black,
-            -0.4rem 0.6rem 0 $pink,
-            0.8rem 0.4rem 0 $pea-green,
-            -0.6rem -0.3rem 0 $orange;
-        :nth-child(1) { margin: 1.5rem; }
-        :nth-child(1),
-        :nth-child(3) {
-            color: $blue;
-            line-height: 3.6rem;
-        }
-        .bold p {
-            color: $black;
-            font-family: $header-font;
-            text-shadow: none;
-        } 
-    }
-    ul.tech-stack {
-        width: 100%;
-        li p { font-size: 1.4rem; }
-    }
-}
-
-@media (max-width: 540px) {
-    h2 { font-size: 2.5rem; }
-    .hero-text .bold {
-        :nth-child(1) { margin-bottom: 1.8rem; }
-        p { font-size: 4rem; }
-    }
-    header nav ul li {
-        font-size: 1.8rem;
-        margin: 5px;
-        margin-top: 0;
-    }
-    ul.tech-stack li { width: 45%; }
-    .opening-page nav ul,
-    .the-collab-lab nav ul {
-        flex-direction: column;
-        li {
-            width: 60%;
-            margin: 5px auto;
-        }
-    }
-    section.about img {
-        width: 85%;
-        height: auto;
-        margin: 0 auto;
-        float: none;
-        }
-    section.tech-design-work img {
-        width: 85%;
-        margin: 0 auto;
-        float: none;
-    }
-    ul.tech-stack li { width: 40%; }
-}
-
-@media (max-width: 500px) {
-    .show-links {
-        position: relative;
-        top: -20px;
-        right: 0;
-        left: 0;
-        width: 90%;
-        margin: 0 auto;
-        background-color: transparent;
-        opacity: 1;
-        .project-desc {
-            margin: 5px;
-            margin-top: 15px;
-            padding: 10px;
-            .title { flex-direction: column; }
-        }
-    } 
-    .project-tech { font-size: 2rem; }
-    .the-collab-lab .logo {
-        margin: 0 auto;
-        float: none;
-    }
-}
-
-@media (max-width: 320px) {
-    .hero-text {
-        :nth-child(1),
-        :nth-child(3),
-        .bold p { font-size: 3rem; }
-    }
-    h2 span { line-height: 3rem; } 
-    header nav ul li {
-        font-size: 1.2rem;
-        i { padding: 3px; }
-    }
-    ul.tech-stack li p { font-size: 1.2rem; }
 }
