@@ -6,13 +6,13 @@ import img from '../assets/photos/trippy-swirl-citrus-header.png';
 const Header = () => {
     return (
         <header>
-            <img src={img} alt='' />
+            <img src={img} alt=''  className='texture'/>
             <h1>
                 <Link to='/'>
                     it's olivia sparks
                 </Link>
             </h1>
-            <ul>
+            <ul className='texture'>
                 {
                     contactLinks.map((link) => {
                         return (

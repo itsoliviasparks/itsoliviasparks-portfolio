@@ -5,7 +5,7 @@ import img from '../assets/photos/trippy-swirl-citrus-footer.png';
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className='texture'>
             <div className='footer-copy'>
                 <p>
                     Created by Olivia Sparks. <Link to={externalLinks.portfolioRepo}>Browse the repo.</Link>

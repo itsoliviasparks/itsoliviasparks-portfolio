@@ -41,7 +41,7 @@ const projects = [
     {
         name: 'PREDICT-A-BUY',
         desc: [
-            'Built in collaboration with a bunch of other early-career developers through The Collab Lab, this app makes shopping a journey through time by anticipating your needs while guiding you through the aisles!',
+            'Built in collaboration with a bunch of other early-career developers through The Collab Lab (TCL), this app makes shopping a journey through time by anticipating your needs while guiding you through the aisles!',
             'PREDICT-A-BUY allows the user start a unique shopping list where they can add/delete items & can check/uncheck items as purchased',
             'Overtime, the app learns the user’s shopping habits, adjusting each item’s purchase frequency, letting the user know when next to buy each item',
         ],
@@ -75,7 +75,7 @@ const projects = [
         links: [
             { name: 'project info & repo', link: externalLinks.collabLabRepo  },
             { name: 'live site', link: externalLinks.collabLab  },
-            { name: 'info on The Collab Lab', link: '/the-collab-lab-info' }
+            { name: 'about my time at TCL', link: '/the-collab-lab-info' }
         ],
         done: true
     }

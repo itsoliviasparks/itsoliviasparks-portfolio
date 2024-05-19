@@ -8,7 +8,7 @@ import Tools from '../Components/Tools';
 
 const Main = () => {
     return (
-        <main className='wrapper'>
+        <main className='wrapper texture'>
             <About />
             <Currently />
             <Projects />
