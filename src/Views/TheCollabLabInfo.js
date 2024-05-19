@@ -7,7 +7,7 @@ import tclWeeklyCadence from '../assets/photos/the-collab-lab/tcl-weekly-cadence
 
 const TheCollabLab = () => {
     return (
-        <main id='the-collab-lab' className='wrapper'>
+        <main id='the-collab-lab' className='wrapper texture'>
             <h2>The <em>Collab</em> Lab</h2>
             <h3>About The Project</h3>
             <img src={tclLogo} className='logo' alt='The Collab Lab Logo' />
