@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
 import externalLinks from '../assets/externalLinks';
-import img from '../assets/photos/trippy-swirl-citrus-footer.png';
+import img from '../assets/photos/trippy-swirl-mint-footer.png';
 
 const Footer = () => {
     return (
-        <footer className='texture'>
+        <footer>
             <div className='footer-copy'>
                 <p>
                     Created by Olivia Sparks. <Link to={externalLinks.portfolioRepo}>Browse the repo.</Link>

@@ -2,11 +2,6 @@
 
 html { background-color: $bg; }
 
-.texture {
-    -webkit-mask-image: url('../assets/photos/texture.png');
-    mask-image: url('../assets/photos/texture.png');
-}
-
 #root {
     display: flex;
     flex-direction: column;

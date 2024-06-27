@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 
 import contactLinks from '../assets/contactLinks';
-import img from '../assets/photos/trippy-swirl-citrus-header.png';
+import img from '../assets/photos/trippy-swirl-mint-header.png';
 
 const Header = () => {
     return (
         <header>
-            <img src={img} alt=''  className='texture'/>
+            <img src={img} alt=''/>
             <h1>
                 <Link to='/'>
                     it's olivia sparks
