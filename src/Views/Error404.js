@@ -1,6 +1,6 @@
 const Error404 = () => {
     return (
-        <main id='error-404' className='wrapper texture'>
+        <main id='error-404' className='wrapper'>
             <h2>404</h2>
             <p>
                 oopsies!

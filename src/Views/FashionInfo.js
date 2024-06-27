@@ -1,6 +1,6 @@
 const FashionInfo = () => {
     return (
-        <main id='tech-design-work ' className='wrapper texture'>
+        <main id='tech-design-work ' className='wrapper'>
             <h2>
                 What is a Technical Apparel Developer?
             </h2>
