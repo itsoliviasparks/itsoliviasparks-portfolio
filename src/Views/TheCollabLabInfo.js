@@ -37,6 +37,22 @@ const TheCollabLab = () => {
             <p className='links'>
                 <Link to={externalLinks.collabLab}>live site</Link> | <Link to={externalLinks.collabLabRepo}>repo</Link>
             </p>
+
+            <h3>Volunteering</h3>
+                <p>
+                    After my great experience in TCL-61, I remained an engaged member of The Collab Lab community, actively volunteering until its closure at the culmination of its fifth year.
+               </p>
+               <p>
+                    As a volunteer, I helped early-career developers, particularly those from underrepresented groups in tech, gain practical experience in web development by working remotely on real world projects:
+                </p>
+                <ul>
+                    <li>
+                        Once potential Collabies got through the application, review, and selection process, their names were passed on to me. I took care of the organization & logistics of sending acceptance/rejection emails and adding everyone to slack
+                    </li>
+                    <li>
+                        Additionally, I was part of a dedicated team of TCL volunteers, who collectively developed a <Link to={externalLinks.collabLabGallery}>comprehensive gallery</Link> , highlighting all of TCL's past projects. Our efforts included reviving and seamlessly integrating past projects onto live URLs while establishing connectivity to operational read-only databases
+                    </li>
+                </ul>
         </main>
     );
 };

@@ -10,10 +10,10 @@ const About = () => {
             </h2>
             <ul>
                 <li>
-                    I’m a curious & methodical developer, designer, and overall "keener" with 6+ years experience in collaborative product development
+                    I’m a curious & methodical developer, designer, and overall "keener" with 6+ years experience in collaborative project development
                 </li>
                 <li>
-                    I specialize in DHTML animation utilizing <Link to={externalLinks.gsap}>GSAP</Link> & Adobe Creative Suite; I craft succinct & maintainable code with a focus on performance
+                    I specialize in DHTML animation utilizing <Link to={externalLinks.gsap}>GSAP</Link>, Adobe Creative Suite, and Figma; I craft succinct & maintainable code with a focus on performance
                 </li>
                 <li>
                     I’m a proven leader who implements best practices & standard operating procedures while fostering clear communication, strategic thinking, and a culture of continuous improvement

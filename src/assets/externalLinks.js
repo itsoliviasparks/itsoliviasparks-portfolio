@@ -5,6 +5,7 @@ const externalLinks = {
     portfolioRepo: 'https://github.com/itsoliviasparks/itsoliviasparks-portfolio',
 
     collabLabSite: 'https://the-collab-lab.codes/',
+    collabLabGallery: 'https://the-collab-lab.codes/developers/',
     gsap: 'https://gsap.com',
     juno: 'https://junocollege.com/',
     tmu: 'https://www.torontomu.ca/fashion/',

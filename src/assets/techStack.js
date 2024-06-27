@@ -48,7 +48,7 @@ const techStack = [
         i: 'devicon-bitbucket-original'
     },
     {
-        name: 'Google Studio',
+        name: 'Google DoubleClick Studio',
         i: 'devicon-google-plain'
     },
     {
