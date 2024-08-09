@@ -9,7 +9,7 @@ const externalLinks = {
     gsap: 'https://gsap.com',
     juno: 'https://junocollege.com/',
     tmu: 'https://www.torontomu.ca/fashion/',
-    work: 'https://www.publicis.ca',
+    work: 'https://publicishealth.com',
 
     collabLab: 'https://predict-a-buy.web.app',
     collabLabRepo: 'https://github.com/itsoliviasparks/predict-a-buy',
