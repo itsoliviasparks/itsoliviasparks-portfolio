@@ -18,7 +18,7 @@ const FashionInfo = () => {
                 My work was iterative, and involved weekly research to identify user pain points — <em>Is it warm enough? Is the pocket in an intuitive place? Can you sit down comfortably? Does it fit as expected?</em>
             </p>
             <p>
-                From there, I would research, prototype, & test solutions to these user-focused problems before sending the best solution to stores (read: push to production).
+                From there, I would research, prototype, and test solutions to these user-focused problems before sending the best solution to stores (read: push to production).
             </p>
             <p>
                 Throughout the development process, I analyzed user-submitted data and led focus groups to guide product improvements. I worked within tight timing and budget constraints; managed the expectations of cross-functional team members; and tracked product development using the industry's version control equivalent.
