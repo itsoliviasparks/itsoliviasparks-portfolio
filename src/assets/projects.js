@@ -10,8 +10,8 @@ const projects = [
         name: 'Touch Grass',
         desc: [
             'A U.S. National Park Search & Plan Tool',
-            'This app allows users to plan a trip outdoors by filtering through National Parks by location & outdoor activity',
-            'Persistent data is utilized in the Field Notes section, encouraging users to add activities they are interested in to a to-do list. They can then check off activities as they have experienced them'
+            `This app allows users to plan a trip outdoors by filtering through U.S. National Parks by location & outdoor activity`,
+            `The Field Notes section uses persistent data, prompting users to create a to-do list of activities they're interested in & check them off as they are completed`
         ],
         tech: [
             {
