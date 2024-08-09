@@ -10,10 +10,10 @@ const Currently = () => {
             </h2>
             <ul>
                 <li>
-                I'm currently coding some pretty rad banner ad animations @ <Link to={externalLinks.work}>Publicis Canada</Link>
+                    I'm a Technology Lead in the Motion & Display department @ <Link to={externalLinks.work}>Publicis Health</Link>
                 </li>
                 <li>
-                    I also volunteer with <Link to={externalLinks.collabLabSite}>The Collab Lab</Link>, helping early-career developers, particularly those from underrepresented groups in tech, gain practical experience in web development by working remotely on real world projects
+                    My team includes talented Interactive Developers & Content Authors. Together, we create some pretty rad banner ad animations & develop impactful email communications
                 </li>
             </ul>
         </section>
