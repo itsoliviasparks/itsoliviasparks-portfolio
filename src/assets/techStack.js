@@ -1,13 +1,5 @@
 const techStack = [
     {
-        name: 'React',
-        i: 'devicon-react-original'
-    },
-    {
-        name: 'Firebase',
-        i: 'devicon-firebase-plain'
-    },
-    {
         name: 'JavaScript',
         i: 'devicon-javascript-plain'
     },
@@ -32,8 +24,32 @@ const techStack = [
         i: 'devicon-html5-plain'
     },
     {
-        name: 'Restful APIs',
-        i: 'fa-solid fa-right-left'
+        name: 'Photoshop',
+        i: 'devicon-photoshop-plain'
+    },
+    {
+        name: 'Illustrator',
+        i: 'devicon-illustrator-line'
+    },
+    {
+        name: 'Figma',
+        i: 'devicon-figma-plain'
+    },
+    {
+        name: 'Google DoubleClick Studio',
+        i: 'devicon-google-plain'
+    },
+    {
+        name: 'Flashtalking',
+        i: 'fa-solid fa-quote-left'
+    },
+    {
+        name: 'Jira',
+        i: 'devicon-jira-plain-wordmark'
+    },
+    {
+        name: 'Project Management',
+        i: 'fa-solid fa-list-check'
     },
     {
         name: 'Git',
@@ -48,40 +64,20 @@ const techStack = [
         i: 'devicon-bitbucket-original'
     },
     {
-        name: 'Google Studio',
-        i: 'devicon-google-plain'
-    },
-    {
-        name: 'Flashtalking',
-        i: 'fa-solid fa-quote-left'
-    },
-    {
-        name: 'Illustrator',
-        i: 'devicon-illustrator-line'
-    },
-    {
-        name: 'Photoshop',
-        i: 'devicon-photoshop-plain'
-    },
-    {
-        name: 'Figma',
-        i: 'devicon-figma-plain'
-    },
-    {
-        name: 'Blender',
-        i: 'devicon-blender-original'
-    },
-    {
-        name: 'Jira',
-        i: 'devicon-jira-plain-wordmark'
-    },
-    {
         name: 'Pair Programming',
         i: 'fa-solid fa-people-arrows'
     },
     {
-        name: 'Project Management',
-        i: 'fa-solid fa-list-check'
+        name: 'React',
+        i: 'devicon-react-original'
+    },
+    {
+        name: 'Firebase',
+        i: 'devicon-firebase-plain'
+    },
+    {
+        name: 'Restful APIs',
+        i: 'fa-solid fa-right-left'
     },
 ];
 

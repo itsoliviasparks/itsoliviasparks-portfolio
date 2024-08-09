@@ -11,8 +11,8 @@ const Main = () => {
         <main className='wrapper'>
             <About />
             <Currently />
-            <Projects />
             <Tools />
+            <Projects />
             <School />
             <AFK />
             <Contact />
