@@ -28,7 +28,7 @@ const FashionInfo = () => {
                 In this position, I collaborated closely with internal design, sourcing, and QA teams, as well as third-party factories, to develop over 60 products per quarter.
             </p>
             <p>
-                The product I worked on was notoriously complex, and as a product expert, I led training efforts for new team members to ensure they quickly got up to speed with such a complex product. I also developed and implemented standard operating procedures (SOPs) and best practices that streamlined workflows and improved efficiency. I provided ongoing support to ensure adherence to these standards, which contributed to improved team performance and consistency across projects.
+                The product I worked on was notoriously complex, and as a product expert, I led training efforts for new team members to ensure they quickly got up to speed with such a complicated product. I also developed and implemented standard operating procedures (SOPs) and best practices that streamlined workflows and improved efficiency. I provided ongoing support to ensure adherence to these standards, which contributed to improved team performance and consistency across projects.
             </p>
             <p>
                 Additionally, my role included presenting my ideas and work to both my cross-functional peers and the brand's leadership team. To facilitate this, I led weekly collaborative working sessions with my peers to align on each style. I also summarized and presented high-level key takeaways to the company's leadership team for their buy-in prior to finalizing products and customer research.
