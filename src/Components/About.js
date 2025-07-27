@@ -10,10 +10,10 @@ const About = () => {
             </h2>
             <ul>
                 <li>
-                    I'm a methodical & goal-oriented Tech Lead with 6+ years experience in collaborative project development
+                    I'm a methodical & goal-oriented Tech Lead with {(new Date().getFullYear()) - 2018}+ years experience in collaborative project development
                 </li>
                 <li>
-                    I specialize in HTML5 animation utilizing <Link to={externalLinks.gsap}>GSAP</Link>, Adobe Creative Suite, and Figma
+                    I specialize in HTML5 banner animations utilizing <Link to={externalLinks.gsap}>GSAP</Link>, Adobe Creative Suite, and Figma
                 </li>
                 <li>
                     I'm a proven leader who focuses on strategic thinking, driving innovation, implementing best practices/SOPs, nurturing talent, and fostering a culture of clear communication & continuous improvement

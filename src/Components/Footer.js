@@ -8,10 +8,10 @@ const Footer = () => {
         <footer>
             <div className='footer-copy'>
                 <p>
-                    Created by Olivia Sparks. <Link to={externalLinks.portfolioRepo}>Browse the repo.</Link>
+                    Created by <Link to={externalLinks.github}>Olivia Sparks</Link>. <Link to={externalLinks.portfolioRepo}>Browse the repo.</Link>
                 </p>
                 <p>
-                    ©2022-2024 Olivia Sparks. All rights reserved.
+                    ©2022-{(new Date().getFullYear())} Olivia Sparks. All rights reserved.
                 </p>
             </div>
             <img src={img} alt='' />

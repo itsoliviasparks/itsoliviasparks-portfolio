@@ -9,12 +9,12 @@ const externalLinks = {
     gsap: 'https://gsap.com',
     juno: 'https://junocollege.com/',
     tmu: 'https://www.torontomu.ca/fashion/',
-    work: 'https://www.publicisgroupe.com/en',
+    work: 'https://www.publicis.ca',
 
     collabLab: 'https://predict-a-buy.web.app',
     collabLabRepo: 'https://github.com/itsoliviasparks/predict-a-buy',
 
-    touchGrass: 'https://itsoliviasparks-touch-grass.netlify.app',
+    touchGrass: 'https://touch-grass-882fb.web.app',
     touchGrassRepo: 'https://github.com/itsoliviasparks/touch-grass',
 };
 

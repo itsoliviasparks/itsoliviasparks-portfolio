@@ -10,11 +10,22 @@ const Currently = () => {
             </h2>
             <ul>
                 <li>
-                    I'm the Technology Lead in the Motion & Display dept. @ <Link to={externalLinks.work}>Publicis</Link> CoLab:
+                    I'm a <b>Technology Lead</b> in the Motion & Display dept. @ <Link to={externalLinks.work}>Publicis Toronto</Link>:
                     <ul>
                         <li>
-                            My team includes talented Interactive Developers and we create some pretty rad banner ad animations together!
+                            As a Tech Lead, I work closely with Project Management, QA, and Creative teams, while overseeing and guiding my team in the transformation of storyboards & brand assets into production-ready, best-in-class ads
                         </li>
+                        <li>
+                            My team of talented Interactive Developers and I work together to create some pretty rad banner ad animations! <em>(As well as some compliance-focused banners with scrolling ISI)</em>
+                        </li>
+                        <ul>
+                            <li>
+                                Primarily we work on standard banners, animated with <Link to={externalLinks.gsap}>GSAP</Link> and delivered via Google's DoubleClick Studio (DCS) platform
+                                </li>
+                                <li>
+                                We also work with third-party media companies, use a variety of banner development tools & platforms, and build HTML5 Point-of-Care assets
+                            </li>
+                        </ul>
                     </ul>
                 </li>
             </ul>

@@ -6,7 +6,7 @@ const AFK = () => {
             </h2>
             <ul>
                 <li>
-                    Throwing pottery, riding mountain bikes, climbing rocks, hiking mountains, petting cats, traveling the world, practising yoga, repairing clothes, & playing boardgames
+                    Petting cats, riding mountain bikes, climbing rocks, hiking mountains, playing D&D, traveling the world, practising yoga, repairing clothes, & playing boardgames
                 </li>
             </ul>
         </section>
